@@ -20,6 +20,16 @@ test('catalog conversion checks provenance and never imports embedded translatio
   input.provenance.operation = 'transform-preview'; assert.throws(() => catalogState(input, expected));
 });
 
+test('catalog v2 preserves the supported source/context fields and rejects future versions', () => {
+  const input = artifact();
+  const legacy = catalogState(input, expected);
+  input.catalog.schemaVersion = 2;
+  input.catalog.entries[0].select = { argument: 'audience', arms: ['other'] };
+  assert.deepEqual(catalogState(input, expected), legacy);
+  input.catalog.schemaVersion = 3;
+  assert.throws(() => catalogState(input, expected), /unsupported/);
+});
+
 test('malformed, duplicate, dangerous keys and oversized catalogs fail before import', () => {
   for (const mutate of [
     a => { a.catalog.schemaVersion = 999; },

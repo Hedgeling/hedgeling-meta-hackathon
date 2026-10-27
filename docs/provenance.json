@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "2bb1c57e902b7a3cc77b37d0ab3c65486c5ee378a92a92a22536359d1e5c0fc9"
+      "sha256": "97147d43424790b08455dcf4a611d26df53b031f17b44da2628a40af54fc78e8"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -167,7 +167,7 @@
     },
     "docs/EXTRACTION-WORKFLOW.md": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "40ad9438f985b94e5297fe36342143bc48834a23b502b8290a7325fa8858e136"
+      "sha256": "7282eada5a6df70442d424762e81fee4bfdcb84121ebdea3f08dd973d1b99e26"
     },
     "src/engine-operations.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -179,7 +179,7 @@
     },
     "src/extraction-catalog.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "f3a69868a72b0a423e2e2e4a8942c9b0304e7f772ef1256effe226ad94d5f252"
+      "sha256": "53c899ec169142503fbeef822723606b0f99a22f585323735ce03cc1b2950a01"
     },
     "src/extraction-workflow.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -187,7 +187,7 @@
     },
     "test/extraction.test.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "c3a496777f172c50bf09fb5008d5154cc615818fa6fc93c4f3527fe71ce06ed2"
+      "sha256": "c5e1a0e2ad22c86d80598bcc2562e25940137c42bdf71b454a9be946c147dd7c"
     },
     "ui/extraction.css": {
       "origin": "authored-during-event-for-project-extraction-workflow",

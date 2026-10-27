@@ -47,7 +47,7 @@ Run `node scripts/vendor-integration.mjs /absolute/path/to/web-console` from a c
 | Engine processing | 1,000 files, 1 MiB per file, 20 MiB total source; five-minute processing deadline |
 | Revision | A branch/tag is pinned when processing starts; use a full commit SHA when exact revision selection is required |
 | Retention | Private job/catalog expires after up to seven days; expired jobs require a new extraction |
-| Import | At most 10,000 entries, bounded metadata, 21 MiB artifact response; plan/resource caps also apply |
+| Import | Catalog versions 1 and 2; source/context fields only. At most 10,000 entries, bounded metadata, 21 MiB artifact response; plan/resource caps also apply |
 | Preview | First five strings, each truncated to 300 characters; clearly labeled sample |
 | History | Default 25, maximum 100 per page; manual UI uses five; `nextOffset` signals more |
 | Progress | Every three seconds for up to 120 polls; manual refresh remains available |

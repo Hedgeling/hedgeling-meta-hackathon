@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T09:51:46.279072+00:00",
+  "recordedAt": "2026-10-27T10:59:37.977826+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -995,6 +995,542 @@
             {
               "start": 1083,
               "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "8fc8b77f1dc7db090b1d5617a4e9feb0a83b1500",
+      "authorDate": "2026-10-27T04:53:52-06:00",
+      "commitDate": "2026-10-27T04:53:52-06:00",
+      "subject": "Wire approved source extraction and catalog import into console and MCP",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "status": "M",
+          "sha256AtCommit": "b60008dafcc69a025034075209cfd2776879201e6649b0ba631ce743de4fcdfa",
+          "newSideHunkRanges": [
+            {
+              "start": 42,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/AWS-DEMO.md",
+          "status": "M",
+          "sha256AtCommit": "bcdbbb8af43e5198c287fe06ca9c554a1701954b29e409c8cc097753e9568250",
+          "newSideHunkRanges": [
+            {
+              "start": 52,
+              "count": 10
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "5a3edb0a2280eb84ce73ac6137edc68e4e2b81359cfaf8499a9f612dcb5b769f",
+          "newSideHunkRanges": [
+            {
+              "start": 44,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/extraction-actions.js",
+          "status": "A",
+          "sha256AtCommit": "62920cd4eebd34abf61dcc05a273934f3f70d4c0c522631491774a7a74219743",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 23
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/api-contract/index.js",
+          "status": "M",
+          "sha256AtCommit": "6a6c84c4ae0543ff3d47e1f56013e533b7570099d70400ea638c07ad4b0e3998",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 21,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/platform-mcp/test/stdio.test.mjs",
+          "status": "M",
+          "sha256AtCommit": "24981cedfafce5e6d49e1666a748188a5714e24439ebebd547906f4f8b217783",
+          "newSideHunkRanges": [
+            {
+              "start": 34,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/db/migrations/202610271200_extraction_workflow.sql",
+          "status": "A",
+          "sha256AtCommit": "4a49ea48cd3f5e21db26d2573244659d05ed247143ef8cbb1b5d2fe1a578f0d7",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 26
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/package.json",
+          "status": "M",
+          "sha256AtCommit": "9fa6da664dd9faf6cd63d1199ec0b2985527687e09fc42c18079acc5c6bcc6f4",
+          "newSideHunkRanges": [
+            {
+              "start": 41,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-tests.js",
+          "status": "M",
+          "sha256AtCommit": "a9b26f14a7819337957eedd25887f19396392c4a9ac322cea919dcc59ee040d4",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-extraction-browser-tests.js",
+          "status": "A",
+          "sha256AtCommit": "669b7864e7b8990f3f349e615a8a22368ebdf440da584277f19e81f4b11a8561",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 63
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/scripts/seed-extraction-demo.js",
+          "status": "A",
+          "sha256AtCommit": "b2db553e7bb8bdfe1fcfbde3d724fa0051866f4c2c10e182b6d172a34c27a1cf",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 34
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "5c7986d0d080fa540a92853248645988d59d8dbf83e43d2808f1dffca3481edd",
+          "newSideHunkRanges": [
+            {
+              "start": 31,
+              "count": 2
+            },
+            {
+              "start": 41,
+              "count": 12
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "sha256AtCommit": "4438640b63d5732e0d2fd3bbeb236c79327912d0611638da74033a821c379744",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-skills.js",
+          "status": "M",
+          "sha256AtCommit": "2ad8382a894f1eaaf9e99c72ef1774af47266e175c34a4b8331028c4a3f73273",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 3,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/extraction-integration.js",
+          "status": "A",
+          "sha256AtCommit": "4ee4c2201777f6c01579c97821a545babfa809c87f4623897791b2f2e2f73a3a",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 33
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/engine-client.js",
+          "status": "M",
+          "sha256AtCommit": "46ca15165bd5182aa7af068cd47ca2336fca5f38cdb2b164221fc06916641a6d",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/engine-operations.js",
+          "status": "A",
+          "sha256AtCommit": "e67beb7829131db3ff65e077ad1af48a7127d78a48479036850adaefe6a52ee4",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 20
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-actions.js",
+          "status": "A",
+          "sha256AtCommit": "62920cd4eebd34abf61dcc05a273934f3f70d4c0c522631491774a7a74219743",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 23
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-catalog.js",
+          "status": "A",
+          "sha256AtCommit": "f3a69868a72b0a423e2e2e4a8942c9b0304e7f772ef1256effe226ad94d5f252",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 61
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-workflow.js",
+          "status": "A",
+          "sha256AtCommit": "c027ed17273825c10870e5953823eff74083188bf367ba847241d30c49759623",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 141
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/http.js",
+          "status": "M",
+          "sha256AtCommit": "0c7b3b785f32aeb7134fa183e3b02874fca584e75e09706d3b9bf3363f8e3682",
+          "newSideHunkRanges": [
+            {
+              "start": 14,
+              "count": 1
+            },
+            {
+              "start": 17,
+              "count": 1
+            },
+            {
+              "start": 23,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "9ec2885ca34901eb5240fc735ba0ad5d04c01004d6902af73d3b2c5cd4d16af8",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 2
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 20,
+              "count": 1
+            },
+            {
+              "start": 27,
+              "count": 20
+            },
+            {
+              "start": 56,
+              "count": 20
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "sha256AtCommit": "084591df4ed7ce090766a61ca2daf73fb57069f0857b8cbabd700ac9ad32d8f9",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "sha256AtCommit": "5b202b6a7ba532e8287339fc13ab65be05649afcd878426f1ca98881d3949d58",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 13,
+              "count": 1
+            },
+            {
+              "start": 21,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 66,
+              "count": 1
+            },
+            {
+              "start": 195,
+              "count": 2
+            },
+            {
+              "start": 236,
+              "count": 10
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "cce760477ffb7621db124cdc48500a4f788ad651f9a832557cf5fe51da992326",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 173,
+              "count": 11
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/extraction.css",
+          "status": "A",
+          "sha256AtCommit": "93fff6df4103b5830bb6b5df61c014af7841fc9a91c8774a2141a29225bac44f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 14
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/public/extraction.js",
+          "status": "A",
+          "sha256AtCommit": "5ae5bf439ca21330ffb823a83d496445b70567741ca6a4b843c510dcc2b4cd24",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 131
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/server.js",
+          "status": "M",
+          "sha256AtCommit": "00ccf4cc2ef338b8738a4d6be1b91404a081daca2b609b499dbf8d5f7fe3a0e4",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 2
+            },
+            {
+              "start": 256,
+              "count": 1
+            },
+            {
+              "start": 265,
+              "count": 1
+            },
+            {
+              "start": 550,
+              "count": 1
+            },
+            {
+              "start": 600,
+              "count": 1
+            },
+            {
+              "start": 985,
+              "count": 18
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/usage.js",
+          "status": "M",
+          "sha256AtCommit": "554755e33b292190a7bd6656ec43a701b728764a0e769e2650517fba57610129",
+          "newSideHunkRanges": [
+            {
+              "start": 793,
+              "count": 1
+            },
+            {
+              "start": 801,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/workspace-actions.js",
+          "status": "M",
+          "sha256AtCommit": "24fe6d257952fa60d289af83cbf830f0933520a2e356a759ab308db1fbf6328f",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 117,
+              "count": 1
+            },
+            {
+              "start": 162,
+              "count": 1
+            },
+            {
+              "start": 196,
+              "count": 2
+            },
+            {
+              "start": 214,
+              "count": 3
+            },
+            {
+              "start": 249,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/workspace-read.js",
+          "status": "M",
+          "sha256AtCommit": "a3061eef0168ad32aa31af4e83fa55b54064a60094df213b9dd22c9248fe8f6b",
+          "newSideHunkRanges": [
+            {
+              "start": 48,
+              "count": 3
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test-support/extraction-engine.mjs",
+          "status": "A",
+          "sha256AtCommit": "038a79bc80904c08bc9b214d46cbbbf59047803280ead3e597d0d27ff7cfb998",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 55
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/test/extraction.integration.mjs",
+          "status": "A",
+          "sha256AtCommit": "751119f781a222a7236f8741b8a0521aa225e3b20adba42e4d5440d374b5ade3",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 70
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "5710426a8a17c9a1d54c43a68d05ea551ffe8fcf",
+      "authorDate": "2026-10-27T04:59:18-06:00",
+      "commitDate": "2026-10-27T04:59:18-06:00",
+      "subject": "Include extraction migration in authorization baseline checks",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "84813f14f0474ed0e7126f4323333301e7534c944d00ff34fca4ded0ba0b56eb",
+          "newSideHunkRanges": [
+            {
+              "start": 352,
+              "count": 1
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
