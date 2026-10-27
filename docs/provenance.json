@@ -196,6 +196,10 @@
     "ui/extraction.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
       "sha256": "5ae5bf439ca21330ffb823a83d496445b70567741ca6a4b843c510dcc2b4cd24"
+    },
+    "examples/source/TravelPlanner.tsx": {
+      "origin": "authored-during-event; synthetic travel-planner extraction fixture",
+      "sha256": "c4abfa5be68dddc332ea8f1238eccc52498da839ec3d14a3b22af929a0f8efc2"
     }
   }
 }
