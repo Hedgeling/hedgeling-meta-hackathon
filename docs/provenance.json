@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "254358c4d12cbf722b495ebc79e6f819cf529e4e1a146847c198191f6b2accd9"
+      "sha256": "877e52415c58425c96b8bdd7811bc9f1f72fbf9f5204da3522b10e29183fba19"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -159,7 +159,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "13d78629bc05db305f57713703d05df177b47ab2626c881b15fc7d1c932f969a"
+      "sha256": "a7d94a54632ab53f6864759d98ca4246a0421a59f9548a55655eef3da85203fe"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",

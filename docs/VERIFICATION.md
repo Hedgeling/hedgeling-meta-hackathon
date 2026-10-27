@@ -208,3 +208,9 @@ Main CI passed, and AWS reports a healthy running task whose image digest matche
 that tested commit. Live health returns 200 and anonymous agent configuration
 returns 401. Verification made no model calls and did not confirm any pending
 user proposal.
+
+## Library workflow — local verification
+
+Event commit `cc3c33e3575c1b43a395594e295b27b114a8372c` provides the new Library service, typed action contracts, forms and additive history/review migration. Hosted integration commit `0f34cd0eefe15958d528c569236d6157f279b2b9` connects it to the existing console, agent, MCP, authorization and translation-revision execution. The hosted-change inventory identifies changed ranges without importing existing product source.
+
+Local verification passed all 28 event unit tests, repository provenance checks and the labeled fixture demo; all 13 hosted agent integration tests; the authorization suite including Library content deletion; and Library browser checks on desktop/mobile. Build, lint and the public boundary check passed. Browser checks cover each asset editor, separate manual confirmations, edit/cancel/save, history, chat-to-form handoff and agent highlighting. Integration tests cover stale versions, restore before/after, reviewer submission/approval/rejection, revocation, scoped pagination and no implicit translation generation. Synthetic Meta-provider checks verify active Library guidance selection and stored revision hashes. These fixture checks do not claim live Meta tool selection.
