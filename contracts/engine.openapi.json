@@ -464,6 +464,82 @@
           }
         }
       }
+    },
+    "/v1/connections/{id}/config": {
+      "get": {
+        "operationId": "readExtractionConfig",
+        "description": "Requires engine:read and an allowed connection. Reads only an ordinary UTF-8 JSON file of at most 32 KiB, pinned to a commit. Returns supported settings plus omitted field names, never provider configuration or secrets. Does not execute repository code.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ref",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          {
+            "name": "path",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 512
+            },
+            "description": "Literal repository-relative path ending in .hedgeling/extract.config.json; no traversal or symlinks."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pinned config, or found=false with empty settings when missing.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "repositoryId": {
+                      "type": "integer"
+                    },
+                    "commitSha": {
+                      "type": "string"
+                    },
+                    "path": {
+                      "type": "string"
+                    },
+                    "found": {
+                      "type": "boolean"
+                    },
+                    "settings": {
+                      "$ref": "#/components/schemas/ExtractionSettings"
+                    },
+                    "ignoredFields": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "$ref": "#/components/responses/Error"
+          },
+          "422": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -515,7 +591,8 @@
           "operation": {
             "enum": [
               "extract",
-              "transform-preview"
+              "transform-preview",
+              "tune"
             ]
           },
           "ref": {
@@ -538,6 +615,9 @@
             "type": "string",
             "default": "en-US",
             "description": "Canonicalizable BCP 47 language tag."
+          },
+          "settings": {
+            "$ref": "#/components/schemas/ExtractionSettings"
           }
         }
       },
@@ -561,7 +641,8 @@
           "operation": {
             "enum": [
               "extract",
-              "transform-preview"
+              "transform-preview",
+              "tune"
             ]
           },
           "ref": {
@@ -622,6 +703,9 @@
                 "type": "string"
               }
             }
+          },
+          "settings": {
+            "$ref": "#/components/schemas/ExtractionSettings"
           }
         }
       },
@@ -679,6 +763,89 @@
           "preview": {
             "type": "object",
             "description": "Only for transform-preview. Rewritten file contents, original hashes, required runtime modules, and extraction-only file list. No writes applied."
+          },
+          "tuning": {
+            "type": "object",
+            "description": "Only for tune. Deterministic before/after counts, accepted additive edits and settings; no writes and no LLM calls. Runs at most two rounds within the shared five-minute bound."
+          }
+        }
+      },
+      "ExtractionSettings": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "At most 8 KiB of supported data-only extraction arrays. Defaults remain in effect. No provider settings, commands, plugins or source-scope changes.",
+        "properties": {
+          "excludePatterns": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "excludeCallees": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "excludeFields": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "denyProps": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "ignoredGlobs": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "fixtureGlobs": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "identifierAllowlist": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "keyShapes": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
           }
         }
       }
