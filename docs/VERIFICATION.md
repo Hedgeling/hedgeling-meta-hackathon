@@ -204,3 +204,7 @@ organization usage period. The read-back confirmed both limits. Usage history
 was preserved. Plan defaults, translation billing, API keys, and human write
 approvals were unchanged. The new integration is merged at
 `e2827bca6ad3d7d78ff70f941b9d4daeeacf9604`.
+Main CI passed, and AWS reports a healthy running task whose image digest matches
+that tested commit. Live health returns 200 and anonymous agent configuration
+returns 401. Verification made no model calls and did not confirm any pending
+user proposal.
