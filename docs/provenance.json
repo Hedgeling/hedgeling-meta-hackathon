@@ -159,7 +159,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "517b5170ab991967e06be5ee2bd615d048f83605bff58bf8c32e4e486caadc82"
+      "sha256": "14f997f72069be75253d4d33fa803227fe30ebcdd50db3a871a1cda4098f1fbb"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
