@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "df0a16d638a2886a35aeaf6cf4e72e0cd3da04b2a238ea61632d70a486224604"
+      "sha256": "7c1cba1dc5b8b74acf463c48882be88c5ed8ff833807f916870b940c64098316"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -220,6 +220,30 @@
     "ui/chat-markdown.js": {
       "origin": "authored-during-event-for-accessible-chat-presentation",
       "sha256": "6a8aaed798901a49f011391eefcc57fdc02109d12f8c79131d1878a9531483cc"
+    },
+    "docs/PROJECT-LOCALES.md": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "9a523f157668011a5418bc09a767605177135dc66712b48a5c6c6e3707ab5c28"
+    },
+    "src/project-locales-actions.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "6d3f9c56235e3887df5ae4cfc3f5b547e403907a7101cc587dd2f41fd427d845"
+    },
+    "src/project-locales.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "64721f02b54d9548e62e20def2fed78cbca31b29d059a74ef31656afd816410a"
+    },
+    "test/project-locales.test.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "5b11bc370fd14f31bd00b7a2f9389bdbc5cf9af14d0429bcd312c351c65920c1"
+    },
+    "ui/project-locales.css": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "18aa04d42cd605c0fad29fd1cbc80d3232aa82440b8e84cc9c4a7945337e8113"
+    },
+    "ui/project-locales.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "7704858f7357851cb5fd80597de09f6c360e7f586b4e84201955bcd28a03db63"
     }
   }
 }
