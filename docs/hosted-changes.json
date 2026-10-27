@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T21:31:36.624416+00:00",
+  "recordedAt": "2026-10-27T21:42:30.521Z",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -3880,6 +3880,28 @@
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "private-engine-api",
+      "commit": "df781dbb360dfa8da13295ac3d7cbcb11ffc913c",
+      "authorDate": "2026-10-27T15:38:14-06:00",
+      "commitDate": "2026-10-27T15:38:14-06:00",
+      "subject": "Handle expired bootstrap task history in engine status checks",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/engine-api/deploy/manage.mjs",
+          "status": "M",
+          "sha256AtCommit": "319214bc1898576066c1ad490f5a2af149e3435f919f7aaab91a186e7f04534f",
+          "newSideHunkRanges": [
+            {
+              "start": 42,
+              "count": 1
+            }
+          ],
+          "note": "Existing event-authored deployment helper modified; only event changes are claimed. This operator-only fix is not part of the deployed runtime image."
         }
       ]
     }

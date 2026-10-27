@@ -133,3 +133,56 @@ The isolated demo now runs existing-product commit `75f16efac62f32ee4c06a62e8efb
 Local integration and browser checks exercised target-language read/propose/confirm, preservation of existing translations when re-enabling a locale, source-language rejection, canonical code handling, stale previews, idempotent replay, revoked and locale-scoped access, concurrent organization limits, manual review/edit/cancel/save, translation-selector refresh, shortcut focus, agent approval/highlighting and mobile layout. The agent tests used a deterministic provider; they do not prove live Meta tool selection for this new feature.
 
 AWS reports a healthy running demo task whose image digest matches the tested build. Public health and login return 200; anonymous agent configuration returns 401. Authenticated interactions were tested locally. No live project locales were changed by deployment verification, and this update performs no database migration, production release or merge. Adding locales does not generate translations or change existing jobs. Existing-product integration changes are recorded in `hosted-changes.json`; the submission repository contains only the new event modules and provenance records.
+
+## Automatic demo deployment and extraction tuning
+
+The existing-product integration repository now tests pushes to `main`, including
+integration tests inside the final container image. A successful main run supplies
+that exact image as an artifact to the demo deployment workflow. Deployment uses
+its immutable digest, skips superseded commits, waits for service stability, and
+checks public health and rejection of anonymous agent access. It does not rebuild
+the image during deployment. The first automatic release completed successfully
+at `d50f59f90501f15e36b5c8a34f8e0ed8e7ecaedd`. The public event repository still has
+no deployment credentials and does not deploy the product.
+
+The tuning release is integration commit
+`f1a20b999f8a69cd92bf7638169c990c14e3e176`, containing implementation `629578e`
+and event modules vendored from `0f05d7c`. Its main CI passed build, lint, unit,
+database, authorization, security, all six browser suites, and final-image
+integration checks. Public repository checks, 25 unit tests and the labeled
+fixture demo also passed. The live task's image digest matches that release;
+health and login return 200, and anonymous agent configuration returns 401.
+The [automatic tuning deployment](https://github.com/Hedgeling/hedgeling-agent-platform/actions/runs/40588689521)
+completed successfully after [main CI](https://github.com/Hedgeling/hedgeling-agent-platform/actions/runs/40588327257).
+
+Local integration and desktop/mobile browser checks cover repository config
+reads, manual and chat approval cards, tuning progress, saved configuration,
+download, and re-extraction pinned to the tuned source commit. Tests also cover
+stale settings, changed source bindings, revoked access, idempotent replay, and
+rejection of direct import from a tuning preview. Saving settings and starting
+re-extraction require confirmation; importing its results remains a separate
+confirmation. Repository files are never written. Existing project strings are
+not deleted just because they disappear from a subsequent extraction.
+
+The separately hosted private service runs runtime commit
+`cb9900d53a1682ca4857057d9bf95f20ac2714aa`. Its unit/security and HTTP/queue/GitHub
+integration checks passed, including the actual engine. Twelve engine tests also
+passed inside the release image with networking disabled and a read-only root
+filesystem. AWS completed the private rollout. A read-only live task verified
+that tuning is available and read the connected repository config at pinned event
+commit `b2efdedc6354b6360bd4e3a8c59f6e6f6cc22a9f`; the optional config file was
+absent and reported as such. This task made no project writes or processing jobs.
+
+Initial tuning uses two bounded deterministic rounds with model calls disabled.
+It may report no accepted changes. Configuration is limited to the documented
+supported extraction fields; the download is not a lossless copy of arbitrary
+repository configuration. Browser agent tests use the deterministic test
+provider. These checks do not establish live Meta selection of the new tuning
+tools or a completed live user tuning conversation.
+
+The existing-product integration and event contributions are merged into their
+respective `main` branches. Private engine work remains on an unmerged review
+branch; no original-product merge or npm release was performed. Operator helper
+commit `df781db` fixes expired bootstrap-task history in status reporting and is
+inventoried separately; it does not change the deployed runtime. Runtime
+addresses, credentials and raw cloud records remain outside this repository.
