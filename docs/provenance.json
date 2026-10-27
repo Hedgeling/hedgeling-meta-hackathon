@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "346f04f35387c74d2095b049e1af34fffe9274509929fe46a820bcfede96f0ad"
+      "sha256": "411839466a7db4877f35e27b168eed5d03ed8a737684dd075bf12fe5f3b45925"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -61,11 +61,11 @@
     },
     "docs/SERVICES.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "e367e95a0adb79fc9706c0da63c244824367e11a0d146d845d9acc7c6cc050e6"
+      "sha256": "a639b4f52c2ac8f9dce0fe6dd60c1ebb989fe0b96f47f8699a21ef7f514d4d8f"
     },
     "docs/SUBMISSION.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "13210fd4e802bddf6c39b29d62136296d19c6b195736d4501400fe70fcb2038c"
+      "sha256": "e543293bdd92edb4815fc1563d54473ed61650b6ebdda762c323d3e702502d53"
     },
     "docs/excluded-baseline-sha256.json": {
       "origin": "event-authored guard data; hashes of excluded pre-existing code, no code contents",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "97147d43424790b08455dcf4a611d26df53b031f17b44da2628a40af54fc78e8"
+      "sha256": "0065475f86135e02b1850fbdaab9f1f481cb481a77600af8ca370586d3e3d42c"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -159,7 +159,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "edd6b09bf4b4725c63a3ca68c1a769ac4945129043ee29f0f97ab507ba3de6c9"
+      "sha256": "517b5170ab991967e06be5ee2bd615d048f83605bff58bf8c32e4e486caadc82"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",

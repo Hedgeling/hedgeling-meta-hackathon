@@ -7,6 +7,7 @@
 - Per-file origins/digests and an inventory of event changes inside the hosted product.
 - Public CI runs repository checks, tests, and the labeled offline example without secrets.
 - Private processing service deployed separately, GitHub App restricted to the synthetic repository, demo backend connection and real extraction verified. See [evidence](VERIFICATION.md).
+- Project-bound extraction/import UI and API/MCP workflow deployed; three synthetic strings imported and confirmation replay checked. Live Meta discovery and bounded extraction proposal verified in two turns. Browser tests separately exercise chat/manual approvals with fixtures.
 
 ## Still required before submission
 

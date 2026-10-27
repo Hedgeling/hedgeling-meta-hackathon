@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T10:59:37.977826+00:00",
+  "recordedAt": "2026-10-27T11:04:45.040093+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -1534,6 +1534,56 @@
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "b7fc91c7ce982a5c74a492c6d15274e773a3d96e",
+      "authorDate": "2026-10-27T05:03:10-06:00",
+      "commitDate": "2026-10-27T05:03:10-06:00",
+      "subject": "Accept catalog v2 from the deployed private extraction engine",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-catalog.js",
+          "status": "M",
+          "sha256AtCommit": "53c899ec169142503fbeef822723606b0f99a22f585323735ce03cc1b2950a01",
+          "newSideHunkRanges": [
+            {
+              "start": 20,
+              "count": 3
+            }
+          ],
+          "note": "Existing event integration updated; no pre-event source copied."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "a7a463a185fa82beea2845f0e23ae4ad5672735b8e0e83be64db36ae0725386b",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 40,
+              "count": 1
+            }
+          ],
+          "note": "Existing event integration updated; no pre-event source copied."
+        },
+        {
+          "path": "packages/web-console/test-support/extraction-engine.mjs",
+          "status": "M",
+          "sha256AtCommit": "c6a7bf508d11c32eec91eed3009343fc82b258ed3be8d24b2c8f36bb161e26f1",
+          "newSideHunkRanges": [
+            {
+              "start": 39,
+              "count": 1
+            }
+          ],
+          "note": "Existing event integration updated; no pre-event source copied."
         }
       ]
     }
