@@ -186,3 +186,21 @@ branch; no original-product merge or npm release was performed. Operator helper
 commit `df781db` fixes expired bootstrap-task history in status reporting and is
 inventoried separately; it does not change the deployed runtime. Runtime
 addresses, credentials and raw cloud records remain outside this repository.
+
+## Included chat allowance grants
+
+Integration implementation `1d4a8f6` preserves the default 500,000 daily user
+tokens while honoring explicit server-managed grants up to a finite 10-million
+ceiling. Invalid values fail before provider dispatch, and a zero allowance blocks
+usage. Regression tests cover the higher grant, reservation headroom, lower and
+zero limits, the upper ceiling, invalid settings, and recording actual usage.
+Local boundary, build, lint and all seven provider tests passed; the full pull
+request CI also passed. Implementation is recorded by hash and changed-line
+ranges in `hosted-changes.json`; no existing-product source was copied here.
+
+An operator applied an owner-requested, audited grant only to the isolated demo
+workspace: 10 million daily tokens per user and 50 million shared tokens per
+organization usage period. The read-back confirmed both limits. Usage history
+was preserved. Plan defaults, translation billing, API keys, and human write
+approvals were unchanged. The new integration is merged at
+`e2827bca6ad3d7d78ff70f941b9d4daeeacf9604`.
