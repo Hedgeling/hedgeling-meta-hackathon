@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T21:42:30.521Z",
+  "recordedAt": "2026-10-27T22:03:11.329Z",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -3902,6 +3902,56 @@
             }
           ],
           "note": "Existing event-authored deployment helper modified; only event changes are claimed. This operator-only fix is not part of the deployed runtime image."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "1d4a8f6644df78456b15e318a6e31d4c91a22e99",
+      "authorDate": "2026-10-27T16:02:23-06:00",
+      "commitDate": "2026-10-27T16:02:23-06:00",
+      "subject": "Honor higher server-granted daily chat allowances",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "ca633816a97b4eb6a8ebcfe1665a73eb87519b5cafa37dc34c6169f9c937a6f7",
+          "newSideHunkRanges": [
+            {
+              "start": 56,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "7ec29b6a6b1bd26ca4b0b30d59e99a19e40523c32ff6d5d3565d29921720afb1",
+          "newSideHunkRanges": [
+            {
+              "start": 125,
+              "count": 5
+            },
+            {
+              "start": 133,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/agent-provider.test.js",
+          "status": "M",
+          "sha256AtCommit": "fe282f8956f2aa9d6086cdbc567ca6dee912944dcba187f33782f377d1531080",
+          "newSideHunkRanges": [
+            {
+              "start": 105,
+              "count": 33
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
         }
       ]
     }
