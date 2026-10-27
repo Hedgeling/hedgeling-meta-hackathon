@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "a551304f90862bcf2ef2c88d7515c53c89469999c0ee156ce791a0385ee50f2d"
+      "sha256": "346f04f35387c74d2095b049e1af34fffe9274509929fe46a820bcfede96f0ad"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -61,11 +61,11 @@
     },
     "docs/SERVICES.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "1965a3ab34289651255d1c9a0de017ef7929519c0079e8e36785f985fefb5790"
+      "sha256": "e367e95a0adb79fc9706c0da63c244824367e11a0d146d845d9acc7c6cc050e6"
     },
     "docs/SUBMISSION.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "b8289fd653b10bc0ff331b213fdaff2f5437f45214bba9b8810eb029f4dd7981"
+      "sha256": "13210fd4e802bddf6c39b29d62136296d19c6b195736d4501400fe70fcb2038c"
     },
     "docs/excluded-baseline-sha256.json": {
       "origin": "event-authored guard data; hashes of excluded pre-existing code, no code contents",
@@ -105,7 +105,7 @@
     },
     "src/engine-client.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "523759b2ddee0c1d0a1b60adae9e38318dc22c57187a8b631a13478c75edb446"
+      "sha256": "46ca15165bd5182aa7af068cd47ca2336fca5f38cdb2b164221fc06916641a6d"
     },
     "src/errors.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -113,7 +113,7 @@
     },
     "src/http.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "86a62f18e8acbc2b74e3b002a8b0523eaf045e0824e1966b7af8b09b77eb20ea"
+      "sha256": "0c7b3b785f32aeb7134fa183e3b02874fca584e75e09706d3b9bf3363f8e3682"
     },
     "src/meta.js": {
       "origin": "event-only extraction from agent-meta.js at eef24e7; standalone adaptation on October 27",
@@ -155,11 +155,47 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "6283c82ee543c8efb8d4d778e5f20000e7cd5b340f3c621b9d451184727c9198"
+      "sha256": "a1b420b5fc05a9baef39ed07589dc02625e0ba21dc6e84d41adf32763c0e83d1"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
       "sha256": "edd6b09bf4b4725c63a3ca68c1a769ac4945129043ee29f0f97ab507ba3de6c9"
+    },
+    "contracts/202610271200_extraction_workflow.sql": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "4a49ea48cd3f5e21db26d2573244659d05ed247143ef8cbb1b5d2fe1a578f0d7"
+    },
+    "docs/EXTRACTION-WORKFLOW.md": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "40ad9438f985b94e5297fe36342143bc48834a23b502b8290a7325fa8858e136"
+    },
+    "src/engine-operations.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "e67beb7829131db3ff65e077ad1af48a7127d78a48479036850adaefe6a52ee4"
+    },
+    "src/extraction-actions.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "62920cd4eebd34abf61dcc05a273934f3f70d4c0c522631491774a7a74219743"
+    },
+    "src/extraction-catalog.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "f3a69868a72b0a423e2e2e4a8942c9b0304e7f772ef1256effe226ad94d5f252"
+    },
+    "src/extraction-workflow.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "c027ed17273825c10870e5953823eff74083188bf367ba847241d30c49759623"
+    },
+    "test/extraction.test.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "c3a496777f172c50bf09fb5008d5154cc615818fa6fc93c4f3527fe71ce06ed2"
+    },
+    "ui/extraction.css": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "93fff6df4103b5830bb6b5df61c014af7841fc9a91c8774a2141a29225bac44f"
+    },
+    "ui/extraction.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "5ae5bf439ca21330ffb823a83d496445b70567741ca6a4b843c510dcc2b4cd24"
     }
   }
 }

@@ -10,8 +10,7 @@
 
 ## Still required before submission
 
-- Finish the selected new workflow and update README status and provenance as code lands.
-- Build the user-authorized extraction workflow and import UI/MCP tools on top of the verified service connection. Infrastructure verification is not a completed user workflow.
+- Complete final live acceptance of the new extraction/import UI and MCP workflow; implementation and fixture-based integration/browser tests are in place. Keep deployment evidence and provenance current.
 - Verify real Meta tool use on the final submitted revision and record the model, revision, date, command, and redacted result. Offline test output is not live inference evidence.
 - Give judges individual access to the hosted demo/dependencies through judging and verify the instructions from a fresh checkout/account.
 - Record an actual three-minute product demonstration. Opening draft: “Hedgeling's console and localization engine existed before the hackathon; this week we built the Meta-powered workflow and processing API demonstrated here.” Adjust the claim to features actually finished.
