@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T20:11:32.729890+00:00",
+  "recordedAt": "2026-10-27T21:31:36.624416+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -2998,6 +2998,888 @@
             }
           ],
           "note": "Added during the event; older dependencies remain separately licensed."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "5dfc8d4fc5fcf4a757413a63c86c490afaecf248",
+      "authorDate": "2026-10-27T15:06:56-06:00",
+      "commitDate": "2026-10-27T15:06:56-06:00",
+      "subject": "Automatically deploy the exact tested main container to demo",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "status": "M",
+          "sha256AtCommit": "c3547e96b4dc1a3bdee08485663bc04452653a81639e4e219d2d21d7ba188949",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 4
+            },
+            {
+              "start": 26,
+              "count": 2
+            },
+            {
+              "start": 32,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 6
+            },
+            {
+              "start": 54,
+              "count": 15
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": ".github/workflows/deploy-demo.yml",
+          "status": "M",
+          "sha256AtCommit": "e88a6a97d70aec75d6bcf845aa9971ebf689049cd7487dd5d3f61b33be91534a",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 4
+            },
+            {
+              "start": 10,
+              "count": 1
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 27,
+              "count": 1
+            },
+            {
+              "start": 40,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 1
+            },
+            {
+              "start": 49,
+              "count": 3
+            },
+            {
+              "start": 54,
+              "count": 8
+            },
+            {
+              "start": 63,
+              "count": 1
+            },
+            {
+              "start": 69,
+              "count": 2
+            },
+            {
+              "start": 74,
+              "count": 1
+            },
+            {
+              "start": 77,
+              "count": 1
+            },
+            {
+              "start": 80,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "68289d131d7ff404b840fdd95fe15bc837b5da398ff94a35b269537135b678fe",
+          "newSideHunkRanges": [
+            {
+              "start": 52,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "scripts/build-demo-image.mjs",
+          "status": "M",
+          "sha256AtCommit": "d35a7688140e0f637271e4d399401ada540cef2cc5a05d90359b55be863e0da2",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 2
+            },
+            {
+              "start": 13,
+              "count": 4
+            },
+            {
+              "start": 23,
+              "count": 1
+            },
+            {
+              "start": 33,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "scripts/demo-release.test.mjs",
+          "status": "A",
+          "sha256AtCommit": "2cd8da8f96171be9470dd995ccb5e888bbc1c8c8a9b7c39fe0ceeb4d563f8e08",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 29
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "scripts/deploy-demo.mjs",
+          "status": "M",
+          "sha256AtCommit": "adb37239645d08f0d588eb20e6a78362bbbf99dcf498d9ee59565cd8ca48838f",
+          "newSideHunkRanges": [
+            {
+              "start": 18,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "scripts/select-demo-release.mjs",
+          "status": "M",
+          "sha256AtCommit": "fadc21333bd9b1b380f8a68f7eec0f9ac0a6f4444d9efc8baa208de2ff059e0c",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 7
+            },
+            {
+              "start": 9,
+              "count": 6
+            },
+            {
+              "start": 16,
+              "count": 7
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "scripts/test-demo-image.mjs",
+          "status": "A",
+          "sha256AtCommit": "178161ee628caa2e3297af89d38d1e660e81c6797caf6acc138363d3c51742b1",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 11
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "629578e0129323ebd193fa2e176be3f943f5d11f",
+      "authorDate": "2026-10-27T15:28:35-06:00",
+      "commitDate": "2026-10-27T15:28:35-06:00",
+      "subject": "Connect agent and console to approved extraction tuning workflow",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "status": "M",
+          "sha256AtCommit": "a24124491650724f04e8d81e9b258a44ce69f8a5603027b121496c930d945ec8",
+          "newSideHunkRanges": [
+            {
+              "start": 53,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "2f3c13b75c4c62c666cb3c3f98acc27970e25b0ebd741649c1e398e688d47e33",
+          "newSideHunkRanges": [
+            {
+              "start": 54,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/extraction-actions.js",
+          "status": "M",
+          "sha256AtCommit": "aa4556255673f1dc4d27c9152bc302ab827bbe7f8625279d035af2f69d60f3f3",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 4
+            },
+            {
+              "start": 14,
+              "count": 4
+            },
+            {
+              "start": 30,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/db/migrations/202610272100_extraction_tuning.sql",
+          "status": "A",
+          "sha256AtCommit": "7971ae66f323716aafbd68bdf61598e2d1ff67d1529f3feed7f12f0824536e2d",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 13
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/web-console/package.json",
+          "status": "M",
+          "sha256AtCommit": "ec32a4892b268d3b311bd6186964e7988a51b84c6d9c7d9f73472287d4119d10",
+          "newSideHunkRanges": [
+            {
+              "start": 43,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-tests.js",
+          "status": "M",
+          "sha256AtCommit": "f7e4982f621c455bca0244b043c3652656bf9dfeea6e221867798b8c21b7a18c",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-tuning-browser-tests.js",
+          "status": "A",
+          "sha256AtCommit": "08ddbf523da2e5c81645fb81ec131e8d812e1ca223d6f17198e0c3c77d8c7107",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 45
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "763bd5449194a54e46b2f1f1ccbe4b060e502fc4b825045f2d9466ad15dcdc32",
+          "newSideHunkRanges": [
+            {
+              "start": 45,
+              "count": 11
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "sha256AtCommit": "fd5f4ab64e34f7a96a10d7f5b1b98e4afb913c0588ca4547515f91a99f48e7f7",
+          "newSideHunkRanges": [
+            {
+              "start": 17,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/engine-operations.js",
+          "status": "M",
+          "sha256AtCommit": "fff2809790af2f17ab54076bf5290299bc9465026fc92167ca1c0e82d6d8b7f7",
+          "newSideHunkRanges": [
+            {
+              "start": 16,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-actions.js",
+          "status": "M",
+          "sha256AtCommit": "aa4556255673f1dc4d27c9152bc302ab827bbe7f8625279d035af2f69d60f3f3",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 4
+            },
+            {
+              "start": 14,
+              "count": 4
+            },
+            {
+              "start": 30,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-workflow.js",
+          "status": "M",
+          "sha256AtCommit": "8c12a29ecfdac158d6d3f3e2559e38fb10819fde677ba6d01df51abd13df2b67",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 3
+            },
+            {
+              "start": 55,
+              "count": 34
+            },
+            {
+              "start": 92,
+              "count": 7
+            },
+            {
+              "start": 109,
+              "count": 1
+            },
+            {
+              "start": 112,
+              "count": 2
+            },
+            {
+              "start": 124,
+              "count": 1
+            },
+            {
+              "start": 130,
+              "count": 4
+            },
+            {
+              "start": 135,
+              "count": 3
+            },
+            {
+              "start": 140,
+              "count": 1
+            },
+            {
+              "start": 146,
+              "count": 16
+            },
+            {
+              "start": 180,
+              "count": 1
+            },
+            {
+              "start": 187,
+              "count": 2
+            },
+            {
+              "start": 190,
+              "count": 3
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "a0a19a479c2c7b6a3c3042af0734786d2951d1256dea2938f7a17c409ae2b439",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 30,
+              "count": 6
+            },
+            {
+              "start": 55,
+              "count": 1
+            },
+            {
+              "start": 65,
+              "count": 1
+            },
+            {
+              "start": 95,
+              "count": 6
+            },
+            {
+              "start": 120,
+              "count": 1
+            },
+            {
+              "start": 125,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/tuning-config.js",
+          "status": "A",
+          "sha256AtCommit": "119500dd2cc4dd51261bc0b0ec7ace53dc6e87d697973d4c5d47d7faef73bc5c",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 20
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "sha256AtCommit": "6d206646f687ec5d15cfb0afde8ff918b0de4a0387c73d373d7cde621b5f70eb",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "sha256AtCommit": "565efd7d8b45fafce4859c34d97df18ce364b1323a50716a9626f794cb281ba9",
+          "newSideHunkRanges": [
+            {
+              "start": 14,
+              "count": 2
+            },
+            {
+              "start": 39,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "35a0ae159e7eaa538fd0ffb81b4e81727fe128fa8ab72a3b6f0c12564d813558",
+          "newSideHunkRanges": [
+            {
+              "start": 179,
+              "count": 4
+            },
+            {
+              "start": 224,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/extraction.css",
+          "status": "M",
+          "sha256AtCommit": "0fd2c3748e957ef60dea8b428e3c73d6af35d2f1ee9f7ac2749df6544725bd50",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/extraction.js",
+          "status": "M",
+          "sha256AtCommit": "8bd374fb433feeeb216548be3fe42d188c823ccfaf2a31bd4c7992cc60f75570",
+          "newSideHunkRanges": [
+            {
+              "start": 18,
+              "count": 1
+            },
+            {
+              "start": 34,
+              "count": 1
+            },
+            {
+              "start": 39,
+              "count": 12
+            },
+            {
+              "start": 98,
+              "count": 1
+            },
+            {
+              "start": 111,
+              "count": 1
+            },
+            {
+              "start": 128,
+              "count": 2
+            },
+            {
+              "start": 134,
+              "count": 8
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test-support/extraction-engine.mjs",
+          "status": "M",
+          "sha256AtCommit": "1394bc29ac298f51e2e19bba4cd186bbf4219857ab0e23dba6171d168055c9c9",
+          "newSideHunkRanges": [
+            {
+              "start": 24,
+              "count": 2
+            },
+            {
+              "start": 41,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "a3891f136727b84fd622e4af1bdd862a9eaf104b343d34f2935ec999647b30b9",
+          "newSideHunkRanges": [
+            {
+              "start": 354,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/extraction-tuning.integration.mjs",
+          "status": "A",
+          "sha256AtCommit": "64cdda00a9af982f9c4ade105a09147f19e7ca5cf14a86e943d88ceb34915073",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 53
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        }
+      ]
+    },
+    {
+      "workspace": "private-engine-api",
+      "commit": "cb9900d53a1682ca4857057d9bf95f20ac2714aa",
+      "authorDate": "2026-10-27T15:28:25-06:00",
+      "commitDate": "2026-10-27T15:28:25-06:00",
+      "subject": "Expose bounded config reads and deterministic tuning through private API",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/engine-api/EVENT-LICENSE",
+          "status": "A",
+          "sha256AtCommit": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 202
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/engine-api/EVENT-NOTICE",
+          "status": "A",
+          "sha256AtCommit": "91424905df6ef3e602591ed759c25d56369ea5f2549ca2fa10a3e16ac7dfb18f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 8
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/engine-api/README.md",
+          "status": "M",
+          "sha256AtCommit": "27d91ddab598a7b3e076ff433400f29e56e4a31ecd3e266b4bc3e027388a6c92",
+          "newSideHunkRanges": [
+            {
+              "start": 279,
+              "count": 8
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/deploy/manage.mjs",
+          "status": "M",
+          "sha256AtCommit": "b8938d2e86cf09604d3f289751c0b75cc7ae1bd887e79ac2a842803ffe966519",
+          "newSideHunkRanges": [
+            {
+              "start": 14,
+              "count": 1
+            },
+            {
+              "start": 24,
+              "count": 1
+            },
+            {
+              "start": 48,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/event-provenance.json",
+          "status": "A",
+          "sha256AtCommit": "1b8be6800846a30181ab8dd740f6a5d6e1b15600e671df281538e21a98521078",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 17
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/engine-api/openapi.json",
+          "status": "M",
+          "sha256AtCommit": "cde2fca795fa04d45c245bf250d2f78fc05b9dd58ad693f1a3a5d0db75c61335",
+          "newSideHunkRanges": [
+            {
+              "start": 467,
+              "count": 76
+            },
+            {
+              "start": 594,
+              "count": 2
+            },
+            {
+              "start": 618,
+              "count": 3
+            },
+            {
+              "start": 644,
+              "count": 2
+            },
+            {
+              "start": 706,
+              "count": 3
+            },
+            {
+              "start": 766,
+              "count": 83
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/contract.mjs",
+          "status": "M",
+          "sha256AtCommit": "875eba383148b11e8cc896e163767d795523cefd86fbab8ece54014878186d70",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 18,
+              "count": 1
+            },
+            {
+              "start": 36,
+              "count": 1
+            },
+            {
+              "start": 58,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/engine-child.mjs",
+          "status": "M",
+          "sha256AtCommit": "4597714c2d990d7a257ff052aac25fe1a9b210690727e10d3d649703bdcbdfc1",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 9,
+              "count": 1
+            },
+            {
+              "start": 17,
+              "count": 1
+            },
+            {
+              "start": 19,
+              "count": 13
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 40,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/github.mjs",
+          "status": "M",
+          "sha256AtCommit": "608f949988a500784d5b42a57ff5341ef94ebc1a2342cff139ddd0bfd4b0bd3f",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 51,
+              "count": 26
+            },
+            {
+              "start": 89,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/http.mjs",
+          "status": "M",
+          "sha256AtCommit": "fb582689d2f2b51ed2747c30a25cbab35a1fe2fea20150a6d7fca9b1bd9cdfcc",
+          "newSideHunkRanges": [
+            {
+              "start": 33,
+              "count": 1
+            },
+            {
+              "start": 61,
+              "count": 6
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/main.mjs",
+          "status": "M",
+          "sha256AtCommit": "aa210792fdca55cf99db53d9ab30432e8c4399b0118e336390f0a1bc8afa3377",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 0
+            },
+            {
+              "start": 17,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/store.mjs",
+          "status": "M",
+          "sha256AtCommit": "ec34a5e86c9458cc966698e0974ffb4512f04e02f6a0baa861e3565ee1ead21e",
+          "newSideHunkRanges": [
+            {
+              "start": 114,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/src/tuning-config.mjs",
+          "status": "A",
+          "sha256AtCommit": "119500dd2cc4dd51261bc0b0ec7ace53dc6e87d697973d4c5d47d7faef73bc5c",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 20
+            }
+          ],
+          "note": "Added during the event; licenses and vendored protocol files retain their declared origin."
+        },
+        {
+          "path": "packages/engine-api/test/engine.test.mjs",
+          "status": "M",
+          "sha256AtCommit": "b3320e8bbd1d4bab145cfec2be564fb7aadc5771016ddda85515c4f9f385b9a6",
+          "newSideHunkRanges": [
+            {
+              "start": 31,
+              "count": 12
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/test/jobs.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "64007657cfb0f7eaa31e5326bfe2db8fe5b5c3f33dee4c8c0ac79976948dd30d",
+          "newSideHunkRanges": [
+            {
+              "start": 22,
+              "count": 1
+            },
+            {
+              "start": 54,
+              "count": 4
+            },
+            {
+              "start": 100,
+              "count": 9
+            },
+            {
+              "start": 110,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/test/security.test.mjs",
+          "status": "M",
+          "sha256AtCommit": "44393c19a96afd3a61a12695db3cdbf5b580457a61f94f8e5a7c6c5fd747aa24",
+          "newSideHunkRanges": [
+            {
+              "start": 88,
+              "count": 18
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
         }
       ]
     }
