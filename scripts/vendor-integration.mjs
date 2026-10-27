@@ -14,13 +14,16 @@ const output = path.join(target, 'src/hackathon-engine');
 fs.mkdirSync(output, { recursive: true });
 const origins = [];
 for (const source of ['src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
-  'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
+  'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
   const contents = fs.readFileSync(source);
   const destination = path.basename(source);
   fs.writeFileSync(path.join(output, destination), contents);
   origins.push({ source, destination, sha256: createHash('sha256').update(contents).digest('hex') });
 }
 for (const [source, destination] of [
+  ['src/project-locales-actions.js', '../api-contract/project-locales-actions.js'],
+  ['ui/project-locales.js', 'src/public/project-locales.js'],
+  ['ui/project-locales.css', 'src/public/project-locales.css'],
   ['src/extraction-actions.js', '../api-contract/extraction-actions.js'],
   ['contracts/202610271200_extraction_workflow.sql', 'db/migrations/202610271200_extraction_workflow.sql'],
   ['contracts/202610271600_meta_byok.sql', 'db/migrations/202610271600_meta_byok.sql'],

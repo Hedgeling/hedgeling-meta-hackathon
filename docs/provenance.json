@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "5266dd9ec4daa6fefbcd36a9d39014294d9a6d8649280ed78989e835e9e99aa2"
+      "sha256": "895a4b7b3fba55635dec7bea7934fb3788527974c53a8f129f9dcf21cf079075"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "df0a16d638a2886a35aeaf6cf4e72e0cd3da04b2a238ea61632d70a486224604"
+      "sha256": "7c1cba1dc5b8b74acf463c48882be88c5ed8ff833807f916870b940c64098316"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "86a58ba4a09bde7cd7b255837f65438ef0c0e92c3b4e7050c9bd9af770590c48"
+      "sha256": "a76964375aff85485cf02b7856bf2d54bdc1114e0116dcbe7a3d43d0d13773b9"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -220,6 +220,30 @@
     "ui/chat-markdown.js": {
       "origin": "authored-during-event-for-accessible-chat-presentation",
       "sha256": "6a8aaed798901a49f011391eefcc57fdc02109d12f8c79131d1878a9531483cc"
+    },
+    "docs/PROJECT-LOCALES.md": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "9a523f157668011a5418bc09a767605177135dc66712b48a5c6c6e3707ab5c28"
+    },
+    "src/project-locales-actions.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "6d3f9c56235e3887df5ae4cfc3f5b547e403907a7101cc587dd2f41fd427d845"
+    },
+    "src/project-locales.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "64721f02b54d9548e62e20def2fed78cbca31b29d059a74ef31656afd816410a"
+    },
+    "test/project-locales.test.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "5b11bc370fd14f31bd00b7a2f9389bdbc5cf9af14d0429bcd312c351c65920c1"
+    },
+    "ui/project-locales.css": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "18aa04d42cd605c0fad29fd1cbc80d3232aa82440b8e84cc9c4a7945337e8113"
+    },
+    "ui/project-locales.js": {
+      "origin": "authored-during-event-for-project-language-management",
+      "sha256": "7704858f7357851cb5fd80597de09f6c360e7f586b4e84201955bcd28a03db63"
     }
   }
 }
