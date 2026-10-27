@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "a433ae362d7255dc9fab1e142571459ba1538f770a04b9252b1f5a08bd4dd4a9"
+      "sha256": "df0a16d638a2886a35aeaf6cf4e72e0cd3da04b2a238ea61632d70a486224604"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -212,6 +212,14 @@
     "contracts/202610271600_meta_byok.sql": {
       "origin": "authored-during-event-for-organization-Meta-BYOK",
       "sha256": "762e176d8ec36eb5cdaa3b33c205fa65cccc9ebcd19b39e488403729c1d97ef5"
+    },
+    "test/chat-markdown.test.js": {
+      "origin": "authored-during-event-for-accessible-chat-presentation",
+      "sha256": "c2cfd48e1d319848e25a98ba4e3a728416b2213e4902b6a152efc10dd5dab861"
+    },
+    "ui/chat-markdown.js": {
+      "origin": "authored-during-event-for-accessible-chat-presentation",
+      "sha256": "6a8aaed798901a49f011391eefcc57fdc02109d12f8c79131d1878a9531483cc"
     }
   }
 }

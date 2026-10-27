@@ -24,6 +24,7 @@ for (const [source, destination] of [
   ['src/extraction-actions.js', '../api-contract/extraction-actions.js'],
   ['contracts/202610271200_extraction_workflow.sql', 'db/migrations/202610271200_extraction_workflow.sql'],
   ['contracts/202610271600_meta_byok.sql', 'db/migrations/202610271600_meta_byok.sql'],
+  ['ui/chat-markdown.js', 'src/public/chat-markdown.js'],
   ['ui/extraction.js', 'src/public/extraction.js'],
   ['ui/extraction.css', 'src/public/extraction.css'],
 ]) {
