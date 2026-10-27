@@ -57,3 +57,11 @@ The engine itself was not written during the event. The inventory records every 
 The original event code and documentation distributed here are **Apache-2.0**, selected by the owner on October 27, 2026. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [licensing scope](docs/LICENSING.md). This grants no license to the separate proprietary product/service implementation, model weights, customer data, or trademarks.
 
 The organizers' clarification allows a private existing product as a disclosed hosted service. [Rules record](docs/EVENT-RULES.md) records the supplied clarification and remaining submission checks. The [submission checklist](docs/SUBMISSION.md) tracks the video, judge access, and final verification. Repository setup is not a claim that the final hackathon deliverables are complete or that organizers have approved the project.
+
+### Organization-owned Meta translation keys
+
+Event-created `src/meta-translation.js` provides metadata-only key validation and context-aware translation using Meta Responses. The hosted console stores Gemini and Meta keys independently, requires a human preview/confirmation for key or billing-route changes, and leaves included chat on Hedgeling’s managed account. Translation prompts include the existing source context, glossary, and project instructions. Extraction itself remains the separately hosted pre-existing service; this addition does not add an LLM context-enrichment pass there.
+
+The server requires `HEDGELING_META_RESPONSES_URL` (the operator-approved HTTPS Responses endpoint) and `HEDGELING_META_TRANSLATION_MODEL`. Keys are organization credentials in the encrypted host vault, never frontend environment values. Selecting Meta uses that organization key only; failure or removal never falls back to Gemini or managed credits. The additive migration preserves existing Gemini keys. Existing paid-plan access requirements still apply.
+
+`npm test` verifies the new Meta transport with synthetic responses. Host integration tests separately verify encryption, authorization, coexistence, confirmation, translation provenance, and zero platform translation-credit charges for BYOK. These fixture tests do not establish live provider access.

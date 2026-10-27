@@ -12,7 +12,7 @@
   "files": {
     ".env.example": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "7e7c2f4709083ea5471515aa136a546bf4c2aff77e02a4f612aa1de57faf2a26"
+      "sha256": "b681ede2a967b4ab2204600e4ac34968f90cbe7b9918c901f77573e066e6b08f"
     },
     ".github/workflows/ci.yml": {
       "origin": "authored-during-event-for-this-extract",
@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "411839466a7db4877f35e27b168eed5d03ed8a737684dd075bf12fe5f3b45925"
+      "sha256": "1351e10dbcc92f5aadbe90fabe29f619478a1db00728a1276941832fda94c91d"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "0065475f86135e02b1850fbdaab9f1f481cb481a77600af8ca370586d3e3d42c"
+      "sha256": "50a569c6b2477cabfde8da1d88f167523c6f753a0706ff73fcb5562d871af0aa"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "a1b420b5fc05a9baef39ed07589dc02625e0ba21dc6e84d41adf32763c0e83d1"
+      "sha256": "a433ae362d7255dc9fab1e142571459ba1538f770a04b9252b1f5a08bd4dd4a9"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "517b5170ab991967e06be5ee2bd615d048f83605bff58bf8c32e4e486caadc82"
+      "sha256": "14f997f72069be75253d4d33fa803227fe30ebcdd50db3a871a1cda4098f1fbb"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -200,6 +200,18 @@
     "examples/source/TravelPlanner.tsx": {
       "origin": "authored-during-event; synthetic travel-planner extraction fixture",
       "sha256": "c4abfa5be68dddc332ea8f1238eccc52498da839ec3d14a3b22af929a0f8efc2"
+    },
+    "test/meta-translation.test.js": {
+      "origin": "authored-during-event-for-organization-Meta-BYOK",
+      "sha256": "a277372b4842296b7a48858f6a0328fb5e66ba8ac5b17129411900202fd717f6"
+    },
+    "src/meta-translation.js": {
+      "origin": "authored-during-event-for-organization-Meta-BYOK",
+      "sha256": "c41a28731105c203acecd14047f57a567206bff01e457ac22c7eeee9ff0d4a49"
+    },
+    "contracts/202610271600_meta_byok.sql": {
+      "origin": "authored-during-event-for-organization-Meta-BYOK",
+      "sha256": "762e176d8ec36eb5cdaa3b33c205fa65cccc9ebcd19b39e488403729c1d97ef5"
     }
   }
 }

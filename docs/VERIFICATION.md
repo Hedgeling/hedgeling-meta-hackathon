@@ -109,3 +109,11 @@ Public code CI passed on `e90590d`. Public unit tests include 16 tests; the host
 browser workflow uses a synthetic HTTPS engine and deterministic model, explicitly
 separate from the real Meta check above. Runtime URLs, private credentials and
 raw cloud task records remain outside the public repository.
+
+## Organization Meta BYOK
+
+The existing-product demo is deployed at `4b6b22afe6fb13132916e3dce5a9a146efef2da9`, with the event-authored Meta translation adapter and additive migration vendored from `4cfe287`. Both review branches passed CI; the host passed its complete build, lint, unit, database, authorization, security, browser, and container pipeline. The public event suite has 19 tests.
+
+A synthetic HTTPS provider exercised key coexistence, metadata testing, confirmed Gemini-to-Meta selection, context-bearing translation, placeholder rejection, provider/model provenance, zero Hedgeling translation-credit charges, and failure/removal without fallback. Browser checks covered both provider cards and desktop/mobile confirmation flows. These tests used synthetic credentials and responses.
+
+After the isolated AWS rollout completed with one healthy task, a read-only verification task using that deployed image confirmed Meta translation configuration, encrypted-vault readiness, paid-plan eligibility, managed chat, and successful model-metadata access for `muse-spark-1.3`. It used the existing server credential only for a metadata request; it did not save/replace/select an organization key or generate content. This establishes live connectivity, not a real organization-owned translation inference. Public health returned 200 and anonymous agent configuration returned 401. No production release or merge was performed.

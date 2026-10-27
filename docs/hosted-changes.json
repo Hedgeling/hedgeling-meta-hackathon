@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T11:04:45.040093+00:00",
+  "recordedAt": "2026-10-27T17:34:04.228120+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -1584,6 +1584,560 @@
             }
           ],
           "note": "Existing event integration updated; no pre-event source copied."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "4b6b22afe6fb13132916e3dce5a9a146efef2da9",
+      "authorDate": "2026-10-27T11:31:20-06:00",
+      "commitDate": "2026-10-27T11:31:20-06:00",
+      "subject": "Support organization Meta keys alongside Gemini for contextual translation",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".env.example",
+          "status": "M",
+          "sha256AtCommit": "8e151ba8a2777c78efaeb9d6aad79d224baf8ae215467c71c58ba88005989be5",
+          "newSideHunkRanges": [
+            {
+              "start": 142,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "README.md",
+          "status": "M",
+          "sha256AtCommit": "7a348705bf26f3849737c9d3d75f922434f965ef0a43f2056fb3c894efbcfe01",
+          "newSideHunkRanges": [
+            {
+              "start": 36,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/AWS-DEMO.md",
+          "status": "M",
+          "sha256AtCommit": "bd1df43c85c4bd4ab71f60ecb976d6d58df7247fcdc0a3d7557ce250cf070076",
+          "newSideHunkRanges": [
+            {
+              "start": 21,
+              "count": 1
+            },
+            {
+              "start": 62,
+              "count": 8
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "4a8329b2074d85340f31937f5923a4c8d2526af2728b6c8882e98062d5156d01",
+          "newSideHunkRanges": [
+            {
+              "start": 43,
+              "count": 1
+            },
+            {
+              "start": 46,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "infra/aws/demo-stack.json",
+          "status": "M",
+          "sha256AtCommit": "b2bbb84c0e9f175b48e6a0eb5a89db466a2125ee4531c5a679087158f01d7fde",
+          "newSideHunkRanges": [
+            {
+              "start": 78,
+              "count": 10
+            },
+            {
+              "start": 961,
+              "count": 12
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/db/migrations/202610271600_meta_byok.sql",
+          "status": "A",
+          "sha256AtCommit": "762e176d8ec36eb5cdaa3b33c205fa65cccc9ebcd19b39e488403729c1d97ef5",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 10
+            }
+          ],
+          "note": "New event file; older dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/scripts/run-commercial-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "448e359dba183418bc6b4f89faec4b27d2182bd8cde904bdc956f03ea5925cf3",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 10,
+              "count": 2
+            },
+            {
+              "start": 42,
+              "count": 2
+            },
+            {
+              "start": 46,
+              "count": 1
+            },
+            {
+              "start": 54,
+              "count": 1
+            },
+            {
+              "start": 61,
+              "count": 15
+            },
+            {
+              "start": 78,
+              "count": 1
+            },
+            {
+              "start": 81,
+              "count": 1
+            },
+            {
+              "start": 99,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/meta-translation.js",
+          "status": "A",
+          "sha256AtCommit": "c41a28731105c203acecd14047f57a567206bff01e457ac22c7eeee9ff0d4a49",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 56
+            }
+          ],
+          "note": "New event file; older dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "51d5520c5bb79cff45155eb60b91b898464a4168f07c8d18a17e338f66ec70fe",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 32,
+              "count": 5
+            },
+            {
+              "start": 72,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/organization-ai.js",
+          "status": "M",
+          "sha256AtCommit": "378065908ca71e9cc01ff16d7d07c207e87013cad038f9202d2674f376e76434",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 31,
+              "count": 1
+            },
+            {
+              "start": 35,
+              "count": 5
+            },
+            {
+              "start": 41,
+              "count": 1
+            },
+            {
+              "start": 47,
+              "count": 2
+            },
+            {
+              "start": 50,
+              "count": 2
+            },
+            {
+              "start": 53,
+              "count": 1
+            },
+            {
+              "start": 79,
+              "count": 1
+            },
+            {
+              "start": 83,
+              "count": 2
+            },
+            {
+              "start": 86,
+              "count": 1
+            },
+            {
+              "start": 88,
+              "count": 1
+            },
+            {
+              "start": 90,
+              "count": 2
+            },
+            {
+              "start": 94,
+              "count": 8
+            },
+            {
+              "start": 106,
+              "count": 1
+            },
+            {
+              "start": 109,
+              "count": 3
+            },
+            {
+              "start": 114,
+              "count": 1
+            },
+            {
+              "start": 121,
+              "count": 1
+            },
+            {
+              "start": 123,
+              "count": 1
+            },
+            {
+              "start": 125,
+              "count": 8
+            },
+            {
+              "start": 156,
+              "count": 1
+            },
+            {
+              "start": 159,
+              "count": 1
+            },
+            {
+              "start": 161,
+              "count": 3
+            },
+            {
+              "start": 166,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/app.js",
+          "status": "M",
+          "sha256AtCommit": "02952859fec5b82d473e837581bb3f0918899e32d9d292aafc4dceb6b578b687",
+          "newSideHunkRanges": [
+            {
+              "start": 3021,
+              "count": 1
+            },
+            {
+              "start": 3025,
+              "count": 1
+            },
+            {
+              "start": 3040,
+              "count": 1
+            },
+            {
+              "start": 3306,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/commercial.css",
+          "status": "M",
+          "sha256AtCommit": "038de6d36fb08bd4a983262aee7950c193442288c90d99f82959025f8f0f7d07",
+          "newSideHunkRanges": [
+            {
+              "start": 13,
+              "count": 1
+            },
+            {
+              "start": 24,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/commercial.js",
+          "status": "M",
+          "sha256AtCommit": "bcc9a7a434f0fe682b827e1b66cc04717da0fcd9f9126e42f4ba87a6567c1801",
+          "newSideHunkRanges": [
+            {
+              "start": 74,
+              "count": 1
+            },
+            {
+              "start": 93,
+              "count": 1
+            },
+            {
+              "start": 114,
+              "count": 1
+            },
+            {
+              "start": 118,
+              "count": 12
+            },
+            {
+              "start": 131,
+              "count": 1
+            },
+            {
+              "start": 134,
+              "count": 29
+            },
+            {
+              "start": 164,
+              "count": 12
+            },
+            {
+              "start": 177,
+              "count": 1
+            },
+            {
+              "start": 179,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/index.html",
+          "status": "M",
+          "sha256AtCommit": "646cddddb0023db2bf5aa51657177af7e2963f9fca952f11cbf1ab218afc2098",
+          "newSideHunkRanges": [
+            {
+              "start": 142,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/secret-vault.js",
+          "status": "M",
+          "sha256AtCommit": "5dc162a90223597286b869561594c4a34b4ceeed24ef9633ee6080e51ca2f460",
+          "newSideHunkRanges": [
+            {
+              "start": 22,
+              "count": 1
+            },
+            {
+              "start": 26,
+              "count": 1
+            },
+            {
+              "start": 30,
+              "count": 1
+            },
+            {
+              "start": 35,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/server.js",
+          "status": "M",
+          "sha256AtCommit": "699f5b4f7b218d6a256d30e200adf5eaf20aa8618e803abbdce4dc58433b5590",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 1
+            },
+            {
+              "start": 1906,
+              "count": 0
+            },
+            {
+              "start": 1908,
+              "count": 3
+            },
+            {
+              "start": 1913,
+              "count": 2
+            },
+            {
+              "start": 1962,
+              "count": 1
+            },
+            {
+              "start": 1964,
+              "count": 1
+            },
+            {
+              "start": 1973,
+              "count": 1
+            },
+            {
+              "start": 1977,
+              "count": 1
+            },
+            {
+              "start": 1980,
+              "count": 1
+            },
+            {
+              "start": 1990,
+              "count": 3
+            },
+            {
+              "start": 2008,
+              "count": 1
+            },
+            {
+              "start": 2023,
+              "count": 1
+            },
+            {
+              "start": 2038,
+              "count": 2
+            },
+            {
+              "start": 2057,
+              "count": 1
+            },
+            {
+              "start": 2060,
+              "count": 1
+            },
+            {
+              "start": 2066,
+              "count": 1
+            },
+            {
+              "start": 2071,
+              "count": 2
+            },
+            {
+              "start": 2088,
+              "count": 1
+            },
+            {
+              "start": 2095,
+              "count": 2
+            },
+            {
+              "start": 2101,
+              "count": 1
+            },
+            {
+              "start": 2103,
+              "count": 2
+            },
+            {
+              "start": 2108,
+              "count": 1
+            },
+            {
+              "start": 2119,
+              "count": 5
+            },
+            {
+              "start": 2125,
+              "count": 1
+            },
+            {
+              "start": 2129,
+              "count": 1
+            },
+            {
+              "start": 2135,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test-support/meta-provider.mjs",
+          "status": "A",
+          "sha256AtCommit": "57f729396e5182e686dd3e48a046683146f5c94b5013cc05a711f56ed46ad65e",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 30
+            }
+          ],
+          "note": "New event file; older dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "bad52bcd41dc02840f7765fd1e7a0abfe2293e93314f08413ef022219b07fd64",
+          "newSideHunkRanges": [
+            {
+              "start": 353,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/commercial-console.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "f5796f126f2bb5e87baa1d8fc8197079e901c73c5a19c2f36e3968386dfb5143",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 94,
+              "count": 69
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/secret-vault.test.js",
+          "status": "M",
+          "sha256AtCommit": "5af204f6b303dffe86b4a1ec6d5a88fe4b3fa9d4bcd66a19d4bea4d61bf9da8d",
+          "newSideHunkRanges": [
+            {
+              "start": 17,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
         }
       ]
     }
