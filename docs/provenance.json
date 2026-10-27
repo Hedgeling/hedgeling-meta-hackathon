@@ -140,6 +140,22 @@
     "docs/provenance.json": {
       "origin": "event-authored manifest",
       "selfManifest": true
+    },
+    "src/engine-status.js": {
+      "origin": "authored-during-event-for-private-service-integration",
+      "sha256": "b8f220225a754cc5dc5cf309a6727098c2cbc4494546795c47c06cfc97811aa2"
+    },
+    "test/engine-status.test.js": {
+      "origin": "authored-during-event-for-private-service-integration",
+      "sha256": "a076e92beb1094ec18c7594b1e7db170a7c6dd991412e23a18ce497e4ab435f4"
+    },
+    "examples/source/App.tsx": {
+      "origin": "authored-during-event-for-private-service-integration",
+      "sha256": "5158805d9461beeb0a2580ab25f729fe012a1d4bf870e69bffaffb795baf7367"
+    },
+    "scripts/vendor-integration.mjs": {
+      "origin": "authored-during-event-for-private-service-integration",
+      "sha256": "6283c82ee543c8efb8d4d778e5f20000e7cd5b340f3c621b9d451184727c9198"
     }
   }
 }
