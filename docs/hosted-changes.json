@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T18:53:40.567902+00:00",
+  "recordedAt": "2026-10-27T20:11:32.729890+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -2616,6 +2616,388 @@
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "75f16efac62f32ee4c06a62e8efb319b43f1913b",
+      "authorDate": "2026-10-27T14:11:21-06:00",
+      "commitDate": "2026-10-27T14:11:21-06:00",
+      "subject": "Add project languages management to console, agent and MCP",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "status": "M",
+          "sha256AtCommit": "c0b57404a2bea30e81a5e78f5beae7153b567ef1e4d782a8d8603966c2e1068b",
+          "newSideHunkRanges": [
+            {
+              "start": 43,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "51d1ea37ca8309e63f781b2f6afdaf37d889eb211fc7e6a71d0efcfe64abad60",
+          "newSideHunkRanges": [
+            {
+              "start": 50,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/index.js",
+          "status": "M",
+          "sha256AtCommit": "593cc01c4ff0798170e5b3d18e385487f32fca6b959b74aac00f9ae2d9c18472",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 23,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/project-locales-actions.js",
+          "status": "A",
+          "sha256AtCommit": "6d3f9c56235e3887df5ae4cfc3f5b547e403907a7101cc587dd2f41fd427d845",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 12
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/package.json",
+          "status": "M",
+          "sha256AtCommit": "ef9952448bb88445b1a7fe354884f9e3826a4010f5cac5c6ad4e9e6ad8738649",
+          "newSideHunkRanges": [
+            {
+              "start": 42,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-tests.js",
+          "status": "M",
+          "sha256AtCommit": "607f3d987b007b08e1ab0cedd7312cdc022b1808cf056687ddf76fe751858c46",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-project-locales-browser-tests.js",
+          "status": "A",
+          "sha256AtCommit": "06cc8bcea51d8b652ee99b367056827c7dd25b452e536f2c0664b8bc6f74a337",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 74
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "0eba862e1a754a40746d3e376af16ab5a84009c798ead11737ec07d18c113207",
+          "newSideHunkRanges": [
+            {
+              "start": 31,
+              "count": 1
+            },
+            {
+              "start": 51,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "sha256AtCommit": "b06354ff013a020fc8e4e88771d3ab742a738150745dcc08f5d6f71aa94d88fb",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-skills.js",
+          "status": "M",
+          "sha256AtCommit": "f3291c68af871ca5a731b24593f380e408abc8a63c2391143b6fc65ca1cdb94f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 9,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/project-locales-actions.js",
+          "status": "A",
+          "sha256AtCommit": "6d3f9c56235e3887df5ae4cfc3f5b547e403907a7101cc587dd2f41fd427d845",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 12
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/project-locales.js",
+          "status": "A",
+          "sha256AtCommit": "64721f02b54d9548e62e20def2fed78cbca31b29d059a74ef31656afd816410a",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 70
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "1d9343dde2e883bbe73aef6bbabe806309a9963da178539aa34d475f1b7a66f9",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 32,
+              "count": 10
+            },
+            {
+              "start": 72,
+              "count": 15
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/project-locales-integration.js",
+          "status": "A",
+          "sha256AtCommit": "ae57024cdf90517535876d089b7172ddf83a7a73387e5743b386d99d2a9d4c6a",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 28
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "sha256AtCommit": "0c7ce1d7d984d6a66155faaeea3dc4f68df751696ddab513979dec968a719a6c",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 2
+            },
+            {
+              "start": 58,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "sha256AtCommit": "1d872ababbde146c622ed5963885859dc863f8cc78f4bd42c06ac1e330d51b85",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            },
+            {
+              "start": 196,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "1c38f66f4e24502e38feaec62eca35e93411daf7c2e83c1212b8b85de79801e9",
+          "newSideHunkRanges": [
+            {
+              "start": 133,
+              "count": 3
+            },
+            {
+              "start": 139,
+              "count": 1
+            },
+            {
+              "start": 177,
+              "count": 1
+            },
+            {
+              "start": 252,
+              "count": 1
+            },
+            {
+              "start": 281,
+              "count": 10
+            },
+            {
+              "start": 330,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/app.js",
+          "status": "M",
+          "sha256AtCommit": "1bb3472f2612d4870c7649d2d8ed150e67cad89119872923137ea55fd9eb26e0",
+          "newSideHunkRanges": [
+            {
+              "start": 300,
+              "count": 1
+            },
+            {
+              "start": 312,
+              "count": 4
+            },
+            {
+              "start": 318,
+              "count": 1
+            },
+            {
+              "start": 3699,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/index.html",
+          "status": "M",
+          "sha256AtCommit": "458f099748ab4a46a6fcaf33c2f7ab04e29d364b4467d1bda51944108d367185",
+          "newSideHunkRanges": [
+            {
+              "start": 70,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/project-locales.css",
+          "status": "A",
+          "sha256AtCommit": "18aa04d42cd605c0fad29fd1cbc80d3232aa82440b8e84cc9c4a7945337e8113",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 13
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/src/public/project-locales.js",
+          "status": "A",
+          "sha256AtCommit": "7704858f7357851cb5fd80597de09f6c360e7f586b4e84201955bcd28a03db63",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 60
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
+        },
+        {
+          "path": "packages/web-console/src/workspace-actions.js",
+          "status": "M",
+          "sha256AtCommit": "0a41fa609aebcb85b6c4114528c481233569a9002eb0b6c5a2a7120aecff5c6a",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 118,
+              "count": 1
+            },
+            {
+              "start": 164,
+              "count": 1
+            },
+            {
+              "start": 199,
+              "count": 2
+            },
+            {
+              "start": 218,
+              "count": 3
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/workspace-read.js",
+          "status": "M",
+          "sha256AtCommit": "0319cf60b89f7f24e3036dcea4a2b647eb181dc466bda06f78a37286d115e2a9",
+          "newSideHunkRanges": [
+            {
+              "start": 50,
+              "count": 6
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/project-locales.integration.mjs",
+          "status": "A",
+          "sha256AtCommit": "72a5bc203a86370016c7768248f365378550ab08c1d7b593ec8b41041e38693c",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 70
+            }
+          ],
+          "note": "Added during the event; older dependencies remain separately licensed."
         }
       ]
     }
