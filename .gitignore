@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.hedgeling/
+coverage/
+dist/
+*.pem
+*.key
+*.tgz
+*.log
+.DS_Store

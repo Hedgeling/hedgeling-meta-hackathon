@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-27T08:29:14.755Z",
+  "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
+  "commits": [
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "eef24e7a0e27d8ce829c47d73e9310eb142f0a9b",
+      "authorDate": "2026-10-26T15:40:10-06:00",
+      "commitDate": "2026-10-26T15:40:10-06:00",
+      "subject": "Add Meta chat and isolated AWS demo deployment",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".env.example",
+          "status": "M",
+          "sha256AtCommit": "76940bf33bf0296695468cc8a0d1392853a4f34b9b2da2129a9be90e9d9c56ba",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 7
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": ".github/workflows/ci.yml",
+          "status": "M",
+          "sha256AtCommit": "38210157f0f045ca2cdec021298b6f1201f4fecb06ce4db4684ce4aa21c8550b",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": ".github/workflows/deploy-demo.yml",
+          "status": "A",
+          "sha256AtCommit": "6739b45d1d87b74af0f47b19f831c3bc8e30793ae94861b8027ae58f79f79321",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 62
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "AGENTS.md",
+          "status": "M",
+          "sha256AtCommit": "14ed8d94809789fdf116955b90a6251e58dc6b22e7067478a0e3a79a42c759e1",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "README.md",
+          "status": "M",
+          "sha256AtCommit": "04115d22f54b23d957ce9667832060e11865306c27a906967ac31ba991f388ba",
+          "newSideHunkRanges": [
+            {
+              "start": 36,
+              "count": 1
+            },
+            {
+              "start": 71,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/AWS-DEMO.md",
+          "status": "A",
+          "sha256AtCommit": "1648b0a0d73d92f470957e019ca452e0177142440b0dca9f7208e9407ea3ddfe",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 51
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "fbf4662d0d072e054cb2d651fab52614edca6a3b3d3119dc30ae3d4eb616236b",
+          "newSideHunkRanges": [
+            {
+              "start": 37,
+              "count": 7
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "infra/aws/demo-stack.json",
+          "status": "A",
+          "sha256AtCommit": "21836599712eb87744bc3e7c05f7f137d19a00b017e6401c5275832bfd8fad71",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1160
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/Dockerfile",
+          "status": "M",
+          "sha256AtCommit": "833f3cb3c5ec0abda7013b5c5b7a4df4bad3509d1bb7abeed086e0f1f90b1b46",
+          "newSideHunkRanges": [
+            {
+              "start": 13,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/seed-demo.js",
+          "status": "A",
+          "sha256AtCommit": "09e0c3032e10601bdf83de95db0c0e9196fab9675ac3fa106fdf73bf503ee89e",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 43
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/agent-meta.js",
+          "status": "A",
+          "sha256AtCommit": "d5abfacadb90be70a0035d50ba56300095289207a0820c0b3910db043ed6e2ee",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 101
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "483e0307250d8bfe9ea35f33932af4a9b6dfb5d37d1030c7b2e6c97737ac56bb",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 9,
+              "count": 3
+            },
+            {
+              "start": 13,
+              "count": 5
+            },
+            {
+              "start": 20,
+              "count": 1
+            },
+            {
+              "start": 84,
+              "count": 1
+            },
+            {
+              "start": 87,
+              "count": 1
+            },
+            {
+              "start": 110,
+              "count": 1
+            },
+            {
+              "start": 123,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/db.js",
+          "status": "M",
+          "sha256AtCommit": "6d754642ea47b3e3f332d808b106ab4d5e106251d56644469fc277e9f7ff848d",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 8,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/agent-meta.test.js",
+          "status": "A",
+          "sha256AtCommit": "a2f21bdeef0da6dbaafbdc2d2e2d3abaccd2f44422e7e79505b5065a43d729b3",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 87
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "scripts/build-demo-image.mjs",
+          "status": "A",
+          "sha256AtCommit": "3d43f08e7f5ffa963f35780b5dd31ae24fa9101e206e0171b65a078b7bc3807b",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 29
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "scripts/check-public-boundary.mjs",
+          "status": "M",
+          "sha256AtCommit": "1041f0c612fffd31b4f52baf8ef87a8bfd9f62c3025d4a57d1661ac9f01397f9",
+          "newSideHunkRanges": [
+            {
+              "start": 17,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "scripts/deploy-demo.mjs",
+          "status": "A",
+          "sha256AtCommit": "241c4cd04d593f94f7a2a9ec3c1ec004e637f0dc8721db47b60fbdd9b00b24b4",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 42
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "scripts/select-demo-release.mjs",
+          "status": "A",
+          "sha256AtCommit": "c648e3f74297d700a7606c8cf6c7877f752c261c6f0be881ed2b866aaf53ec5f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 17
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "961af208f26f9705cfc9649c7422501a452b2700",
+      "authorDate": "2026-10-26T15:44:49-06:00",
+      "commitDate": "2026-10-26T15:44:49-06:00",
+      "subject": "Match the repository's immutable GitHub OIDC subject",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/AWS-DEMO.md",
+          "status": "M",
+          "sha256AtCommit": "95e7d26f97cdc9e7def493eefda4cc2f0c683585a53e7ac69be2fabd23b787bf",
+          "newSideHunkRanges": [
+            {
+              "start": 25,
+              "count": 1
+            },
+            {
+              "start": 39,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "infra/aws/demo-stack.json",
+          "status": "M",
+          "sha256AtCommit": "6699590908d5d174d5173b1711bc56ace0bc7eebcaea0954b6b7fa1ddf194114",
+          "newSideHunkRanges": [
+            {
+              "start": 63,
+              "count": 5
+            },
+            {
+              "start": 542,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "private-engine-service",
+      "commit": "95b0c245601fc8b197da700f485e20dfc14286fa",
+      "authorDate": "2026-10-26T18:32:21-06:00",
+      "commitDate": "2026-10-26T18:32:21-06:00",
+      "subject": "feat(engine-api): add private GitHub extraction jobs",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": ".changeset/private-engine-api.md",
+          "status": "A",
+          "sha256AtCommit": "e338097138724d9592ae13aa0bc05ad5766d28597ba278104d846f96c4e4e44a",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 5
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": ".dockerignore",
+          "status": "M",
+          "sha256AtCommit": "887d0072b0af94220291451b9922c7ec2e9d2165ef7836abf98cd345e006e9e6",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 3
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": ".github/workflows/ci-engine-api.yml",
+          "status": "A",
+          "sha256AtCommit": "74d35114476e367dee4e87de538145e08cd9ea50afd75a2fe64cb23489c677bb",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 51
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "package-lock.json",
+          "status": "M",
+          "sha256AtCommit": "603becc129fa906a6f7e0d32dc431ccda70c33bc262de4d09d1de919061bf78b",
+          "newSideHunkRanges": [
+            {
+              "start": 1930,
+              "count": 4
+            },
+            {
+              "start": 9041,
+              "count": 12
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/engine-api/.env.example",
+          "status": "A",
+          "sha256AtCommit": "b13f65eaf639721a30444599521670fe78e44f91033a50d0bd5449cc9c8ca081",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 8
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/Dockerfile",
+          "status": "A",
+          "sha256AtCommit": "2b4b18ecc29d2ca6514647b0f51af569e2de95bf708bc923e7d01cbd5dac6ffe",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 22
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/Dockerfile.dockerignore",
+          "status": "A",
+          "sha256AtCommit": "1bb9b4ed2d4e94744127bd88b73f6e0df4a6535759757857d02cb029847dee02",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 19
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/README.md",
+          "status": "A",
+          "sha256AtCommit": "5d7c30a483ee148b3b48989909adc68857f0071d3d085b6a32c1fd33d3f637c5",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 219
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/access.example.json",
+          "status": "A",
+          "sha256AtCommit": "894799bec833be58ab9fab62997d4f936cc28fa3fbace1d53f7cfde5f3d5a0f1",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 21
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/openapi.json",
+          "status": "A",
+          "sha256AtCommit": "974acad0d96b950cb93d40c6522e8726575321116e2dbea8f4bbde97d646a3be",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 699
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/package.json",
+          "status": "A",
+          "sha256AtCommit": "7a3e039e4c48ee7b253e4890c3928f039c664a00da447c7a28e6b3df2ecb01fa",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 20
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/scripts/check.mjs",
+          "status": "A",
+          "sha256AtCommit": "7b701b726d2128fda5381d8d72571dcd5fcab97df53b4d9a1fc8a1f84061d3df",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 9
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/scripts/migrate.mjs",
+          "status": "A",
+          "sha256AtCommit": "a554124a2aaae790c3361e14c51788255f65c2a817aec1877e5ad0f666f7c842",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 6
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/config.mjs",
+          "status": "A",
+          "sha256AtCommit": "9ce472ee1f67c4870c80bab7ed4197aa1874c060ea3b80cef6adb231be536c05",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 64
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/contract.mjs",
+          "status": "A",
+          "sha256AtCommit": "b6330be0d6c9cc3c97d45cc1dddf844b3fb9c888ffc45bc7ac3e1f137facf30a",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 69
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/engine-child.mjs",
+          "status": "A",
+          "sha256AtCommit": "6967974d34511daf7957f4b12d72f723e99a5c137f6d33d800c3dc2ddaaf0081",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 55
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/engine.mjs",
+          "status": "A",
+          "sha256AtCommit": "eb8fc7e6e445a821eabdb55c1a2a0bd0d8de28b0c6761eb32f15fa585e2ae075",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 34
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/github.mjs",
+          "status": "A",
+          "sha256AtCommit": "60b439c5694b6b624e440ac51d6608e54e0c7ed216ba3f5a6e633440ad598403",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 110
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/http.mjs",
+          "status": "A",
+          "sha256AtCommit": "a41e5e9bef8505a22c499485a74c95403657aba94400ea32927e680cf7ca399d",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 88
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/main.mjs",
+          "status": "A",
+          "sha256AtCommit": "3b01df26532e4a7c66a906c958ac1afafcaa7f6dd46807ad44bfa53a93343763",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 33
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/store.mjs",
+          "status": "A",
+          "sha256AtCommit": "58372db6414b023b81c0e95b82746fba61279819dab57275ad102530ba09b03a",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 117
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/src/worker.mjs",
+          "status": "A",
+          "sha256AtCommit": "26a2c50201e038b0287fd4060a19cdada665ae3718b54b12f86d4d4b03d0c8ae",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 75
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/test/engine.test.mjs",
+          "status": "A",
+          "sha256AtCommit": "1de310a7b9f76a903630d50d48b811f4ee20cb96df8b1b45da0a07459dd4f1e2",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 30
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/test/helpers.mjs",
+          "status": "A",
+          "sha256AtCommit": "397a4c7aa319211823cdf160ad682622ecd6031bf7304d28dfb27546e26c619f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 39
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/test/jobs.integration.mjs",
+          "status": "A",
+          "sha256AtCommit": "6c3ae751f33f612f3de70cac2e418bf8422974ac7d4745729c8d5879d2f68f04",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 132
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/engine-api/test/security.test.mjs",
+          "status": "A",
+          "sha256AtCommit": "2bd2a49717dcfb11dd1031331a6ce09f59031285c4ec2776b1a69a60ba7bebac",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 87
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        }
+      ]
+    }
+  ]
+}

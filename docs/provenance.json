@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "eventStartDate": "2026-10-26",
+  "ownerConfirmedStartDate": true,
+  "preparedAt": "2026-10-27T08:29:32.967Z",
+  "licenseDecision": {
+    "date": "2026-10-27",
+    "license": "Apache-2.0",
+    "scope": "Only event-created work distributed in this new public repo; private product retains commercial terms.",
+    "authorization": "Explicit owner response in this task."
+  },
+  "files": {
+    ".env.example": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "7e7c2f4709083ea5471515aa136a546bf4c2aff77e02a4f612aa1de57faf2a26"
+    },
+    ".github/workflows/ci.yml": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "a92cf71ec46b650c88b3cbffe17927cd32cef99ae2b877d3d6e358d5088fae79"
+    },
+    ".gitignore": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "b3617c552418bfc0362af1523a126e957f30e5d6efb3409814b5cfa088f4e9fe"
+    },
+    "AGENTS.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "c9b1c9bbf727dfd5fd9202b7b9da476816669242a9ba2a0373e92d2d7f307ff0"
+    },
+    "LICENSE": {
+      "origin": "standard-license-text-from-apache.org; declared pre-existing legal text",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "NOTICE": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "91424905df6ef3e602591ed759c25d56369ea5f2549ca2fa10a3e16ac7dfb18f"
+    },
+    "README.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "2b79dd156a32c59abbfb72abdf8c88c6c22d83c3a660f2d020c905def71512f6"
+    },
+    "contracts/engine.openapi.json": {
+      "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
+      "sha256": "974acad0d96b950cb93d40c6522e8726575321116e2dbea8f4bbde97d646a3be",
+      "source": {
+        "commit": "95b0c245601fc8b197da700f485e20dfc14286fa",
+        "path": "packages/engine-api/openapi.json",
+        "sourceSha256": "974acad0d96b950cb93d40c6522e8726575321116e2dbea8f4bbde97d646a3be"
+      }
+    },
+    "docs/EVENT-RULES.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "312fbf5bf20ff7c5b1c7fdd3666e00fcd5afbb587a9f247c06a3c9633a242a26"
+    },
+    "docs/LICENSING.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "5bd13c0563375b63715740be03c9df62a04a7b99253a06b2a6f513a5da07927a"
+    },
+    "docs/PROVENANCE.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "99424d073f53e9a48b44f07baf9546e08677479045b6e08f7798eab694a1433e"
+    },
+    "docs/SERVICES.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "658cb6e5f11894b9158a55f39412f53ddae3a2179372bf201f940c226bf21393"
+    },
+    "docs/SUBMISSION.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "41617fb3d4dd5465e63c8888c2a4fa48a4fb2e135c3833032bfc27c4b9dbdbaf"
+    },
+    "docs/excluded-baseline-sha256.json": {
+      "origin": "event-authored guard data; hashes of excluded pre-existing code, no code contents",
+      "sha256": "2692df4391df21444e46b130d3f5e54c25383a1c517c65240a260bf3fb7f0896"
+    },
+    "docs/hosted-changes.json": {
+      "origin": "event-authored inventory of event commits; no source bodies",
+      "sha256": "e9850d72a21bc888e39648ef9510c392f3e486f53d140826a2733fab4a3d276f"
+    },
+    "examples/catalog.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "d3f149184241686667c163e8102d3844b4464c27a63e407196d25621c045058c"
+    },
+    "examples/demo.mjs": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "31ab15866796e31a60d10dde7bd4d608e0dda8f2e797bb5f21f18cdeca54db50"
+    },
+    "examples/engine-check.mjs": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "0de2626d471960598bd50a2190a918b78d1c33dc7cb37e6715dfa0865325cb6d"
+    },
+    "examples/tool-loop.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "4a2a68eb92e45c14b847c3444b605d9dd7bc0886ec04c5f83c8f2fccfbad7905"
+    },
+    "package-lock.json": {
+      "origin": "generated-during-event; no npm dependencies",
+      "sha256": "cc922cc18b3321f1a7b0f3e90e91307de4f22df8354d49fae0b049924aa9316c"
+    },
+    "package.json": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "fa8d8bef7dbb55004dde4244a565853f5388b92ff2e76739e12d7b89dd3344f0"
+    },
+    "scripts/check-repository.mjs": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "5488a1841b8c857871c6b3681aafaabf1fcf4cd7dbc37380568baa6322c17eec"
+    },
+    "src/engine-client.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "523759b2ddee0c1d0a1b60adae9e38318dc22c57187a8b631a13478c75edb446"
+    },
+    "src/errors.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "39cda22e8434d3a78f156d7a8ccd4cc6b3301f9ac11127bb6e8680449b53fb2a"
+    },
+    "src/http.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "86a62f18e8acbc2b74e3b002a8b0523eaf045e0824e1966b7af8b09b77eb20ea"
+    },
+    "src/meta.js": {
+      "origin": "event-only extraction from agent-meta.js at eef24e7; standalone adaptation on October 27",
+      "sha256": "d2028fe2d82206f448a12029694e4732557664676e2fd01933d432bf4420035b",
+      "source": {
+        "workspace": "existing-platform-integration",
+        "commit": "eef24e7a0e27d8ce829c47d73e9310eb142f0a9b",
+        "path": "packages/web-console/src/agent-meta.js",
+        "retainedFunctions": [
+          "metaRequest",
+          "normalizeMetaResponse"
+        ],
+        "modifications": "Replaced console errors/helper dependency and transport; explicit configuration added."
+      }
+    },
+    "test/http.test.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "5c767aeff7e4ccba7f80b3115950b9e989d16929d8cb4a742b4e0093f3a14322"
+    },
+    "test/meta.test.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "c01ffeeb0575acfe3736aff1802ec55dc5159f7561b81b0218111eba9c9c3741"
+    },
+    "docs/provenance.json": {
+      "origin": "event-authored manifest",
+      "selfManifest": true
+    }
+  }
+}
