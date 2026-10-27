@@ -20,9 +20,11 @@ Judges should receive an individual invite, a synthetic workspace/repository, a 
 
 ## Private processing API
 
-The new wrapper around the old engine is implemented but not deployed. It requires a dedicated PostgreSQL database, an installed GitHub App with read-only contents access, a server-side PEM key, operator-provisioned tenant/repository mappings, and a separate service token. The GitHub App identity/key still need to be resolved. The public OpenAPI contract describes the interface, not the implementation or its license.
+The new wrapper around the old engine runs as a separate private AWS container, with its own database and internal HTTPS ingress restricted to the demo backend. Its GitHub App has read-only contents access to only this synthetic hackathon repository. The server-side PEM key, service token and tenant/repository mapping are provisioned. The public OpenAPI contract describes the interface, not the implementation or its license. [Live verification](VERIFICATION.md) records the completed synthetic extraction check.
 
 After deployment and provisioning, an operator can set `HEDGELING_ENGINE_URL` to its HTTPS base URL and `HEDGELING_ENGINE_TOKEN` to an authorized service credential, then run `npm run engine:check` from an environment with network access. This command only reads capabilities and one connection page. It prints counts, not repository names or credentials. The client also accepts explicit limit/offset pagination.
+
+The existing demo vendors only `errors.js`, `http.js`, `engine-client.js`, and `engine-status.js` from this repository, with their Apache license, NOTICE and commit/hash provenance. `scripts/vendor-integration.mjs` performs that copy into an existing console checkout; the checkout is not part of this submission. The demo's `/api/platform/engine-status` route requires platform-operator authorization and reports readiness/counts without exposing private endpoints or credentials. The extraction engine is not present in the demo image. Both images are in private registries.
 
 The service token is not an end-user permission check. Before adding job execution to UI/chat/MCP, the authenticated platform must bind projects to connections, enforce user permissions, obtain confirmation, and import results through its authorized workflow. Those integration steps are not implemented here. Browser configuration and model prompts must never receive service credentials or private upstream URLs.
 

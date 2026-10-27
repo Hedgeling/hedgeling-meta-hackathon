@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "eventStartDate": "2026-10-26",
   "ownerConfirmedStartDate": true,
-  "preparedAt": "2026-10-27T08:29:32.967Z",
+  "preparedAt": "2026-10-27T09:53:59.835324+00:00",
   "licenseDecision": {
     "date": "2026-10-27",
     "license": "Apache-2.0",
@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "2b79dd156a32c59abbfb72abdf8c88c6c22d83c3a660f2d020c905def71512f6"
+      "sha256": "a551304f90862bcf2ef2c88d7515c53c89469999c0ee156ce791a0385ee50f2d"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -61,11 +61,11 @@
     },
     "docs/SERVICES.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "658cb6e5f11894b9158a55f39412f53ddae3a2179372bf201f940c226bf21393"
+      "sha256": "1965a3ab34289651255d1c9a0de017ef7929519c0079e8e36785f985fefb5790"
     },
     "docs/SUBMISSION.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "41617fb3d4dd5465e63c8888c2a4fa48a4fb2e135c3833032bfc27c4b9dbdbaf"
+      "sha256": "b8289fd653b10bc0ff331b213fdaff2f5437f45214bba9b8810eb029f4dd7981"
     },
     "docs/excluded-baseline-sha256.json": {
       "origin": "event-authored guard data; hashes of excluded pre-existing code, no code contents",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "e9850d72a21bc888e39648ef9510c392f3e486f53d140826a2733fab4a3d276f"
+      "sha256": "2bb1c57e902b7a3cc77b37d0ab3c65486c5ee378a92a92a22536359d1e5c0fc9"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -156,6 +156,10 @@
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
       "sha256": "6283c82ee543c8efb8d4d778e5f20000e7cd5b340f3c621b9d451184727c9198"
+    },
+    "docs/VERIFICATION.md": {
+      "origin": "authored-during-event; redacted live deployment verification record",
+      "sha256": "edd6b09bf4b4725c63a3ca68c1a769ac4945129043ee29f0f97ab507ba3de6c9"
     }
   }
 }

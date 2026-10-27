@@ -6,11 +6,12 @@
 - Apache-2.0 license, NOTICE, dependency inventory, and explicit proprietary-service boundary.
 - Per-file origins/digests and an inventory of event changes inside the hosted product.
 - Public CI runs repository checks, tests, and the labeled offline example without secrets.
+- Private processing service deployed separately, GitHub App restricted to the synthetic repository, demo backend connection and real extraction verified. See [evidence](VERIFICATION.md).
 
 ## Still required before submission
 
 - Finish the selected new workflow and update README status and provenance as code lands.
-- Deploy and connect the private processing service if extraction is part of the demo; resolve the GitHub App credentials and provide a synthetic repository.
+- Build the user-authorized extraction workflow and import UI/MCP tools on top of the verified service connection. Infrastructure verification is not a completed user workflow.
 - Verify real Meta tool use on the final submitted revision and record the model, revision, date, command, and redacted result. Offline test output is not live inference evidence.
 - Give judges individual access to the hosted demo/dependencies through judging and verify the instructions from a fresh checkout/account.
 - Record an actual three-minute product demonstration. Opening draft: “Hedgeling's console and localization engine existed before the hackathon; this week we built the Meta-powered workflow and processing API demonstrated here.” Adjust the claim to features actually finished.
