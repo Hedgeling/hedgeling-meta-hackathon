@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "a551304f90862bcf2ef2c88d7515c53c89469999c0ee156ce791a0385ee50f2d"
+      "sha256": "411839466a7db4877f35e27b168eed5d03ed8a737684dd075bf12fe5f3b45925"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -61,11 +61,11 @@
     },
     "docs/SERVICES.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "1965a3ab34289651255d1c9a0de017ef7929519c0079e8e36785f985fefb5790"
+      "sha256": "a639b4f52c2ac8f9dce0fe6dd60c1ebb989fe0b96f47f8699a21ef7f514d4d8f"
     },
     "docs/SUBMISSION.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "b8289fd653b10bc0ff331b213fdaff2f5437f45214bba9b8810eb029f4dd7981"
+      "sha256": "e543293bdd92edb4815fc1563d54473ed61650b6ebdda762c323d3e702502d53"
     },
     "docs/excluded-baseline-sha256.json": {
       "origin": "event-authored guard data; hashes of excluded pre-existing code, no code contents",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "2bb1c57e902b7a3cc77b37d0ab3c65486c5ee378a92a92a22536359d1e5c0fc9"
+      "sha256": "0065475f86135e02b1850fbdaab9f1f481cb481a77600af8ca370586d3e3d42c"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -105,7 +105,7 @@
     },
     "src/engine-client.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "523759b2ddee0c1d0a1b60adae9e38318dc22c57187a8b631a13478c75edb446"
+      "sha256": "46ca15165bd5182aa7af068cd47ca2336fca5f38cdb2b164221fc06916641a6d"
     },
     "src/errors.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -113,7 +113,7 @@
     },
     "src/http.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "86a62f18e8acbc2b74e3b002a8b0523eaf045e0824e1966b7af8b09b77eb20ea"
+      "sha256": "0c7b3b785f32aeb7134fa183e3b02874fca584e75e09706d3b9bf3363f8e3682"
     },
     "src/meta.js": {
       "origin": "event-only extraction from agent-meta.js at eef24e7; standalone adaptation on October 27",
@@ -155,11 +155,51 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "6283c82ee543c8efb8d4d778e5f20000e7cd5b340f3c621b9d451184727c9198"
+      "sha256": "a1b420b5fc05a9baef39ed07589dc02625e0ba21dc6e84d41adf32763c0e83d1"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "edd6b09bf4b4725c63a3ca68c1a769ac4945129043ee29f0f97ab507ba3de6c9"
+      "sha256": "517b5170ab991967e06be5ee2bd615d048f83605bff58bf8c32e4e486caadc82"
+    },
+    "contracts/202610271200_extraction_workflow.sql": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "4a49ea48cd3f5e21db26d2573244659d05ed247143ef8cbb1b5d2fe1a578f0d7"
+    },
+    "docs/EXTRACTION-WORKFLOW.md": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "7282eada5a6df70442d424762e81fee4bfdcb84121ebdea3f08dd973d1b99e26"
+    },
+    "src/engine-operations.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "e67beb7829131db3ff65e077ad1af48a7127d78a48479036850adaefe6a52ee4"
+    },
+    "src/extraction-actions.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "62920cd4eebd34abf61dcc05a273934f3f70d4c0c522631491774a7a74219743"
+    },
+    "src/extraction-catalog.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "53c899ec169142503fbeef822723606b0f99a22f585323735ce03cc1b2950a01"
+    },
+    "src/extraction-workflow.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "c027ed17273825c10870e5953823eff74083188bf367ba847241d30c49759623"
+    },
+    "test/extraction.test.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "c5e1a0e2ad22c86d80598bcc2562e25940137c42bdf71b454a9be946c147dd7c"
+    },
+    "ui/extraction.css": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "93fff6df4103b5830bb6b5df61c014af7841fc9a91c8774a2141a29225bac44f"
+    },
+    "ui/extraction.js": {
+      "origin": "authored-during-event-for-project-extraction-workflow",
+      "sha256": "5ae5bf439ca21330ffb823a83d496445b70567741ca6a4b843c510dcc2b4cd24"
+    },
+    "examples/source/TravelPlanner.tsx": {
+      "origin": "authored-during-event; synthetic travel-planner extraction fixture",
+      "sha256": "c4abfa5be68dddc332ea8f1238eccc52498da839ec3d14a3b22af929a0f8efc2"
     }
   }
 }

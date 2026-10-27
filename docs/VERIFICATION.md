@@ -44,7 +44,68 @@ private deployment tooling and is not part of the public verification harness.
 Judge access to the hosted product must still be arranged as described in
 [services](SERVICES.md).
 
-This check does not verify live Meta inference. Verify and record real Meta tool
-use on the final submission revision separately. End-user project authorization,
-approval and result import must be implemented before exposing extraction through
-the new UI/chat/MCP workflow.
+This initial infrastructure check did not verify live Meta inference. The new
+workflow and the additional checks below are separate from that initial result.
+
+## Live Meta extraction proposal
+
+On October 27, an operator verification task using the deployed existing-product
+revision `8fc8b77f1dc7db090b1d5617a4e9feb0a83b1500` called the configured Meta
+provider through its metered `nextAgentTurn` path. It used a normal non-staff demo
+owner's project permissions, real source-connection discovery, the new extraction
+skill, and the shared action schemas. No fixture provider was involved.
+
+| Check | Observed result |
+| --- | --- |
+| Model | `muse-spark-1.3` |
+| Provider turns | 2 |
+| Measured tokens | 4,082 total |
+| Tool calls | `console_list_source_connections`, then `console_propose_extraction` |
+| Selection | `extraction-demo`, `hackathon-source`, `main`, `examples/source` |
+| Proposal | Server validated project access and source bounds; preview created |
+| Execution | No confirmation or extraction; verification proposal rejected after inspection |
+
+This proves live Meta selection and proposal preparation, not a human browser
+session or a complete model-driven extraction/import conversation. UI confirmation
+behavior is covered separately by the host browser suite. Repeat final live
+acceptance on the eventual submission revision and arrange judge access.
+
+## Live project extraction and import
+
+The existing-product demo was updated to
+`b7fc91c7ce982a5c74a492c6d15274e773a3d96e`, vendoring public event modules from
+`e90590d294fb2360d4864a242bc46928bc830bff`. An explicit operator seed created the
+synthetic `extraction-demo` project, bound only to `examples/source` in this repo.
+The seed was also tested twice against a disposable local database.
+
+A one-off task running the deployed demo image exercised the actual application
+actions, normal demo-owner permissions, proposal preparation and confirmation,
+private engine, artifact conversion and transactional importer. This was an
+operator diagnostic, not a recorded user browser session. Its redacted result:
+
+```json
+{
+  "sourceCommit": "e0a12474c7fef94bf429329e330b515a0efb0e48",
+  "strings": 3,
+  "projectSlug": "extraction-demo",
+  "confirmedOperations": 2,
+  "replay": true,
+  "imported": true
+}
+```
+
+The check compared the saved source strings to the three expected synthetic
+phrases above and verified `importedAt` through the read action. Replaying the
+confirmed import returned its existing result. GitHub and translations were not
+modified. The first live attempt found that the engine emits catalog v2; import
+failed closed with no saved strings. The adapter was corrected for the documented
+v1/v2 source/context shape, tested directly against actual engine output, and the
+successful verification above used the corrected image.
+
+Live HTTPS checks returned 200 for health/login and 401 for anonymous agent
+configuration. Console CI passed the full build, lint, unit, database,
+authorization, security, browser and container-build pipeline on `b7fc91c`.
+Public code CI passed on `e90590d`. Public unit tests include 16 tests; the host
+browser workflow uses a synthetic HTTPS engine and deterministic model, explicitly
+separate from the real Meta check above. Runtime URLs, private credentials and
+raw cloud task records remain outside the public repository.

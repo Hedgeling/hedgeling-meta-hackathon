@@ -7,11 +7,11 @@
 - Per-file origins/digests and an inventory of event changes inside the hosted product.
 - Public CI runs repository checks, tests, and the labeled offline example without secrets.
 - Private processing service deployed separately, GitHub App restricted to the synthetic repository, demo backend connection and real extraction verified. See [evidence](VERIFICATION.md).
+- Project-bound extraction/import UI and API/MCP workflow deployed; three synthetic strings imported and confirmation replay checked. Live Meta discovery and bounded extraction proposal verified in two turns. Browser tests separately exercise chat/manual approvals with fixtures.
 
 ## Still required before submission
 
-- Finish the selected new workflow and update README status and provenance as code lands.
-- Build the user-authorized extraction workflow and import UI/MCP tools on top of the verified service connection. Infrastructure verification is not a completed user workflow.
+- Complete final live acceptance of the new extraction/import UI and MCP workflow; implementation and fixture-based integration/browser tests are in place. Keep deployment evidence and provenance current.
 - Verify real Meta tool use on the final submitted revision and record the model, revision, date, command, and redacted result. Offline test output is not live inference evidence.
 - Give judges individual access to the hosted demo/dependencies through judging and verify the instructions from a fresh checkout/account.
 - Record an actual three-minute product demonstration. Opening draft: “Hedgeling's console and localization engine existed before the hackathon; this week we built the Meta-powered workflow and processing API demonstrated here.” Adjust the claim to features actually finished.

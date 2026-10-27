@@ -2,7 +2,7 @@
 
 **This is the fresh event-only submission repository.** Hedgeling's existing console, authorization/approval system, platform API, older MCP tools, and localization engine predate the event. They are separate hosted dependencies and are not included here. This repository does not import their Git history.
 
-During the event we implemented Meta Responses integration for the existing agent, isolated demo infrastructure, and a private GitHub-connected processing API. This public extract currently contains the standalone Meta protocol integration, a new verification harness, a read-only engine client, and the event-created engine API contract. [Provenance](docs/PROVENANCE.md) distinguishes public implementation, private event work, and pre-existing services.
+During the event we implemented Meta Responses integration for the existing agent, isolated demo infrastructure, and a private GitHub-connected processing API. This public extract contains the standalone Meta protocol integration, a verification harness, engine clients/contract, and the new project-bound extraction → review → import workflow with shared API/MCP actions and UI components. [Provenance](docs/PROVENANCE.md) distinguishes public implementation, private event work, and pre-existing services.
 
 The earlier public platform snapshot is an integration workspace, **not the submission repository**. It contains pre-event product code; no checkout, package, or history from that snapshot is required to run this extract.
 
@@ -35,8 +35,9 @@ The live command uses Meta inference and may incur provider charges. It makes at
 - Offline tests and an optional live Meta tool-loop verification independent of the existing console.
 - A server-only read client for private engine capabilities and paginated repository connections, deployed into the existing demo behind operator authorization.
 - A documented engine interface for extraction jobs and rewrite previews. The implementation is private event work around a pre-existing engine; publishing its contract does not deploy the service.
+- New project-scoped API/MCP extraction actions, separate extraction and import approvals, source provenance validation, retry-safe admission, and progress/manual source controls, deployed into the existing demo. See the [workflow and limits](docs/EXTRACTION-WORKFLOW.md). Unit, host integration and browser tests cover this workflow; real extraction/import and Meta proposal checks are recorded in [verification](docs/VERIFICATION.md).
 
-The current live console uses the earlier event Meta adapter inside the existing hosted product. The standalone Meta module here has not yet replaced that adapter. The private engine service is deployed separately and connected to the demo backend; an operator check extracted all three strings from the pinned synthetic source through the real GitHub App and API. [Verification evidence](docs/VERIFICATION.md). New MCP workflows, extraction approval/import UI, Meta BYOK, Bedrock, and applying repository changes remain future work. Existing chat/approval features are not claimed as event contributions.
+The current live console uses the earlier event Meta adapter inside the existing hosted product. The standalone Meta module here has not yet replaced that adapter. The private engine service is deployed separately and connected to the demo backend; an operator check extracted all three strings from the pinned synthetic source through the real GitHub App and API. [Verification evidence](docs/VERIFICATION.md). Meta BYOK, Bedrock, Meta translation/context enrichment and applying repository changes remain future work. Existing chat/approval features are not claimed as event contributions.
 
 ## Private work written during the event
 
@@ -47,6 +48,7 @@ The current live console uses the earlier event Meta adapter inside the existing
 | GitHub App connector, tenant-scoped engine API, queue, worker, previews, tests and container packaging | Private commits `95b0c245601fc8b197da700f485e20dfc14286fa` and the deployment commit recorded in [hosted changes](docs/hosted-changes.json) | Deployed from the unmerged private branch; no npm release |
 | Private AWS engine stack, restricted database role, secret provisioning and synthetic verification | Deployment commit in [hosted changes](docs/hosted-changes.json) | Dedicated service healthy; live extraction verified |
 | Demo server readiness route and server-only connection configuration | Commit `a159e447a3dcea5bac095c9ece623cfa37a4f689` | Deployed; vendored public event modules retain Apache-2.0 and provenance |
+| Extraction action/UI integration, transactional importer/usage bridge and restricted synthetic project seed | Commits `8fc8b77`, `5710426`, `b7fc91c`, fully inventoried in [hosted changes](docs/hosted-changes.json) | Deployed; real three-string extraction/import and live Meta proposal verified |
 
 The engine itself was not written during the event. The inventory records every changed file and added line range in these event commits, including modifications made inside older files; older source contents are not copied into this submission. Keep the inventory and implementation status current as work lands.
 
