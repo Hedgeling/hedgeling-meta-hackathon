@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "5cdf78f7e7d62a3f88b748fc7661b809403cfc42e20f4434ae3f2f066e7ca8b9"
+      "sha256": "31001582f45538b22a2818fd035c562b290c48dcff456af0509ece55ec1f2fa6"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -159,7 +159,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "1ea860219d5d6744bc1673f24adf5b08f9474158e3cc5724b933bcfa83495b12"
+      "sha256": "1793ffb3ff2441614008c779e386a32654c40bb662f364aab4c861332971fe28"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -263,11 +263,11 @@
     },
     "docs/LIBRARY-WORKFLOW.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "f3e61a1396b7c12f862f59870f90f356d19939882b92597aea365ad6998fe399"
+      "sha256": "94f4e5c0ecf061971a0c1852be71d2af31a630baa4a9865e0c6754a516462488"
     },
     "src/library-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "62861c59597b6898a5278a8a21f0806b13dd8527be5e4c1bb20b0f63fb3449b7"
+      "sha256": "4b91511b9e1d29d8b68a7ed29221832492bc175727e52b195d74d70148799426"
     },
     "src/library.js": {
       "origin": "authored-during-event-for-this-extract",
