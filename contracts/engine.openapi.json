@@ -540,6 +540,150 @@
           }
         }
       }
+    },
+    "/v1/jobs/{jobId}/model-requests": {
+      "get": {
+        "operationId": "pendingModelRequests",
+        "description": "Requires engine:read. Only a running tune-llm job returns requests. Tenant and connection scoped. Provider credentials stay in the caller; these are server-only prompts, never browser data.",
+        "parameters": [
+          {
+            "name": "jobId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Up to four pending bounded model requests",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "requests": {
+                      "type": "array",
+                      "maxItems": 4,
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "id",
+                          "system",
+                          "user",
+                          "maxOutputTokens"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "format": "uuid"
+                          },
+                          "system": {
+                            "type": "string"
+                          },
+                          "user": {
+                            "type": "string"
+                          },
+                          "maxOutputTokens": {
+                            "const": 8192
+                          }
+                        },
+                        "description": "Combined UTF-8 system/user text is at most 65536 bytes. Engine-owned prompt; contains source snippets. No provider key."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
+    },
+    "/v1/jobs/{jobId}/model-requests/{requestId}": {
+      "post": {
+        "operationId": "resolveModelRequest",
+        "description": "Requires engine:run on the linked job. Returns accepted:true. Identical redelivery is idempotent; changed results conflict. A new result is rejected after cancellation. The host must not repeat inference after an unknown outcome.",
+        "parameters": [
+          {
+            "name": "jobId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "requestId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "text"
+                    ],
+                    "properties": {
+                      "text": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "At most 131072 UTF-8 bytes"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "failed"
+                    ],
+                    "properties": {
+                      "failed": {
+                        "const": true
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Result accepted or identically replayed"
+          },
+          "400": {
+            "$ref": "#/components/responses/Error"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -592,7 +736,8 @@
             "enum": [
               "extract",
               "transform-preview",
-              "tune"
+              "tune",
+              "tune-llm"
             ]
           },
           "ref": {
@@ -642,7 +787,8 @@
             "enum": [
               "extract",
               "transform-preview",
-              "tune"
+              "tune",
+              "tune-llm"
             ]
           },
           "ref": {
@@ -766,7 +912,7 @@
           },
           "tuning": {
             "type": "object",
-            "description": "Only for tune. Deterministic before/after counts, accepted additive edits and settings; no writes and no LLM calls. Runs at most two rounds within the shared five-minute bound."
+            "description": "For tune or tune-llm: before/after counts, accepted additive settings, wrote:false and actual llmCalls. LLM mode adds classifiedCount, maximumItems:80 and coverage:bounded. Deterministic mode uses two rounds; LLM mode one round and at most four requests including retries. Both remain within the five-minute processing limit."
           }
         }
       },
