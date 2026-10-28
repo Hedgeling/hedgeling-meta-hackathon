@@ -64,6 +64,14 @@ Guidance text and other values are preserved. The HTTP API remains strictly type
 the adapted input still passes normal validation, authorization and version checks.
 Using null when an asset already exists fails as stale; it cannot overwrite it.
 
+The Library skill also treats earlier tool errors and assistant capability claims
+as historical observations. When the person asks to proceed or retry, the agent
+reads the current asset and prepares a fresh preview using the current schema.
+It must not report a new tool failure without making a new attempt. A fresh input
+format error may be corrected once; a stale version requires rereading, while
+permission failures and missing user decisions stop execution. Conversation
+history and human confirmation remain intact.
+
 ## Translation behavior
 
 Active project instructions, the active target-locale persona and active applicable

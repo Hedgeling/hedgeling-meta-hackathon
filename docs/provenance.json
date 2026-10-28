@@ -263,11 +263,11 @@
     },
     "docs/LIBRARY-WORKFLOW.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "f3e61a1396b7c12f862f59870f90f356d19939882b92597aea365ad6998fe399"
+      "sha256": "94f4e5c0ecf061971a0c1852be71d2af31a630baa4a9865e0c6754a516462488"
     },
     "src/library-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "62861c59597b6898a5278a8a21f0806b13dd8527be5e4c1bb20b0f63fb3449b7"
+      "sha256": "4b91511b9e1d29d8b68a7ed29221832492bc175727e52b195d74d70148799426"
     },
     "src/library.js": {
       "origin": "authored-during-event-for-this-extract",
