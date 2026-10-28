@@ -28,3 +28,13 @@ test('Gemini tuning makes one bounded request and rejects incomplete or oversize
   }
   assert.equal(calls,4);
 });
+
+
+test('usage summaries distinguish unknown and estimated costs from known zero', async () => {
+  const {createTuningModels}=await import('../src/tuning-models.js');
+  let calls=[];
+  const broker=createTuningModels({database:{query:async sql=>({rows:sql.includes('from extraction_model_runs')?[{provider_plan:{provider:'meta',model:'fixture',limits:{}},status:'failed'}]:calls})}});
+  assert.equal((await broker.summary('synthetic')).totalTokens,0);
+  calls=[{status:'failed',usage:null}];assert.equal((await broker.summary('synthetic')).totalTokens,null);
+  calls=[{status:'succeeded',usage:{totalTokens:100,estimated:true}}];const usage=await broker.summary('synthetic');assert.equal(usage.totalTokens,100);assert.equal(usage.usageEstimated,true);
+});

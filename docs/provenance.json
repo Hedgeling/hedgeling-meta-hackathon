@@ -195,7 +195,7 @@
     },
     "ui/extraction.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "a2194476df232d0c51fdd2b932756469e4200deb73afaccc37fa7a7b0730d689"
+      "sha256": "57d7887305279e78c8ab056e509537f81b1bdd6a87c4c86ec5eeac9db1660cb9"
     },
     "examples/source/TravelPlanner.tsx": {
       "origin": "authored-during-event; synthetic travel-planner extraction fixture",
@@ -347,11 +347,11 @@
     },
     "src/tuning-models.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "c010294e8ad8f0bc6dad55c21d71e5b3b07ec2059bfd5c3e08e7b82a11ea40d8"
+      "sha256": "05ca30fbdfdcc42977f935e6d0ae32150aafce3715a52deb7c7ac8d61cbf4bb5"
     },
     "test/tuning-models.test.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "ee99244c86b4b6d1a99903acc908ac662da873154e3148dd30dc56144ef0ecdd"
+      "sha256": "fbcb80cc69db5f6d71a3421e002756b7e8ef2ed1c6099a29bede21c48ab9c54b"
     },
     "src/tuning-gemini.js": {
       "origin": "authored-during-event-for-this-extract",
