@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T23:18:33.678479+00:00",
+  "recordedAt": "2026-10-28T23:25:16.323603+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -6742,6 +6742,60 @@
           "newSideHunkRanges": [
             {
               "start": 40,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "c71445c1b73f8cb1f72db435b2f1564c1c6a59e7",
+      "authorDate": "2026-10-28T17:24:03-06:00",
+      "commitDate": "2026-10-28T17:24:03-06:00",
+      "subject": "Show unknown tuning usage honestly after interrupted requests",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "7aefb81de8ec64d2d3e6948ad0c1b58cc27f4d00aff332feca704eb995dbf337",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 210,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/tuning-models.js",
+          "status": "M",
+          "sha256AtCommit": "05ca30fbdfdcc42977f935e6d0ae32150aafce3715a52deb7c7ac8d61cbf4bb5",
+          "newSideHunkRanges": [
+            {
+              "start": 32,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/extraction.js",
+          "status": "M",
+          "sha256AtCommit": "57d7887305279e78c8ab056e509537f81b1bdd6a87c4c86ec5eeac9db1660cb9",
+          "newSideHunkRanges": [
+            {
+              "start": 39,
               "count": 1
             }
           ],
