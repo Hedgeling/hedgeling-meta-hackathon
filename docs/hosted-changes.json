@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T09:14:24.940980+00:00",
+  "recordedAt": "2026-10-28T14:18:11.159249+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -5086,6 +5086,168 @@
           "newSideHunkRanges": [
             {
               "start": 37,
+              "count": 3
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "a08da9562f7ead27e0d70ed5e2562268331a10fd",
+      "authorDate": "2026-10-28T08:17:36-06:00",
+      "commitDate": "2026-10-28T08:17:36-06:00",
+      "subject": "Keep agent conversations aligned with selected workspace",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "27295fd869866e536ad48b3c1748122a6be7bb46a9e76b06d87d414a768df082",
+          "newSideHunkRanges": [
+            {
+              "start": 59,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "70199c465692c012dc5d1c8f7b52af7e5e348a1152fb0011d479d2d047b22642",
+          "newSideHunkRanges": [
+            {
+              "start": 88,
+              "count": 16
+            },
+            {
+              "start": 138,
+              "count": 1
+            },
+            {
+              "start": 163,
+              "count": 2
+            },
+            {
+              "start": 308,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-console-shell-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "58cd389d4fa2ef88cf558e41d24fdb3817c7267f7774cde0c3761d878b242665",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 4
+            },
+            {
+              "start": 16,
+              "count": 11
+            },
+            {
+              "start": 35,
+              "count": 2
+            },
+            {
+              "start": 42,
+              "count": 2
+            },
+            {
+              "start": 107,
+              "count": 75
+            },
+            {
+              "start": 191,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "980a6b8153b5aedba45c02105fa7e88b8a7b8ac97e72f0755cf9155c16b6078c",
+          "newSideHunkRanges": [
+            {
+              "start": 22,
+              "count": 2
+            },
+            {
+              "start": 122,
+              "count": 1
+            },
+            {
+              "start": 167,
+              "count": 1
+            },
+            {
+              "start": 221,
+              "count": 7
+            },
+            {
+              "start": 237,
+              "count": 36
+            },
+            {
+              "start": 276,
+              "count": 2
+            },
+            {
+              "start": 280,
+              "count": 3
+            },
+            {
+              "start": 285,
+              "count": 12
+            },
+            {
+              "start": 299,
+              "count": 9
+            },
+            {
+              "start": 350,
+              "count": 1
+            },
+            {
+              "start": 368,
+              "count": 1
+            },
+            {
+              "start": 370,
+              "count": 1
+            },
+            {
+              "start": 405,
+              "count": 1
+            },
+            {
+              "start": 416,
+              "count": 2
+            },
+            {
+              "start": 419,
+              "count": 2
+            },
+            {
+              "start": 424,
+              "count": 8
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/console-shell.js",
+          "status": "M",
+          "sha256AtCommit": "27c28bb07770cd1d447e5c4c2758514d84dfee49558f16f0b8127f3abd6e9d6f",
+          "newSideHunkRanges": [
+            {
+              "start": 187,
               "count": 3
             }
           ],
