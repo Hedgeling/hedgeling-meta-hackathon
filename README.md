@@ -67,3 +67,5 @@ The server requires `HEDGELING_META_RESPONSES_URL` (the operator-approved HTTPS 
 `npm test` verifies the new Meta transport with synthetic responses. Host integration tests separately verify encryption, authorization, coexistence, confirmation, translation provenance, and zero platform translation-credit charges for BYOK. These fixture tests do not establish live provider access.
 
 Project configuration and deterministic extraction tuning are available as event-authored API/MCP actions and UI components; see [the workflow](docs/EXTRACTION-WORKFLOW.md). The private service runs the pre-existing tuner. Settings are saved per project/connection, downloaded as JSON, and used for a separately approved re-extraction/import flow.
+
+The [Agent Library workflow](docs/LIBRARY-WORKFLOW.md) adds event-created, permission-scoped personas, translation instructions, glossary suggestions, human review and revision history. Existing product storage and translation execution remain hosted dependencies.

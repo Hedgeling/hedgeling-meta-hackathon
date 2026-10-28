@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "1e9fe823131e9b4be014c4f87896e6f190a2d267a67f1b6864cd4c01b61801f5"
+      "sha256": "fef895c9688d87da0e4d08417bbd25f87ad64ea0ab5578356138e6c30e2fd0dd"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "254358c4d12cbf722b495ebc79e6f819cf529e4e1a146847c198191f6b2accd9"
+      "sha256": "877e52415c58425c96b8bdd7811bc9f1f72fbf9f5204da3522b10e29183fba19"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "16515dad49799048dd4d6addb50e87cf99adb6644f6b4e52dd9271cb8c79522d"
+      "sha256": "35f13edde37ec2732db163ce84e816c753adec575e6993f1ecd36a79635c33bf"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "13d78629bc05db305f57713703d05df177b47ab2626c881b15fc7d1c932f969a"
+      "sha256": "a7d94a54632ab53f6864759d98ca4246a0421a59f9548a55655eef3da85203fe"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -256,6 +256,34 @@
     "test/tuning-config.test.js": {
       "origin": "authored-during-event-for-extraction-tuning",
       "sha256": "4ca43c47bd6e37bd31636f8ccec40408a3b848e0c6676a34ddb41bd7f693b730"
+    },
+    "contracts/202610272300_library_workflow.sql": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "d33a5af52d84960f914cd5ab6628208050c7b64dbf8b2cb0601de7e704ad79f6"
+    },
+    "docs/LIBRARY-WORKFLOW.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "01d8695d796fa751df751a8a50217b3f9f284ec11d8de1c9bb5f07bfd0dc7ff1"
+    },
+    "src/library-actions.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "9c810e8a6264ed7791f7ea3758f64905eb48d34c05000010c6cb8db772bd1fb1"
+    },
+    "src/library.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "6567d5d8fa2dda5df95b866f43b7b2bb12c0347be09f3fcf9677381cc86ef5b9"
+    },
+    "test/library.test.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "5509990ab83cccda7c862b72bbf20c41f5b630527a372b631100e619186ae850"
+    },
+    "ui/library.css": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "4fed40252a8611f4aed734cc17114c695242b0d798a9f9d32cd16604e6d69ad0"
+    },
+    "ui/library.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "8a7a05e13180b9c96c3691d4cd1c6de103e028c7777aab1ec92cbe58858f03da"
     }
   }
 }
