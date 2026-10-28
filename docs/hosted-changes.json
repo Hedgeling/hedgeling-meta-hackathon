@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T08:18:40.086169+00:00",
+  "recordedAt": "2026-10-28T09:02:16.452646+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -4983,6 +4983,88 @@
             {
               "start": 64,
               "count": 14
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "50b404c46dec002f5206a43d18a1d41e0e09d9ac",
+      "authorDate": "2026-10-28T03:02:15-06:00",
+      "commitDate": "2026-10-28T03:02:15-06:00",
+      "subject": "Recover persona previews in previously failed conversations",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "7874fe0d4b7d6dee68c764e2ee9a18f4dcb40d0b3a4ab59e224777c4633b8c42",
+          "newSideHunkRanges": [
+            {
+              "start": 64,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/library-actions.js",
+          "status": "M",
+          "sha256AtCommit": "4b91511b9e1d29d8b68a7ed29221832492bc175727e52b195d74d70148799426",
+          "newSideHunkRanges": [
+            {
+              "start": 38,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/library-actions.js",
+          "status": "M",
+          "sha256AtCommit": "4b91511b9e1d29d8b68a7ed29221832492bc175727e52b195d74d70148799426",
+          "newSideHunkRanges": [
+            {
+              "start": 38,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "ff08fbc589248bca0cb011ae5117657c38786515e07daee3a4d8c83d0dbd492b",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 45,
+              "count": 1
+            },
+            {
+              "start": 100,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/library.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "687df9c477358a8be81f6961fb1371b32b4e7bbb30434ecc3e0226dd58d87f1a",
+          "newSideHunkRanges": [
+            {
+              "start": 69,
+              "count": 7
+            },
+            {
+              "start": 79,
+              "count": 2
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
