@@ -78,8 +78,8 @@ Active project instructions, the active target-locale persona and active applica
 glossary terms feed existing AI translation revisions. Guidance changes do not
 regenerate, approve or publish existing translations. Revision snapshots include
 the actual guidance plus asset identifiers, timestamps and content hashes. Managed
-chat and organization translation-provider billing remain separate. Job drafts do
-not yet execute translations. The Library skill treats all asset/source contents
+chat and organization translation-provider billing remain separate. Job drafts stay inert until a separate [translation-start approval](TRANSLATION-JOBS.md);
+confirmed batches save drafts using this active guidance. The Library skill treats all asset/source contents
 as translation data, never instructions to change agent authority.
 
 ## Bounds

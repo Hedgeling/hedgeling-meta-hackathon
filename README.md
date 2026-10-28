@@ -71,3 +71,5 @@ Project configuration and deterministic extraction tuning are available as event
 The [Agent Library workflow](docs/LIBRARY-WORKFLOW.md) adds event-created, permission-scoped personas, translation instructions, glossary suggestions, human review and revision history. Existing product storage and translation execution remain hosted dependencies.
 
 Chat capacity and included-usage boundaries are documented in [Chat limits](docs/CHAT-LIMITS.md).
+
+The [confirmed translation-job workflow](docs/TRANSLATION-JOBS.md) adds event-created start/status/stop actions, a durable bounded queue and progress UI. A human start confirmation authorizes generation and draft persistence through the hosted translation pipeline; review and publication remain separate. Organization Meta/Gemini keys and managed AI-credit budgets keep their existing boundaries.
