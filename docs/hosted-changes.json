@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T19:18:12.549651+00:00",
+  "recordedAt": "2026-10-28T22:10:10.513507+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -6007,6 +6007,88 @@
             {
               "start": 356,
               "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "2e2c981b885b4b0075c7f77f5abd008e2cf51f8a",
+      "authorDate": "2026-10-28T16:09:35-06:00",
+      "commitDate": "2026-10-28T16:09:35-06:00",
+      "subject": "Apply localization scope instructions to every agent turn",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "1579c1a079ce94014950816f0be5eb79926e2cd9f987aaf43493aecae35a0cc5",
+          "newSideHunkRanges": [
+            {
+              "start": 41,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-skills.js",
+          "status": "M",
+          "sha256AtCommit": "23743eea78fff8bf53fe5cb97b82589878bb4555cd7d93b1d7c3224162bfc048",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 27,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/agent-scope.js",
+          "status": "A",
+          "sha256AtCommit": "10c47098b90e2dbc86239058cb0d3af102cb2362f618fa32a9bcf91224cbcb3e",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 10
+            }
+          ],
+          "note": "New event file; older imports/dependencies remain separate."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "0ab65d306ac47dcb6b2c42886f19596f2904b2439baaf2c4cafcd0e8b35e4573",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 7,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/agent-provider.test.js",
+          "status": "M",
+          "sha256AtCommit": "b33a750f0cb5102dfd655b04e226683aedd9415fc1dfb0d845b60a1a100ffa63",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 10,
+              "count": 40
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
