@@ -2,6 +2,7 @@
 // Event-created request/response logic extracted from commit eef24e7.
 // Modified here: standalone errors/configuration and new HTTP transport; no console imports.
 import { fail } from './errors.js';
+import { CHAT_LIMITS } from './chat-limits.js';
 import { requestJson, serverUrl } from './http.js';
 
 export function metaConfiguration(env = process.env) {
@@ -44,7 +45,7 @@ export function metaRequest({ model, history, tools, instructions }) {
   return {
     model, instructions, input, store: false,
     include: ["reasoning.encrypted_content"], reasoning: { effort: "low" },
-    max_output_tokens: 2048,
+    max_output_tokens: CHAT_LIMITS.outputTokens,
     tools: tools.map((tool) => ({ type: "function", name: tool.name, description: tool.description, parameters: tool.inputSchema, strict: false })),
     parallel_tool_calls: false,
   };
