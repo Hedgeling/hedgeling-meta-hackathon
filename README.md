@@ -69,3 +69,5 @@ The server requires `HEDGELING_META_RESPONSES_URL` (the operator-approved HTTPS 
 Project configuration and deterministic extraction tuning are available as event-authored API/MCP actions and UI components; see [the workflow](docs/EXTRACTION-WORKFLOW.md). The private service runs the pre-existing tuner. Settings are saved per project/connection, downloaded as JSON, and used for a separately approved re-extraction/import flow.
 
 The [Agent Library workflow](docs/LIBRARY-WORKFLOW.md) adds event-created, permission-scoped personas, translation instructions, glossary suggestions, human review and revision history. Existing product storage and translation execution remain hosted dependencies.
+
+Chat capacity and included-usage boundaries are documented in [Chat limits](docs/CHAT-LIMITS.md).
