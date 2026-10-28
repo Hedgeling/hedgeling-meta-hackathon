@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T14:18:11.159249+00:00",
+  "recordedAt": "2026-10-28T15:06:40.734052+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -5249,6 +5249,136 @@
             {
               "start": 187,
               "count": 3
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "54eaa273ed6e4649897b2478262ee0ac06fad169",
+      "authorDate": "2026-10-28T09:06:02-06:00",
+      "commitDate": "2026-10-28T09:06:02-06:00",
+      "subject": "Simplify chat controls and update sign-in message",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "b42f5419407a656213ab9b6ee91607dd33db86c621a57eecc2d25820465959ba",
+          "newSideHunkRanges": [
+            {
+              "start": 49,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "225f2e679c9907da1ad9292e4dcf6abed59acfeb49dc3ea87dc932cc2cac6f4c",
+          "newSideHunkRanges": [
+            {
+              "start": 39,
+              "count": 1
+            },
+            {
+              "start": 133,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "sha256AtCommit": "5f6971415aab4e17913ef0cfcf89cd6ccde1214c2d0bcc50292d4d457f9f17a2",
+          "newSideHunkRanges": [
+            {
+              "start": 138,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.css",
+          "status": "M",
+          "sha256AtCommit": "19f7cc11288edd78600ed9a44657b27d49ea03d473d468498fc3d21ae3f074ea",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 2
+            },
+            {
+              "start": 19,
+              "count": 2
+            },
+            {
+              "start": 50,
+              "count": 3
+            },
+            {
+              "start": 191,
+              "count": 1
+            },
+            {
+              "start": 195,
+              "count": 1
+            },
+            {
+              "start": 197,
+              "count": 1
+            },
+            {
+              "start": 235,
+              "count": 2
+            },
+            {
+              "start": 240,
+              "count": 0
+            },
+            {
+              "start": 250,
+              "count": 0
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "e53de3097ae7bf4c9d52824a851e095f05f40d678bc120b179284187596bb014",
+          "newSideHunkRanges": [
+            {
+              "start": 29,
+              "count": 3
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 41,
+              "count": 1
+            },
+            {
+              "start": 120,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/login.html",
+          "status": "M",
+          "sha256AtCommit": "4f87ed41e44994a4e703bfc4bdc4d49833f1626d9bb74a74799cea31d502148a",
+          "newSideHunkRanges": [
+            {
+              "start": 20,
+              "count": 2
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
