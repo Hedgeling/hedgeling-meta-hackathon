@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-27T23:38:10.312100+00:00",
+  "recordedAt": "2026-10-28T01:52:42.833206+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -4539,6 +4539,280 @@
             {
               "start": 11,
               "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "3db6f36146603adaa895de132566ef39cc640288",
+      "authorDate": "2026-10-27T19:52:42-06:00",
+      "commitDate": "2026-10-27T19:52:42-06:00",
+      "subject": "Expand chat capacity and restore complete long conversations",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "ebab19a410f16a32f2d0f583fca0910087e47b1ec60093ee7b65757c52adfd35",
+          "newSideHunkRanges": [
+            {
+              "start": 60,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "docs/platform/AGENT-CONSOLE-IMPLEMENTATION.md",
+          "status": "M",
+          "sha256AtCommit": "fd10f772f91af161b65ca94aed8b0437ab6905016cb13da4826bec0f837f4bc1",
+          "newSideHunkRanges": [
+            {
+              "start": 288,
+              "count": 1
+            },
+            {
+              "start": 290,
+              "count": 6
+            },
+            {
+              "start": 298,
+              "count": 2
+            },
+            {
+              "start": 302,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "3d769af0dc41b061c379c5faa5390a1d88725aa4f472692f5191b65205560543",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 20,
+              "count": 1
+            },
+            {
+              "start": 24,
+              "count": 1
+            },
+            {
+              "start": 140,
+              "count": 6
+            },
+            {
+              "start": 151,
+              "count": 2
+            },
+            {
+              "start": 309,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-meta.js",
+          "status": "M",
+          "sha256AtCommit": "6dd557d5c1f0d7b7b557ef1bfb6bf8ff14ad2ec939af0166f68521fc47b81e0e",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 86,
+              "count": 1
+            },
+            {
+              "start": 96,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "6ed891f78b31b8162bdeb7faf6aa90e9539b8b1fe5fbb66627aeb1387e3742b2",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 127,
+              "count": 1
+            },
+            {
+              "start": 129,
+              "count": 1
+            },
+            {
+              "start": 181,
+              "count": 1
+            },
+            {
+              "start": 191,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "sha256AtCommit": "d5cf1bf80594c22da996f9400274a7ad6d3d8e5f8c5b424756074efc4ecf94f8",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 105,
+              "count": 1
+            },
+            {
+              "start": 110,
+              "count": 1
+            },
+            {
+              "start": 119,
+              "count": 1
+            },
+            {
+              "start": 190,
+              "count": 1
+            },
+            {
+              "start": 213,
+              "count": 4
+            },
+            {
+              "start": 218,
+              "count": 1
+            },
+            {
+              "start": 231,
+              "count": 1
+            },
+            {
+              "start": 236,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/chat-limits.js",
+          "status": "A",
+          "sha256AtCommit": "4ec2ba1ee739bda5c6b92555b79bbbae18a33520b0e9875a474d6bc299784c6d",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 25
+            }
+          ],
+          "note": "Event-created file; source body excluded from this inventory."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "9d04eb20f06b358ffe339d592c4d4f9b94d6ac81a31cace5715c72444ef1a8cd",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 32,
+              "count": 5
+            },
+            {
+              "start": 92,
+              "count": 5
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "sha256AtCommit": "29032fa650378031f1b224e6bb90e905674a8bf4e2c2a4ef0b1964c42895d6da",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 138,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "afc6536c6209b922c347ac63f9b25f9d800dea5ad03a70890dd76ffbc8dd0076",
+          "newSideHunkRanges": [
+            {
+              "start": 361,
+              "count": 9
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/chat-limits.js",
+          "status": "A",
+          "sha256AtCommit": "4ec2ba1ee739bda5c6b92555b79bbbae18a33520b0e9875a474d6bc299784c6d",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 25
+            }
+          ],
+          "note": "Event-created file; source body excluded from this inventory."
+        },
+        {
+          "path": "packages/web-console/test/agent-console.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "dddcefcd0b1dfb8edc6563fe4cf4e697480beb68895893b9493ea17136377e3e",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 22
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/agent-provider.test.js",
+          "status": "M",
+          "sha256AtCommit": "35954b4724a5100c323a65fc9e812388ee0871a3f73c1456e9072aa8ea420720",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 139,
+              "count": 30
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
