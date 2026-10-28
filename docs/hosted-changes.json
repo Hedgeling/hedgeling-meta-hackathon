@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T01:52:42.833206+00:00",
+  "recordedAt": "2026-10-28T08:18:40.086169+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -4813,6 +4813,176 @@
             {
               "start": 139,
               "count": 30
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "cbe34bb895dbca36bbeef4632a568b11d66c0a63",
+      "authorDate": "2026-10-28T02:18:39-06:00",
+      "commitDate": "2026-10-28T02:18:39-06:00",
+      "subject": "Fix persona creation when MCP tools receive quoted null",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "sha256AtCommit": "955bdf9fc1c5c6119dcaa871a10dba91b74b72e90e31f42ee5c22c466261ae14",
+          "newSideHunkRanges": [
+            {
+              "start": 62,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/index.d.ts",
+          "status": "M",
+          "sha256AtCommit": "d64f15531e5f6fba8f8616702bce3db11cc0bc055284ce009aebfcbedeec2a56",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/index.js",
+          "status": "M",
+          "sha256AtCommit": "b2a11d835e51308421b7aace71a9aa8c0fdfc10f06902134a3171b3e97c1c3f7",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/library-actions.js",
+          "status": "M",
+          "sha256AtCommit": "62861c59597b6898a5278a8a21f0806b13dd8527be5e4c1bb20b0f63fb3449b7",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 2
+            },
+            {
+              "start": 24,
+              "count": 14
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/platform-mcp/src/consoleTools.ts",
+          "status": "M",
+          "sha256AtCommit": "e6606420dc8007fc2c2468e9bd50d822c72bdcd36e4815234d50773891742406",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 12,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/platform-mcp/test/console-tools.test.mjs",
+          "status": "M",
+          "sha256AtCommit": "1b12e702a74c2498acb7157b05d07a372a6baeb680cbe19e47141848b69570a8",
+          "newSideHunkRanges": [
+            {
+              "start": 63,
+              "count": 28
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-mcp.js",
+          "status": "M",
+          "sha256AtCommit": "973e5d1cab46ba1e7a0f441da6c8c03547f1bde460e787b35613f499a82d637f",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 23,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "sha256AtCommit": "969bf2786ddf6bd654808856fc712d2063f847e49ef2f401c4a5813c4e3987da",
+          "newSideHunkRanges": [
+            {
+              "start": 47,
+              "count": 6
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/library-actions.js",
+          "status": "M",
+          "sha256AtCommit": "62861c59597b6898a5278a8a21f0806b13dd8527be5e4c1bb20b0f63fb3449b7",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 2
+            },
+            {
+              "start": 24,
+              "count": 14
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "c2f6ae1af5bac0f9aacc0f8ce8fdce6c7a7e31acf448b820539ec2491299301e",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 45,
+              "count": 1
+            },
+            {
+              "start": 100,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/library.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "99f01d98631cab8d09d0fd3fa2e7229c144c62b5568b55f4622f641edd57877a",
+          "newSideHunkRanges": [
+            {
+              "start": 13,
+              "count": 1
+            },
+            {
+              "start": 64,
+              "count": 14
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."

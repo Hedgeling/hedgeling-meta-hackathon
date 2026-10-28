@@ -57,6 +57,13 @@ previously submitted suggestion into an applied change. History is append-only
 through this API; restoring adds a revision. It includes the previous content for
 assets first edited through this workflow. Earlier product history is not invented.
 
+Tool schemas explicitly request JSON `null`, without quotes, for new assets.
+Both MCP adapters repair the model's exact string `"null"` only in declared
+nullable Library arguments (`expectedVersion` and optional/project-wide `locale`).
+Guidance text and other values are preserved. The HTTP API remains strictly typed;
+the adapted input still passes normal validation, authorization and version checks.
+Using null when an asset already exists fails as stale; it cannot overwrite it.
+
 ## Translation behavior
 
 Active project instructions, the active target-locale persona and active applicable
