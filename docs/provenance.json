@@ -263,11 +263,11 @@
     },
     "docs/LIBRARY-WORKFLOW.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "01d8695d796fa751df751a8a50217b3f9f284ec11d8de1c9bb5f07bfd0dc7ff1"
+      "sha256": "f3e61a1396b7c12f862f59870f90f356d19939882b92597aea365ad6998fe399"
     },
     "src/library-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "9c810e8a6264ed7791f7ea3758f64905eb48d34c05000010c6cb8db772bd1fb1"
+      "sha256": "62861c59597b6898a5278a8a21f0806b13dd8527be5e4c1bb20b0f63fb3449b7"
     },
     "src/library.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -275,7 +275,7 @@
     },
     "test/library.test.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "5509990ab83cccda7c862b72bbf20c41f5b630527a372b631100e619186ae850"
+      "sha256": "dbe1651768bd321e1718260d2225a4d8e980c6392b21a53ca757de14b0664497"
     },
     "ui/library.css": {
       "origin": "authored-during-event-for-this-extract",
