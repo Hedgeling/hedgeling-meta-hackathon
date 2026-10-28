@@ -39,8 +39,8 @@
       "sha256": "16c695c902faf2d49b0cca4a80969b6bf6480520c60fe1810773985f26df7d2a"
     },
     "contracts/engine.openapi.json": {
-      "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
-      "sha256": "cde2fca795fa04d45c245bf250d2f78fc05b9dd58ad693f1a3a5d0db75c61335",
+      "origin": "event-created API contract with October 28 bounded LLM broker extension; original public-copy provenance retained below",
+      "sha256": "1a796cdee7fe5c823f9b43a887ea3fdd43769a3d7baad13671dbd6ed19a1c332",
       "source": {
         "commit": "95b0c245601fc8b197da700f485e20dfc14286fa",
         "path": "packages/engine-api/openapi.json",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "066cbcdd1e6d07503fbe0d54f150110e335ed2a069b03a937e6ea6c72c1acab5"
+      "sha256": "f9f10b604dff08e613b4f9c28fd104879c62dd8119ec2d0f9c0756771a7c5a0c"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "b142e3b8d9ce43abf2c0058ad0807f60d2fdfdcffd3947002655c91a57879f70"
+      "sha256": "99d9b10ad4107e68b5280ad8b1d8fc530981c4ad1faa386ec6add5f39d443606"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -167,15 +167,15 @@
     },
     "docs/EXTRACTION-WORKFLOW.md": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "f17c2b5d3ad515ca7f778f49e7e3c787b6cc41da4eeb5e0b1814db39448d399f"
+      "sha256": "2672e3da09111757c0d616ba8c74e96127e993cba41df04f4676482f6d4d3519"
     },
     "src/engine-operations.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "fff2809790af2f17ab54076bf5290299bc9465026fc92167ca1c0e82d6d8b7f7"
+      "sha256": "37ac1286dd7e48d8eaa8a2a25d762b61d9d1a698869e74f5ba4ff76b72ed3ce7"
     },
     "src/extraction-actions.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "aa4556255673f1dc4d27c9152bc302ab827bbe7f8625279d035af2f69d60f3f3"
+      "sha256": "6bbb79adc7fccdb00ef4a900203542ed7c4603795b0a2d0f86b1e9ac73861203"
     },
     "src/extraction-catalog.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -183,7 +183,7 @@
     },
     "src/extraction-workflow.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "8c12a29ecfdac158d6d3f3e2559e38fb10819fde677ba6d01df51abd13df2b67"
+      "sha256": "04dba72ac5bacd653b62123bfec703f01ad4dd98d8769b0799c06bb470315ffe"
     },
     "test/extraction.test.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -195,7 +195,7 @@
     },
     "ui/extraction.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "8bd374fb433feeeb216548be3fe42d188c823ccfaf2a31bd4c7992cc60f75570"
+      "sha256": "a2194476df232d0c51fdd2b932756469e4200deb73afaccc37fa7a7b0730d689"
     },
     "examples/source/TravelPlanner.tsx": {
       "origin": "authored-during-event; synthetic travel-planner extraction fixture",
@@ -340,6 +340,22 @@
     "docs/UI-POLISH-SPEC.md": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "aaa16eada8e3c6daf9077043b01431fd7a89b7cb70b4f4aa54c7be4a34396bef"
+    },
+    "contracts/202610282100_tuning_models.sql": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "b6d66773a2c9de6d9f234d62b30d802e0ae47f4dc2483baa285c96d8bc973f34"
+    },
+    "src/tuning-models.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "c010294e8ad8f0bc6dad55c21d71e5b3b07ec2059bfd5c3e08e7b82a11ea40d8"
+    },
+    "test/tuning-models.test.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "ee99244c86b4b6d1a99903acc908ac662da873154e3148dd30dc56144ef0ecdd"
+    },
+    "src/tuning-gemini.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "b6b9e9485aba9db0551342efe93d6da2a50a50cbcd233c68940e3b31cc73a687"
     }
   }
 }

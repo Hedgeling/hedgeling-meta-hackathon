@@ -277,3 +277,8 @@ repository provenance checks and the offline fixture demo passed. Host build,
 lint and public-boundary checks passed. Hosted integration commit
 `2e2c981b885b4b0075c7f77f5abd008e2cf51f8a` is recorded in the line/hash inventory;
 release status is tracked by its platform PR and automatic demo workflow.
+
+
+### Bounded LLM tuning validation (October 28)
+
+Event unit tests cover strict model-request bounds and backward-compatible action schemas (36 passing). Private engine tests exercise the real tuner with synthetic classifications, safe failure on provider errors, four-request queue caps, tenant isolation and idempotent result delivery (16 passing including PostgreSQL integration). Host integration tests exercise actual HTTPS adapters against synthetic services: approval before inference, selected Meta key, one metered inference despite lost delivery acknowledgement, stale provider previews, invalid request bounds and revoked permissions. Browser checks cover chat/manual approvals, visible provider/model, downloadable settings, separate re-extraction and mobile layout. These checks do not claim live provider inference or customer-source processing. Deployment verification will be recorded separately after rollout.
