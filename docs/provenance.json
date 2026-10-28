@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "7709eb6f88cfa3ee63244c57117cda1636546403473060131d7fa93515bfd785"
+      "sha256": "dbb25f9f686856098a7900082470f94eeb629451655e2f58529ce7f8743be0dc"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T23:09:43.009829+00:00",
+  "recordedAt": "2026-10-28T23:18:33.678479+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -6721,6 +6721,28 @@
             {
               "start": 134,
               "count": 22
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "49195a4b8876e39ba050af82ac1dd82bfd8f5d7c",
+      "authorDate": "2026-10-28T17:17:25-06:00",
+      "commitDate": "2026-10-28T17:17:25-06:00",
+      "subject": "Pin the billing organization in approved tuning plans",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/src/tuning-models-integration.js",
+          "status": "M",
+          "sha256AtCommit": "957bb89126ab4327ff2bf46df6da139fcae907b33a5af59a23855f7f4b57270a",
+          "newSideHunkRanges": [
+            {
+              "start": 40,
+              "count": 1
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
