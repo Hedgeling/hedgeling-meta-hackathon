@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-28T19:08:14.660678+00:00",
+  "recordedAt": "2026-10-28T19:18:12.549651+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -5988,6 +5988,28 @@
             }
           ],
           "note": "New event file; older imports/dependencies remain separate."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "5c134c30bc73e0477021c0ec03109ec85dfa25e5",
+      "authorDate": "2026-10-28T13:17:53-06:00",
+      "commitDate": "2026-10-28T13:17:53-06:00",
+      "subject": "Include translation jobs in migration upgrade coverage",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "0f8d8064aeda18cab73b3c270d2e06b0c43344e0192da45493244d9495fb8687",
+          "newSideHunkRanges": [
+            {
+              "start": 356,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
         }
       ]
     }
