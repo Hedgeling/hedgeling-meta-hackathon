@@ -72,4 +72,6 @@ The [Agent Library workflow](docs/LIBRARY-WORKFLOW.md) adds event-created, permi
 
 Chat capacity and included-usage boundaries are documented in [Chat limits](docs/CHAT-LIMITS.md).
 
+The [agent scope policy](docs/AGENT-SCOPE.md) keeps hosted chat focused on localization and Hedgeling, with synthetic acceptance cases for live model evaluation. The [deferred UI polish spec](docs/UI-POLISH-SPEC.md) tracks provider/model selection clarity, Set budget repair and agent logo replacement.
+
 The [confirmed translation-job workflow](docs/TRANSLATION-JOBS.md) adds event-created start/status/stop actions, a durable bounded queue and progress UI. A human start confirmation authorizes generation and draft persistence through the hosted translation pipeline; review and publication remain separate. Organization Meta/Gemini keys and managed AI-credit budgets keep their existing boundaries.

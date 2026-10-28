@@ -254,3 +254,26 @@ New event modules provide bounded job planning, shared start/status/stop contrac
 All 34 event unit tests passed. These checks do not establish live Meta inference or approval of a real customer's translation job. Hosted integration `e3d008b69de876015e4f3fc16f256bbb934a9f7a` vendors event implementation `364726cbc7e6a3d6c99cb0a73a30e578b399757c`. Its changed paths, hashes and new-side ranges are recorded in the hosted inventory. Deployment status is verified separately through the demo release pipeline.
 
 Hosted follow-up `5c134c30bc73e0477021c0ec03109ec85dfa25e5` updates the authorization upgrade test’s expected migration list to include the new job tables. The first PR run failed at this explicit migration assertion after its execution tests passed; the local authorization suite then passed with the corrected expectation.
+
+## Agent topic scope verification — October 28, 2026
+
+The event-authored scope policy was evaluated against the demo's configured Meta
+chat model using the hosted system instructions and current tool catalog. All 11
+[synthetic cases](../examples/agent-scope-cases.js) met their scope expectations on
+manual inspection: ordinary and disguised off-topic requests, a role override,
+continuation after an earlier off-topic answer, Russian refusal, translation of
+creative content and instruction-like source text, placeholder guidance, a mixed
+request, localized product copy, and a greeting. This checks scope behavior, not
+every factual or linguistic claim in a generated answer.
+
+Each case allowed at most 1,200 output tokens. No tool calls were requested or
+executed, no customer content was used, and no conversation or business record was
+modified. These were real Meta calls, not fixture results. The finite sample does
+not guarantee adherence for every future prompt.
+
+The hosted adapter suite passed 13 tests, including policy delivery to Meta and
+Gemini on fresh, resumed and tool-result turns. The event suite passed 34 tests;
+repository provenance checks and the offline fixture demo passed. Host build,
+lint and public-boundary checks passed. Hosted integration commit
+`2e2c981b885b4b0075c7f77f5abd008e2cf51f8a` is recorded in the line/hash inventory;
+release status is tracked by its platform PR and automatic demo workflow.

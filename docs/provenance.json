@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "fd3f02ab15afb912263887cff4f968a7d22755939a0660d50b94821dea3fbecd"
+      "sha256": "16c695c902faf2d49b0cca4a80969b6bf6480520c60fe1810773985f26df7d2a"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract at private commit 95b0c24; explicitly licensed public copy",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "ef76e1266fddc5e8cf50951dfb68478a5cbb04a4379fe7360ff88ee9191f1dec"
+      "sha256": "7c1003d7a8413c36a8479773077abec225a596280a320735078334b65258346d"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "1b8cf736599f7b8a26a791ae8513b8f49b7931eae0bc0e5f0d892a007d73ee9e"
+      "sha256": "066cbcdd1e6d07503fbe0d54f150110e335ed2a069b03a937e6ea6c72c1acab5"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "3f6037647f7cbe9a5e636e63d0bd930fcd5ad47f2ff0d1b57b2b07df6ad2e61c"
+      "sha256": "b142e3b8d9ce43abf2c0058ad0807f60d2fdfdcffd3947002655c91a57879f70"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -324,6 +324,22 @@
     "docs/TRANSLATION-JOBS.md": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "3c6eae731bfc995c5063532b38a470c5ccbb040d90d710a67a8bfa5abf5e8fa4"
+    },
+    "src/agent-scope.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "10c47098b90e2dbc86239058cb0d3af102cb2362f618fa32a9bcf91224cbcb3e"
+    },
+    "examples/agent-scope-cases.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "8a620abc2a1f789bd0cee9178687a30380c59f1ea3b31c9b55d11658a82082ef"
+    },
+    "docs/AGENT-SCOPE.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "6af48a1e14d250976477cc37835bdec1e704d80022d0b6812d86889c11cd1393"
+    },
+    "docs/UI-POLISH-SPEC.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "aaa16eada8e3c6daf9077043b01431fd7a89b7cb70b4f4aa54c7be4a34396bef"
     }
   }
 }
