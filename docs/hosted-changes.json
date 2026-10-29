@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-29T20:26:27.268Z",
+  "recordedAt": "2026-10-29T23:58:05.429Z",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -9103,6 +9103,621 @@
             {
               "start": 1,
               "count": 16
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "0942054b9d0d8df63b8f4fcbefce93d04cba1a9a",
+      "authorDate": "2026-10-29T17:57:45-06:00",
+      "commitDate": "2026-10-29T17:57:45-06:00",
+      "subject": "Integrate job quality approvals, AI-only workflow and GitHub PR controls",
+      "sourceCodeIncluded": false,
+      "deploymentStatus": "local development branch; not deployed",
+      "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "status": "M",
+          "sha256AtCommit": "997ca70e56023edc012e988b4419a2f60dbdc3fad7e16d661611acbf3d990537",
+          "newSideHunkRanges": [
+            {
+              "start": 56,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/index.js",
+          "status": "M",
+          "sha256AtCommit": "3fa18f9120ada0ec1e7b1c303fd3a1d79b1bee37111115b51b28e69a13ddd3c0",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 2
+            },
+            {
+              "start": 23,
+              "count": 1
+            },
+            {
+              "start": 32,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/api-contract/job-delivery-actions.js",
+          "status": "A",
+          "sha256AtCommit": "fd82acf7d5427e308743a33b068ff5f348269c7f40eb4d319cb853e89018d52f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 9
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/api-contract/job-review-actions.js",
+          "status": "A",
+          "sha256AtCommit": "99e94a8fd82b76d74daeff6ad8923bc7f0de51063ffa7f7190a771506bf199c6",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 11
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/api-contract/translation-job-actions.js",
+          "status": "M",
+          "sha256AtCommit": "8cf7c3a6f95e8070af87e1cd0b8f66a6b2929919c43b1e9848cd0e5b281dbd71",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            },
+            {
+              "start": 13,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/db/migrations/202610292200_job_review_delivery.sql",
+          "status": "A",
+          "sha256AtCommit": "4450bac47f77d32ca603835ad758373a5361594a315d3a79ebd20276585bd8d0",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 39
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/package.json",
+          "status": "M",
+          "sha256AtCommit": "75fbb118089745067543040414b043a7cabd3e4316a95075dfbcc9a1733a1bb6",
+          "newSideHunkRanges": [
+            {
+              "start": 47,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-tests.js",
+          "status": "M",
+          "sha256AtCommit": "6d890892e6578b4158cfd2b375f4fd3958a71c8d6e0f35a2843c51905dee53e8",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-job-workflows-browser-tests.js",
+          "status": "A",
+          "sha256AtCommit": "ebde5a8c908f9e31fc8c581d63cd22695941830adefee724a38ea959d46c7e41",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 62
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/scripts/run-translation-jobs-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "86327247fcaeb1a1267dd6de382fa53bb1e249527983447704872e1d4abe3a07",
+          "newSideHunkRanges": [
+            {
+              "start": 36,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "sha256AtCommit": "2d32a167cab89b807f2419bfc140d751aa45e970886d1f5363ce132a4613b241",
+          "newSideHunkRanges": [
+            {
+              "start": 16,
+              "count": 7
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/agent-skills.js",
+          "status": "M",
+          "sha256AtCommit": "541ef0b17314a96a58ce6d2db04b668a739ec2696b8a13f26b90eb851392c040",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 2
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 26,
+              "count": 1
+            },
+            {
+              "start": 40,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/github-source.js",
+          "status": "M",
+          "sha256AtCommit": "6e7b39f34673729ea8b733c71bcb97e73127ca2e3bb89a938a5700eaef93e0db",
+          "newSideHunkRanges": [
+            {
+              "start": 47,
+              "count": 1
+            },
+            {
+              "start": 57,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery-actions.js",
+          "status": "A",
+          "sha256AtCommit": "fd82acf7d5427e308743a33b068ff5f348269c7f40eb4d319cb853e89018d52f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 9
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery.js",
+          "status": "A",
+          "sha256AtCommit": "4d9774de5d03dcf9e0bf95b37683aad4a43f545244af10998f54d86b2afb6a8d",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 104
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review-actions.js",
+          "status": "A",
+          "sha256AtCommit": "99e94a8fd82b76d74daeff6ad8923bc7f0de51063ffa7f7190a771506bf199c6",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 11
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review-analysis.js",
+          "status": "A",
+          "sha256AtCommit": "7e25f4690e558fc95dcc80873ae6637dad1765ab500faae898d0770b8202d6b0",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 35
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review.js",
+          "status": "A",
+          "sha256AtCommit": "81a45103899000526452c3c7ad2791e660c232bc7628407364ef91cffd51651d",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 85
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-scope.js",
+          "status": "A",
+          "sha256AtCommit": "0acd3d24361541d8617311236bb9d3404bd920aa71f8e3717d0da5b6060d1308",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 38
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "2ec129254de007180a26fe09b0746fe0b1917ba56b9251d276a8d888cc4a0bcd",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 7,
+              "count": 30
+            },
+            {
+              "start": 40,
+              "count": 1
+            },
+            {
+              "start": 140,
+              "count": 1
+            },
+            {
+              "start": 145,
+              "count": 1
+            },
+            {
+              "start": 207,
+              "count": 15
+            },
+            {
+              "start": 305,
+              "count": 1
+            },
+            {
+              "start": 315,
+              "count": 1
+            },
+            {
+              "start": 320,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-job-actions.js",
+          "status": "M",
+          "sha256AtCommit": "8cf7c3a6f95e8070af87e1cd0b8f66a6b2929919c43b1e9848cd0e5b281dbd71",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            },
+            {
+              "start": 13,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-jobs.js",
+          "status": "M",
+          "sha256AtCommit": "f51d4bdd1ceb7e5af1a37356b7b55e22a0bc919c58ff9d791b3b3feaf4020954",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 31,
+              "count": 1
+            },
+            {
+              "start": 64,
+              "count": 1
+            },
+            {
+              "start": 83,
+              "count": 2
+            },
+            {
+              "start": 102,
+              "count": 2
+            },
+            {
+              "start": 134,
+              "count": 1
+            },
+            {
+              "start": 140,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/job-workflows-integration.js",
+          "status": "A",
+          "sha256AtCommit": "3630e1989fc37549b09ab5af9cc4df553c9ae18e8e49c9b2976e47a7d4b983fd",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 46
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "sha256AtCommit": "3df42d3a0b722801a8f917db7fc70d6cd603f0088cb4d3077659856eaea03d1a",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 7
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "sha256AtCommit": "49fd0840ac8381d8bab95b42515520c3f2e01f239211a6530acc323bbe8e8e50",
+          "newSideHunkRanges": [
+            {
+              "start": 18,
+              "count": 1
+            },
+            {
+              "start": 25,
+              "count": 1
+            },
+            {
+              "start": 32,
+              "count": 1
+            },
+            {
+              "start": 54,
+              "count": 1
+            },
+            {
+              "start": 59,
+              "count": 1
+            },
+            {
+              "start": 79,
+              "count": 4
+            },
+            {
+              "start": 84,
+              "count": 1
+            },
+            {
+              "start": 113,
+              "count": 1
+            },
+            {
+              "start": 194,
+              "count": 1
+            },
+            {
+              "start": 287,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "dc932ff0e1c057ece2bf1922d19263ffd23579c9116f9f8f1e3b2890b4d07575",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 202,
+              "count": 8
+            },
+            {
+              "start": 217,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.css",
+          "status": "M",
+          "sha256AtCommit": "daa4db80786ca673d798305c3c3e13f96c31fd9a5a1867ce946806b6f921dd20",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 11,
+              "count": 7
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.js",
+          "status": "M",
+          "sha256AtCommit": "7dfd9fb13686827f42fcfa1867df70f4e309bb15ac575214d8678dab1e0a0ffa",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 16,
+              "count": 1
+            },
+            {
+              "start": 25,
+              "count": 1
+            },
+            {
+              "start": 31,
+              "count": 1
+            },
+            {
+              "start": 53,
+              "count": 3
+            },
+            {
+              "start": 70,
+              "count": 1
+            },
+            {
+              "start": 72,
+              "count": 2
+            },
+            {
+              "start": 76,
+              "count": 40
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/repositories-integration.js",
+          "status": "M",
+          "sha256AtCommit": "3d163a557cec69567714fba1bf228bed74de6ed64582f45f69c22eb33627564f",
+          "newSideHunkRanges": [
+            {
+              "start": 18,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/server.js",
+          "status": "M",
+          "sha256AtCommit": "8acba82fb4a373444913bd8ac4388aae6a04bb02d9d2911232e7750a062f8fba",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 2203,
+              "count": 1
+            },
+            {
+              "start": 2208,
+              "count": 1
+            },
+            {
+              "start": 2219,
+              "count": 1
+            },
+            {
+              "start": 2271,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/workspace-actions.js",
+          "status": "M",
+          "sha256AtCommit": "5e29f23b40269dfc96bdcc5951120e9de190d375125fa1ff63d49e870b224d2f",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 28,
+              "count": 1
+            },
+            {
+              "start": 128,
+              "count": 2
+            },
+            {
+              "start": 184,
+              "count": 2
+            },
+            {
+              "start": 222,
+              "count": 2
+            },
+            {
+              "start": 250,
+              "count": 4
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/workspace-read.js",
+          "status": "M",
+          "sha256AtCommit": "5b240eeac36aa9dbd84e2f444d2dfe9750aa463bd7eb721a43e0f35bfaf3ab98",
+          "newSideHunkRanges": [
+            {
+              "start": 147,
+              "count": 2
+            },
+            {
+              "start": 154,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/job-review.integration.mjs",
+          "status": "A",
+          "sha256AtCommit": "591dad14eb22c8661e80855284a8c4276dca955fcc2799ecca34302104b0f0c3",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 72
             }
           ],
           "note": "New event file; implementation remains in the separate integration/service workspace."
