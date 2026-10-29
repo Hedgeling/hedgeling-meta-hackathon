@@ -13,7 +13,7 @@ const dirty = Boolean(execFileSync('git', ['status', '--porcelain'], { encoding:
 const output = path.join(target, 'src/hackathon-engine');
 fs.mkdirSync(output, { recursive: true });
 const origins = [];
-for (const source of ['src/context-enrichment.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
+for (const source of ['src/github-source.js','src/github-identity.js','src/repositories.js','src/repository-actions.js','src/context-enrichment.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
   'src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent-scope.js', 'src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
   'src/translation-jobs.js', 'src/translation-job-actions.js', 'src/chat-limits.js', 'src/library.js', 'src/library-actions.js', 'src/tuning-config.js', 'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
   const contents = fs.readFileSync(source);
@@ -22,6 +22,11 @@ for (const source of ['src/context-enrichment.js', 'src/context-analysis.js', 's
   origins.push({ source, destination, sha256: createHash('sha256').update(contents).digest('hex') });
 }
 for (const [source, destination] of [
+  ['src/repository-actions.js','../api-contract/repository-actions.js'],
+  ['contracts/202610292000_repository_connections.sql','db/migrations/202610292000_repository_connections.sql'],
+  ['ui/repositories.js','src/public/repositories.js'],
+  ['ui/github-callback.html','src/public/github-callback.html'],
+  ['ui/github-callback.js','src/public/github-callback.js'],
   ['src/context-actions.js', '../api-contract/context-actions.js'],
   ['contracts/202610291600_context_enrichment.sql', 'db/migrations/202610291600_context_enrichment.sql'],
   ['contracts/202610291601_context_retention.sql', 'db/migrations/202610291601_context_retention.sql'],

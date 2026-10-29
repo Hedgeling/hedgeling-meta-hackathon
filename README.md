@@ -6,6 +6,8 @@ During the event we implemented Meta Responses integration for the existing agen
 
 The earlier public platform snapshot is an integration workspace, **not the submission repository**. It contains pre-event product code; no checkout, package, or history from that snapshot is required to run this extract.
 
+The local development extension for [repository discovery and personal GitHub access](docs/REPOSITORIES.md) adds branch/path exploration and confirmed source snapshots. Its extraction engine remains a separate private dependency; this extension has not been deployed yet.
+
 ## Run and verify
 
 Requires Node.js 22.13+ and npm. Public document-parser dependencies are pinned in the lockfile and labeled in [licensing](docs/LICENSING.md); no private package downloads are required.

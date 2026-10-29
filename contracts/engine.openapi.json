@@ -40,7 +40,7 @@
     "/v1/capabilities": {
       "get": {
         "operationId": "capabilities",
-        "description": "Requires engine:read.",
+        "description": "Requires engine:read. sourceConfigured reports the legacy GitHub App connector; snapshotConfigured reports this caller’s snapshot grant. snapshotLimits contains the bounded upload limits.",
         "responses": {
           "200": {
             "description": "Enabled operations and caps",
@@ -684,6 +684,106 @@
           }
         }
       }
+    },
+    "/v1/snapshot-jobs": {
+      "post": {
+        "operationId": "createSnapshotJob",
+        "description": "Requires engine:run and engine:snapshot. Accepts source fetched and authorized by the console at a pinned commit; no GitHub token is accepted. Up to 100 files, 1 MiB each, 5 MiB total UTF-8 content; 32 MiB HTTP body. Caller and tenant bound. Raw snapshots are removed after processing/cancellation; job artifacts expire after seven days.",
+        "parameters": [
+          {
+            "name": "Idempotency-Key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]{8,128}$"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSnapshotJob"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Processing job",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "job": {
+                      "$ref": "#/components/schemas/Job"
+                    },
+                    "replayed": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "Processing job",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "job": {
+                      "$ref": "#/components/schemas/Job"
+                    },
+                    "replayed": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            },
+            "headers": {
+              "Location": {
+                "description": "Relative job status URL",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/Error"
+          },
+          "401": {
+            "$ref": "#/components/responses/Error"
+          },
+          "403": {
+            "$ref": "#/components/responses/Error"
+          },
+          "404": {
+            "$ref": "#/components/responses/Error"
+          },
+          "409": {
+            "$ref": "#/components/responses/Error"
+          },
+          "413": {
+            "$ref": "#/components/responses/Error"
+          },
+          "415": {
+            "$ref": "#/components/responses/Error"
+          },
+          "429": {
+            "$ref": "#/components/responses/Error"
+          },
+          "503": {
+            "$ref": "#/components/responses/Error"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -991,6 +1091,92 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 256
+            }
+          }
+        }
+      },
+      "CreateSnapshotJob": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request",
+          "repository",
+          "snapshot"
+        ],
+        "properties": {
+          "request": {
+            "$ref": "#/components/schemas/CreateJob"
+          },
+          "repository": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "owner",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "owner": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9-]{1,100}$"
+              },
+              "name": {
+                "type": "string",
+                "maxLength": 100
+              }
+            }
+          },
+          "snapshot": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "commitSha",
+              "bytes",
+              "files"
+            ],
+            "properties": {
+              "commitSha": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{40}$",
+                "description": "Must equal request.ref."
+              },
+              "bytes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 5242880
+              },
+              "files": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "path",
+                    "blobSha",
+                    "content"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string",
+                      "maxLength": 512
+                    },
+                    "blobSha": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{40}$"
+                    },
+                    "content": {
+                      "type": "string",
+                      "description": "UTF-8 text up to 1 MiB; Git blob SHA-1 must match."
+                    }
+                  }
+                }
+              }
             }
           }
         }

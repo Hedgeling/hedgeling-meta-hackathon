@@ -36,11 +36,11 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "c8e774aa81df53255b61b1374703a75be43d2d877fc9e91a6dde8f5a30d3ba95"
+      "sha256": "65631e5651982cc6b074685261fb5383d0741032c40144386797ae63fd248fb3"
     },
     "contracts/engine.openapi.json": {
-      "origin": "event-created API contract with October 28 bounded LLM broker extension; original public-copy provenance retained below",
-      "sha256": "1a796cdee7fe5c823f9b43a887ea3fdd43769a3d7baad13671dbd6ed19a1c332",
+      "origin": "event-created API contract with bounded source snapshot extension; original public-copy provenance retained below",
+      "sha256": "e80f68289b9f3af4acebc863ec35f2eade7226946c9d3c9a3189ce0c1a0e67bc",
       "source": {
         "commit": "95b0c245601fc8b197da700f485e20dfc14286fa",
         "path": "packages/engine-api/openapi.json",
@@ -105,7 +105,7 @@
     },
     "src/engine-client.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "46ca15165bd5182aa7af068cd47ca2336fca5f38cdb2b164221fc06916641a6d"
+      "sha256": "456848de285d33f7d6677b2739f30b59a3042f52d8793a73ff9b511d4d2009f8"
     },
     "src/errors.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -113,7 +113,7 @@
     },
     "src/http.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "0c7b3b785f32aeb7134fa183e3b02874fca584e75e09706d3b9bf3363f8e3682"
+      "sha256": "3cce9cfa7778a8ccf3934da1fd91baf14505ba3df985cfd850a68963e988eb6d"
     },
     "src/meta.js": {
       "origin": "event-only extraction from agent-meta.js at eef24e7; standalone adaptation on October 27",
@@ -131,7 +131,7 @@
     },
     "test/http.test.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "5c767aeff7e4ccba7f80b3115950b9e989d16929d8cb4a742b4e0093f3a14322"
+      "sha256": "97b971610fb83ecefb8524a11b3164d50429670fadac86455a1e4da90ff0c260"
     },
     "test/meta.test.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "e2dc2bff16ef6f50f6c31f3e8ab60545c4be8e0145e97002c85b6bc0000ad282"
+      "sha256": "230a0cebbe1ed4d02ea5a060d4eed5b2da49d353d24f721c4e4a2c2fa590daaa"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -171,7 +171,7 @@
     },
     "src/engine-operations.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "37ac1286dd7e48d8eaa8a2a25d762b61d9d1a698869e74f5ba4ff76b72ed3ce7"
+      "sha256": "3d10c906d0082b0873afd8914f88fca4a6ffe5caa7833e9266cbab024666ce91"
     },
     "src/extraction-actions.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -183,7 +183,7 @@
     },
     "src/extraction-workflow.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "04dba72ac5bacd653b62123bfec703f01ad4dd98d8769b0799c06bb470315ffe"
+      "sha256": "2d546d02b1b3023a22ce753af6f49a7e57b86926fb9a07189cebd2214c595a49"
     },
     "test/extraction.test.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -191,11 +191,11 @@
     },
     "ui/extraction.css": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "0fd2c3748e957ef60dea8b428e3c73d6af35d2f1ee9f7ac2749df6544725bd50"
+      "sha256": "55b74c908624c470c8bb6dffa56780db17545a5f0358d143e0b88b72f1f568f7"
     },
     "ui/extraction.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "57d7887305279e78c8ab056e509537f81b1bdd6a87c4c86ec5eeac9db1660cb9"
+      "sha256": "9c1b9d725a18211c2ad8f3b1b8f5e497e1764a1639f2919df20c157c876856c2"
     },
     "examples/source/TravelPlanner.tsx": {
       "origin": "authored-during-event; synthetic travel-planner extraction fixture",
@@ -444,6 +444,46 @@
     "src/context-analysis.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
       "sha256": "53269e9a7b2f1119199abd6b6b40d5bbc354af2afdf13eae0dffbe488c829950"
+    },
+    "contracts/202610292000_repository_connections.sql": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "5cff7c8b3ba5c4d9b9382365e27d85a62e0fb36d4b839ed018148381e54b7199"
+    },
+    "docs/REPOSITORIES.md": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "8ce14f86ba173ae68aa7b04b6e7961ce2a1a39a418ef14e1122e3a1261b7e21b"
+    },
+    "src/github-identity.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "c3dc6691f32739307dc7cd466ac1538ccb10605528dfdbb8beff7a22564152f5"
+    },
+    "src/github-source.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "53ded18b58749c6bb4391a3a4938c98a148ceb7a5af393aecbaac9333fef238f"
+    },
+    "src/repositories.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "36856b29c2fcec51c7834e9a03ad9282cf17ebca200f361eae9cb218e493ce3b"
+    },
+    "src/repository-actions.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "0c5bcb7b35cb221b8fb4026e01756f5aa9b49929155ad82a9bf2af14886155fd"
+    },
+    "test/repositories.test.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "40197510e37c4de1c49c0c6aa44e97013d07e499624e2eb2e4ac60310a420f47"
+    },
+    "ui/github-callback.html": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "059f302b1045afe4d009837969d9e56c4b3c3f8581c7bd17da861dd3aa075c45"
+    },
+    "ui/github-callback.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "e266ae0819272c2daa854475c01f93d4ba9f9b4b2075fc3b12e0874cfae4eb52"
+    },
+    "ui/repositories.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "bdb0e68cf6021dbeee30e1eee1a6ce0b37ece0fa8207b8b079bcfaf320857c96"
     }
   }
 }
