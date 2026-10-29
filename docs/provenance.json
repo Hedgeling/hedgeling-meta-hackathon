@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "7a7644461a0154a44ee353bb2b830a0d35b0272c20a10c73fa05ebb89f0e1f17"
+      "sha256": "c8e774aa81df53255b61b1374703a75be43d2d877fc9e91a6dde8f5a30d3ba95"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract with October 28 bounded LLM broker extension; original public-copy provenance retained below",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "a6babad5087fb358ac30dea3c415e8207b62e1de4331d9c1a3cf8e4208d71204"
+      "sha256": "e2dc2bff16ef6f50f6c31f3e8ab60545c4be8e0145e97002c85b6bc0000ad282"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "eb531541d5474685f80440ae292ce103918bc7473f8648ac0a27b7fed6d2b27d"
+      "sha256": "13f0007ceb89bed362be15f117b61ba63869caa2baa9e7c72f1c5f358ec6e986"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -179,7 +179,7 @@
     },
     "src/extraction-catalog.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "53c899ec169142503fbeef822723606b0f99a22f585323735ce03cc1b2950a01"
+      "sha256": "277339bf417c45ef059191dc372a3b0789e55b1dd2e91b0c3d5557818360efa6"
     },
     "src/extraction-workflow.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -400,6 +400,50 @@
     "ui/documents.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
       "sha256": "2f3b37e684c80110d0ee5cc8806c95dd28db3973adaec33e20598f0af0867d3b"
+    },
+    "contracts/202610291601_context_retention.sql": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "8334c275843edb9751b0719c9f9ce7cc8a0c842ebb343edfbffda5e28874933f"
+    },
+    "examples/source/ContextWorkshop.tsx": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "04914a9380a4c8bf4ac8efbd307ce8476bd1ebf9a54ba446cf73f4b8824dabe8"
+    },
+    "src/context-actions.js": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "c627a13f90730a3cc90ffb8734268bf8f7e59f98b1033b7432104d383973c4f8"
+    },
+    "docs/CONTEXT-ENRICHMENT.md": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "f10ef9d57f1456aa181e116d9f1e250fae68d00e3764d01333900119a5366249"
+    },
+    "src/context-enrichment.js": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "b490e1b1d7ea8ea5a441b8b400581263321341bcc2e52d7ff8ffd0859574ea33"
+    },
+    "src/source-evidence.js": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "990b6ca73c393b6fa66fb022cf3283f41d3c7f54855fc294024c2ff4008806ec"
+    },
+    "contracts/202610291600_context_enrichment.sql": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "93429d6bc3f80f8a644c2cf0aff1ba2d1ee7686f56fc1edb2a76563f2d7784b1"
+    },
+    "test/context.test.js": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "7c63cb1c20de3b2f5212cd53d1f28c04da24808dc729f311af8a63cb18659245"
+    },
+    "ui/context-enrichment.js": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "143b646dd5bcc7bccd68c2fa950ac1c46232255bcc887eaed1752614d24b7437"
+    },
+    "ui/context-enrichment.css": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "8de7780761d6901975bca8074130c2f61e2cac4b49cb15ff85308ca448a87a92"
+    },
+    "src/context-analysis.js": {
+      "origin": "authored-during-event-for-translator-context-enrichment",
+      "sha256": "87e5c086833e2f926884a1675dd2a2daf984abb49248f50d27c2cc352c632e9c"
     }
   }
 }
