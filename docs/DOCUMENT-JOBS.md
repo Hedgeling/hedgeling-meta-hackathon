@@ -47,3 +47,17 @@ Downloads use the current saved translations in document order. **Approved only*
 Synthetic parser tests cover all formats, malformed inputs, XML entity rejection, section/page limits and isolated-worker execution. Host integration tests exercise upload, idempotent confirmation, scoped translation, stale inputs, access revocation, export completeness, CSV formula escaping and the real MCP transport with a fixture chat provider. Browser tests cover manual and chat upload, approvals, progress, downloads and mobile layout. These tests do not claim live Meta inference or preserved document layout.
 
 General config, diagnostics and reporting file exports remain a separate follow-up. This milestone introduces reusable file cards and document translation delivery.
+
+## File-delivery roadmap
+
+| Use case | Useful artifact | Delivery boundary |
+| --- | --- | --- |
+| Reuse extraction settings | Current supported config JSON, with project/source revision | Reuse existing authenticated config download; exclude credentials and private service addresses. |
+| Investigate extraction/tuning | Structured diagnostics, rejected-candidate summary and before/after settings | Explain scope and completeness; omit private engine implementation, secrets and unnecessary source text. |
+| Report progress | Locale coverage, review backlog, job/usage summary as CSV/JSON | Reuse account-wide reporting permissions and pagination; label filters, snapshot time and caps. |
+| Exchange Library guidance | Locale personas, translation instructions and glossary CSV/JSON | Export only accessible project/locale assets; imports need validation, conflict preview and confirmation. |
+| Hand off to a linguist | Bilingual review package, later XLIFF | Preserve stable source IDs and versions; reviewed-file import must detect conflicts and require approval. |
+| Ship application content | Locale resource files or an injection patch | Separate export from repository writes; preserve the private engine boundary and require explicit publish/apply approval. |
+| Deliver a translated document | Layout-preserving DOCX, later PDF/OCR | Add format-specific reconstruction and checks; do not relabel the current TXT/CSV output as a preserved original. |
+
+Next, connect existing config/tuning downloads to chat file cards, then add filtered report exports. Use one server-owned artifact descriptor (name, format, size, source scope/version, draft/approved status and authenticated download reference) across UI and MCP. Generating a download does not publish it or grant access to another person. Imports follow inspect → resolve mapping/conflicts → preview → confirm, with model execution approved separately.
