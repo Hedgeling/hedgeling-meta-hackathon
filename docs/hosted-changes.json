@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-29T04:26:32.981236+00:00",
+  "recordedAt": "2026-10-29T04:45:36.570104+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -7351,6 +7351,96 @@
             {
               "start": 11,
               "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "7e4d57975837affcb93a9f6a14c4a0bdc512d6ec",
+      "authorDate": "2026-10-28T22:31:46-06:00",
+      "commitDate": "2026-10-28T22:31:46-06:00",
+      "subject": "Include document migration in authorization baseline test",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "b56e990a34dc4f2559af8cde79f4f5d3c00de5cd9d7c4998d63bf5f14ba2b6dd",
+          "newSideHunkRanges": [
+            {
+              "start": 358,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "51daf0c0c294b0154ebeaeb0feac1f4354ec3bf6",
+      "authorDate": "2026-10-28T22:38:07-06:00",
+      "commitDate": "2026-10-28T22:38:07-06:00",
+      "subject": "Verify keyboard navigation through document upload control",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "51010fdd1bead8e57f962ffef0419c7fa4e44b571ba9fa0c343c554a57ba6b0a",
+          "newSideHunkRanges": [
+            {
+              "start": 135,
+              "count": 2
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "866ee861d1d6f9f28a6077b9f74f7d2ca5ae43c9",
+      "authorDate": "2026-10-28T22:44:43-06:00",
+      "commitDate": "2026-10-28T22:44:43-06:00",
+      "subject": "Mount ephemeral HTTPS fixtures for production image tests",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/test-support/meta-provider.mjs",
+          "status": "M",
+          "sha256AtCommit": "6e9b269f14785cacb125323d353c145a2ae09799f8839600022c4e5e63ec445b",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 3
+            },
+            {
+              "start": 15,
+              "count": 8
+            },
+            {
+              "start": 39,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "scripts/test-demo-image.mjs",
+          "status": "M",
+          "sha256AtCommit": "5cada73c4a48a48f1a9600a85919d2e4617f065ef3a3218b51f973c8e457bdd8",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 2
+            },
+            {
+              "start": 12,
+              "count": 7
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."

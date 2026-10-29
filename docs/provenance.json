@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "fdaccdfd3ae386f47798ebfcf64cab2be70a96f5f9bcbe5d0c51a1ece9c5532e"
+      "sha256": "62ba0ebf1d457e328723dd92af036e55ca504c55362ed7c498954266e55420b6"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -159,7 +159,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "f344ff3f2a05be6acd9adcb0b14315e8352461164039705c189c8d96181889d7"
+      "sha256": "eb531541d5474685f80440ae292ce103918bc7473f8648ac0a27b7fed6d2b27d"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -363,7 +363,7 @@
     },
     "docs/DOCUMENT-JOBS.md": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
-      "sha256": "2408cddae25f7b2d9dcadeaef010543001571597c1fe8c18660b39c6232ddaa6"
+      "sha256": "af9115b2ee9439d45f97bc2c49d47e4f6e144097443a0114d597bbff93ea1c31"
     },
     "src/document-actions.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
