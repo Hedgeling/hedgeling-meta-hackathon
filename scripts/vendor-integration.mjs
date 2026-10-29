@@ -13,7 +13,8 @@ const dirty = Boolean(execFileSync('git', ['status', '--porcelain'], { encoding:
 const output = path.join(target, 'src/hackathon-engine');
 fs.mkdirSync(output, { recursive: true });
 const origins = [];
-for (const source of ['src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent-scope.js', 'src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
+for (const source of ['src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
+  'src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent-scope.js', 'src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
   'src/translation-jobs.js', 'src/translation-job-actions.js', 'src/chat-limits.js', 'src/library.js', 'src/library-actions.js', 'src/tuning-config.js', 'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
   const contents = fs.readFileSync(source);
   const destination = path.basename(source);
@@ -21,6 +22,11 @@ for (const source of ['src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent
   origins.push({ source, destination, sha256: createHash('sha256').update(contents).digest('hex') });
 }
 for (const [source, destination] of [
+  ['src/document-actions.js', '../api-contract/document-actions.js'],
+  ['contracts/202610290100_document_jobs.sql', 'db/migrations/202610290100_document_jobs.sql'],
+  ['ui/documents.js', 'src/public/documents.js'],
+  ['ui/documents.css', 'src/public/documents.css'],
+  ['test/document-fixtures.js', 'test-support/document-fixtures.mjs'],
   ['contracts/202610282100_tuning_models.sql', 'db/migrations/202610282100_tuning_models.sql'],
   ['src/translation-job-actions.js', '../api-contract/translation-job-actions.js'],
   ['contracts/202610281800_translation_jobs.sql', 'db/migrations/202610281800_translation_jobs.sql'],

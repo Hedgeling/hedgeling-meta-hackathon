@@ -8,7 +8,7 @@ The earlier public platform snapshot is an integration workspace, **not the subm
 
 ## Run and verify
 
-Requires Node.js 22+ and npm. There are no npm dependencies or private package downloads.
+Requires Node.js 22.13+ and npm. Public document-parser dependencies are pinned in the lockfile and labeled in [licensing](docs/LICENSING.md); no private package downloads are required.
 
 ```sh
 npm ci --ignore-scripts
@@ -75,3 +75,5 @@ Chat capacity and included-usage boundaries are documented in [Chat limits](docs
 The [agent scope policy](docs/AGENT-SCOPE.md) keeps hosted chat focused on localization and Hedgeling, with synthetic acceptance cases for live model evaluation. The [deferred UI polish spec](docs/UI-POLISH-SPEC.md) tracks provider/model selection clarity, Set budget repair and agent logo replacement.
 
 The [confirmed translation-job workflow](docs/TRANSLATION-JOBS.md) adds event-created start/status/stop actions, a durable bounded queue and progress UI. A human start confirmation authorizes generation and draft persistence through the hosted translation pipeline; review and publication remain separate. Organization Meta/Gemini keys and managed AI-credit budgets keep their existing boundaries.
+
+The [document workflow](docs/DOCUMENT-JOBS.md) adds Markdown/TXT, DOCX body text and selectable-text PDF uploads, section previews, confirmed document-scoped jobs and authenticated TXT/bilingual CSV downloads. Manual UI, chat and MCP share authorization and approval boundaries. Parsing uses declared public dependencies; this workflow does not require the private source-code extractor. OCR and preservation of original Word/PDF layout are not implemented.

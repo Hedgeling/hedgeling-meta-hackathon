@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "16c695c902faf2d49b0cca4a80969b6bf6480520c60fe1810773985f26df7d2a"
+      "sha256": "7a7644461a0154a44ee353bb2b830a0d35b0272c20a10c73fa05ebb89f0e1f17"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract with October 28 bounded LLM broker extension; original public-copy provenance retained below",
@@ -53,7 +53,7 @@
     },
     "docs/LICENSING.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "5bd13c0563375b63715740be03c9df62a04a7b99253a06b2a6f513a5da07927a"
+      "sha256": "94fe528a35c54fc43de6094cefff2406664a9097c9abfdd71622ae022001a650"
     },
     "docs/PROVENANCE.md": {
       "origin": "authored-during-event-for-this-extract",
@@ -92,16 +92,16 @@
       "sha256": "4a2a68eb92e45c14b847c3444b605d9dd7bc0886ec04c5f83c8f2fccfbad7905"
     },
     "package-lock.json": {
-      "origin": "generated-during-event; no npm dependencies",
-      "sha256": "cc922cc18b3321f1a7b0f3e90e91307de4f22df8354d49fae0b049924aa9316c"
+      "origin": "generated-during-event; pinned public parser dependencies and their optional/transitive packages are pre-existing dependencies, labeled in docs/LICENSING.md",
+      "sha256": "89f73fd7a292b2f7382e42febb4fa93a37f57a6df7e666a0aa4d8f96775577b8"
     },
     "package.json": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "fa8d8bef7dbb55004dde4244a565853f5388b92ff2e76739e12d7b89dd3344f0"
+      "sha256": "b6dee4eb2a81dd57746144494bb027b7c015bf2ac92fa6fdd38772fa73bcd3f7"
     },
     "scripts/check-repository.mjs": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "5488a1841b8c857871c6b3681aafaabf1fcf4cd7dbc37380568baa6322c17eec"
+      "sha256": "b81c3875c4db6f584f7b6496b74d05dbfcbbd924cd1c5d801bda06affe690ece"
     },
     "src/engine-client.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -155,11 +155,11 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "f9f10b604dff08e613b4f9c28fd104879c62dd8119ec2d0f9c0756771a7c5a0c"
+      "sha256": "a6babad5087fb358ac30dea3c415e8207b62e1de4331d9c1a3cf8e4208d71204"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "86f13a8e0dbe75959f6b16f869f43a6bfab4c26cecdd81daf776de722d74f35e"
+      "sha256": "f344ff3f2a05be6acd9adcb0b14315e8352461164039705c189c8d96181889d7"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -299,11 +299,11 @@
     },
     "ui/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "ac453e409500c7c5dae8ff23e6ff98bd8ae590f2bb6996e3122857d02b8f665b"
+      "sha256": "6ad49793c482a35cafbe840f325d3f603e829d4f739dd4c2e8155b56af5ae75a"
     },
     "src/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "2ec594fa465f35371f23da5f56104cd33ba5b342880ff5f619a008ebd74856da"
+      "sha256": "012373fa52d1957c4c4841302974a0441871092a48f5fbbb2a51535e16286b2b"
     },
     "src/translation-job-actions.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -356,6 +356,50 @@
     "src/tuning-gemini.js": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "b6b9e9485aba9db0551342efe93d6da2a50a50cbcd233c68940e3b31cc73a687"
+    },
+    "contracts/202610290100_document_jobs.sql": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "ea345cd405cdfe77a6c2e0efa0a4d78ff7804200856bb8f15b078f83a44d75a3"
+    },
+    "docs/DOCUMENT-JOBS.md": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "2408cddae25f7b2d9dcadeaef010543001571597c1fe8c18660b39c6232ddaa6"
+    },
+    "src/document-actions.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "d85e735c5b25546cbd764cebf5843444ac1cecad1282e433d45b26fa3a14b676"
+    },
+    "src/document-parser.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "b406ec2ba622981c48833e18140d15b4b424fb63a0caea5a066765fc4b1e855d"
+    },
+    "src/document-processing.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "ad2bf32b5b456653f4f9a90df3eb84e8f52038020e74ff30c5afd2153cb73f93"
+    },
+    "src/document-worker.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "1a91d6ce4a7de4fe00e8cdc347510155d8c813e341b38d5b386680844548b787"
+    },
+    "src/documents.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "176dc945442cf2c48926faad55aca1ed18ab65d934feecfd0026915fb0ab5e3f"
+    },
+    "test/document-fixtures.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "30149aeff870e71fe73f1098f6c0c81e60afe569fe1bde5c9024db771da6aae3"
+    },
+    "test/documents.test.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "abeb6b6710fef5e9d95b19b216fb712d71ebd4505338ebf3af726eab45bad990"
+    },
+    "ui/documents.css": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "09069906d5cd4b1ad7a4306677621d19166287099c9e39b6a73e50a640c4904d"
+    },
+    "ui/documents.js": {
+      "origin": "authored-during-event-for-document-translation-and-file-delivery",
+      "sha256": "2f3b37e684c80110d0ee5cc8806c95dd28db3973adaec33e20598f0af0867d3b"
     }
   }
 }

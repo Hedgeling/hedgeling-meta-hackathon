@@ -5,13 +5,23 @@
   "type": "module",
   "license": "Apache-2.0",
   "description": "Event-created Meta agent integration for Hedgeling; proprietary hosted services are separate dependencies.",
-  "engines": { "node": ">=22" },
-  "exports": { ".": "./src/meta.js", "./engine-client": "./src/engine-client.js" },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "exports": {
+    ".": "./src/meta.js",
+    "./engine-client": "./src/engine-client.js"
+  },
   "scripts": {
     "test": "node --test test/*.test.js",
     "check": "node scripts/check-repository.mjs",
     "demo": "node examples/demo.mjs --fixture",
     "demo:live": "node --env-file=.env.local examples/demo.mjs --live",
     "engine:check": "node --env-file=.env.local examples/engine-check.mjs"
+  },
+  "dependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "fflate": "0.8.3",
+    "pdfjs-dist": "6.4.299"
   }
 }
