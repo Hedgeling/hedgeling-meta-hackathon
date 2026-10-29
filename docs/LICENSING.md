@@ -13,7 +13,16 @@ On October 27, 2026, the project owner explicitly selected Apache-2.0 for this f
 
 The commercial npm EULA is not copied into this repo: it describes a different package and does not govern this independent extract. Apache-2.0 permits use, modification, and redistribution subject to its conditions and contains an express patent grant with the limitations in the license. Do not add restrictions to NOTICE that contradict those rights.
 
-No npm runtime/development packages are currently required. Before adding dependencies, record their versions and licenses and retain any required notices. There are no vendored product assets or model files.
+Document parsing uses the separately installed packages below. The lockfile records the dependency graph; package license files remain in the installed distributions. No dependency implementation is copied into this repository or claimed as event work. There are no vendored product assets or model files.
+
+| Document dependency | Version | License and source |
+| --- | --- | --- |
+| fflate | 0.8.3 | MIT; https://github.com/101arrowz/fflate |
+| @xmldom/xmldom | 0.9.12 | MIT; https://github.com/xmldom/xmldom |
+| pdfjs-dist | 6.4.299 | Apache-2.0; https://github.com/mozilla/pdf.js |
+| @napi-rs/canvas (PDF.js optional dependency and its platform binary packages) | 1.0.13, pinned by lockfile | MIT; https://github.com/Brooooooklyn/canvas; bundled native dependency notices remain with the package |
+
+The new parser/orchestration/UI is event-authored. These general document libraries are pre-existing dependencies. PDF.js requires Node >=22.13; the CI and demo image use current Node 22. Dependency installation does not grant rights to uploaded documents; use documents you are authorized to process.
 
 ## Separately obtained dependencies
 

@@ -293,3 +293,10 @@ Hosted main `65e70daba596feba8111a99e675ccf8de435f652` passed main CI and the au
 A read-only task using the deployed console verified both model-run tables, engine `tune-llm` support, and the demo owner's authorized selected Meta BYOK (`muse-spark-1.3`). It made zero provider calls and zero business writes. This proves deployment/provider readiness; it does not claim a live model-generated tuning result on customer source. The real-engine and synthetic-provider tests above exercise that execution path without spending customer credits.
 
 Final event tests pass 37 cases, including unknown/estimated usage reporting. Failed or interrupted calls show unknown tokens instead of implying zero cost; successful estimates are labeled. The final hosted usage-display commit is inventoried separately. Clean vendoring source for this correction is event commit `90ace1f`; implementation and private bridge boundaries remain unchanged.
+
+
+### Document translation validation
+
+The event suite passes 41 tests, including Markdown/TXT, DOCX and selectable-text PDF parsing, limits and isolated-worker execution. The offline fixture demo and repository provenance checks pass. Hosted database checks pass all ten document/translation-job integration cases with no skips, including scoped sources, idempotent approvals, changed inputs, revoked access, incomplete exports and MCP file cards. The production parser worker test passes for DOCX and PDF.
+
+The full browser flow passed with synthetic data: manual upload and preview, confirmed import/draft, separately confirmed translation, bilingual CSV download, chat upload and proposal, mobile layout and dark theme. A handoff regression was fixed so completed document forms do not leave chat paused as though unsaved edits remain. Host build, lint and public-boundary checks pass. No live model calls or customer-file processing were used in these checks. Release-container and live deployment status will be recorded after CI/rollout.

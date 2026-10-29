@@ -35,7 +35,9 @@ for (const file of new Set(files)) {
 for (const file of Object.keys(manifest.files)) if (!files.includes(file)) fail(file, 'provenance points to a missing file');
 const pkg = JSON.parse(readFileSync('package.json'));
 if (pkg.license !== 'Apache-2.0' || !pkg.private) fail('package.json', 'license/publishing boundary changed');
-if (Object.keys(pkg.dependencies || {}).length || Object.keys(pkg.devDependencies || {}).length) fail('package.json', 'new dependencies require a license/provenance review and guard update');
+const reviewedDependencies = { '@xmldom/xmldom': '0.9.12', fflate: '0.8.3', 'pdfjs-dist': '6.4.299' };
+if (JSON.stringify(Object.entries(pkg.dependencies || {}).sort()) !== JSON.stringify(Object.entries(reviewedDependencies).sort())
+  || Object.keys(pkg.devDependencies || {}).length) fail('package.json', 'dependencies differ from the reviewed document-parser inventory; review licenses/provenance before updating');
 if (readFileSync('LICENSE', 'utf8').indexOf('Version 2.0, January 2004') < 0) fail('LICENSE', 'expected Apache-2.0 text');
 try {
   const roots = execFileSync('git', ['rev-list', '--max-parents=0', 'HEAD'], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim().split('\n');
