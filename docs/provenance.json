@@ -143,11 +143,11 @@
     },
     "src/engine-status.js": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "b8f220225a754cc5dc5cf309a6727098c2cbc4494546795c47c06cfc97811aa2"
+      "sha256": "ded1e3ce0a751245876ebbf88f049c6b2a7f7db9cce99eda0a9c1ace1c220b96"
     },
     "test/engine-status.test.js": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "a076e92beb1094ec18c7594b1e7db170a7c6dd991412e23a18ce497e4ab435f4"
+      "sha256": "e6b6823625f99dbb256db7107a73ee836bce914e467da689e3409174877661d3"
     },
     "examples/source/App.tsx": {
       "origin": "authored-during-event-for-private-service-integration",
