@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "230a0cebbe1ed4d02ea5a060d4eed5b2da49d353d24f721c4e4a2c2fa590daaa"
+      "sha256": "7a39d4914356ee40d7b5064f42c7169570819192465236496797b3066e461f14"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -299,19 +299,19 @@
     },
     "ui/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "6ad49793c482a35cafbe840f325d3f603e829d4f739dd4c2e8155b56af5ae75a"
+      "sha256": "7dfd9fb13686827f42fcfa1867df70f4e309bb15ac575214d8678dab1e0a0ffa"
     },
     "src/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "012373fa52d1957c4c4841302974a0441871092a48f5fbbb2a51535e16286b2b"
+      "sha256": "f51d4bdd1ceb7e5af1a37356b7b55e22a0bc919c58ff9d791b3b3feaf4020954"
     },
     "src/translation-job-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "f27b89eb4ed9379cde333b65d63167f550ade7afa6647c1c4a3b3a958c41bf90"
+      "sha256": "8cf7c3a6f95e8070af87e1cd0b8f66a6b2929919c43b1e9848cd0e5b281dbd71"
     },
     "ui/translation-jobs.css": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "614c36c9c82f96fe83a15f2b8859e69842538619690e17dadfad6d8c9e38a14c"
+      "sha256": "daa4db80786ca673d798305c3c3e13f96c31fd9a5a1867ce946806b6f921dd20"
     },
     "test/translation-jobs.test.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -323,7 +323,7 @@
     },
     "docs/TRANSLATION-JOBS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "3c6eae731bfc995c5063532b38a470c5ccbb040d90d710a67a8bfa5abf5e8fa4"
+      "sha256": "47dfad5be8d69d528f4f79127b197a642a03dd522997f3b4f85c80c723d574dd"
     },
     "src/agent-scope.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -459,7 +459,7 @@
     },
     "src/github-source.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "53ded18b58749c6bb4391a3a4938c98a148ceb7a5af393aecbaac9333fef238f"
+      "sha256": "6e7b39f34673729ea8b733c71bcb97e73127ca2e3bb89a938a5700eaef93e0db"
     },
     "src/repositories.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -484,6 +484,38 @@
     "ui/repositories.js": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "bdb0e68cf6021dbeee30e1eee1a6ce0b37ece0fa8207b8b079bcfaf320857c96"
+    },
+    "contracts/202610292200_job_review_delivery.sql": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "4450bac47f77d32ca603835ad758373a5361594a315d3a79ebd20276585bd8d0"
+    },
+    "src/job-delivery-actions.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "fd82acf7d5427e308743a33b068ff5f348269c7f40eb4d319cb853e89018d52f"
+    },
+    "src/job-delivery.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "4d9774de5d03dcf9e0bf95b37683aad4a43f545244af10998f54d86b2afb6a8d"
+    },
+    "src/job-review-actions.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "99e94a8fd82b76d74daeff6ad8923bc7f0de51063ffa7f7190a771506bf199c6"
+    },
+    "src/job-review-analysis.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "7e25f4690e558fc95dcc80873ae6637dad1765ab500faae898d0770b8202d6b0"
+    },
+    "src/job-review.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "81a45103899000526452c3c7ad2791e660c232bc7628407364ef91cffd51651d"
+    },
+    "src/job-scope.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "0acd3d24361541d8617311236bb9d3404bd920aa71f8e3717d0da5b6060d1308"
+    },
+    "test/job-review-delivery.test.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "3d7fb7a336e7ee2536c39ac77eed1391292f97c057f3c1281fdd9ba306877511"
     }
   }
 }

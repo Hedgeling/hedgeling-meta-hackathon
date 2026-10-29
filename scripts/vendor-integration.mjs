@@ -13,7 +13,7 @@ const dirty = Boolean(execFileSync('git', ['status', '--porcelain'], { encoding:
 const output = path.join(target, 'src/hackathon-engine');
 fs.mkdirSync(output, { recursive: true });
 const origins = [];
-for (const source of ['src/github-source.js','src/github-identity.js','src/repositories.js','src/repository-actions.js','src/context-enrichment.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
+for (const source of ['src/job-scope.js','src/job-review-analysis.js','src/job-review.js','src/job-review-actions.js','src/job-delivery.js','src/job-delivery-actions.js','src/github-source.js','src/github-identity.js','src/repositories.js','src/repository-actions.js','src/context-enrichment.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
   'src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent-scope.js', 'src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
   'src/translation-jobs.js', 'src/translation-job-actions.js', 'src/chat-limits.js', 'src/library.js', 'src/library-actions.js', 'src/tuning-config.js', 'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
   const contents = fs.readFileSync(source);
@@ -22,6 +22,9 @@ for (const source of ['src/github-source.js','src/github-identity.js','src/repos
   origins.push({ source, destination, sha256: createHash('sha256').update(contents).digest('hex') });
 }
 for (const [source, destination] of [
+  ['src/job-review-actions.js','../api-contract/job-review-actions.js'],
+  ['src/job-delivery-actions.js','../api-contract/job-delivery-actions.js'],
+  ['contracts/202610292200_job_review_delivery.sql','db/migrations/202610292200_job_review_delivery.sql'],
   ['src/repository-actions.js','../api-contract/repository-actions.js'],
   ['contracts/202610292000_repository_connections.sql','db/migrations/202610292000_repository_connections.sql'],
   ['ui/repositories.js','src/public/repositories.js'],
