@@ -305,3 +305,8 @@ The full browser flow passed with synthetic data: manual upload and preview, con
 ### Document release checks
 
 Event PR #18 merged as `3b80247`. Console PR #18 passed its complete suite at `866ee861d1d6f9f28a6077b9f74f7d2ca5ae43c9` and merged as `6aaf7b3fe2634468adabcb27f4c0f4dae7a344d1`. Checks include authorization/security, all console browser flows, and document/translation integration inside the final Linux production image. PDF and DOCX parse with production-only dependencies. Synthetic HTTPS certificates are generated outside the image and mounted read-only for the test; they are not baked into the release. The migration-list and keyboard-tab-order expectations were updated for the document feature. All integration commits, including those test corrections, are recorded in the hosted inventory.
+
+
+### Document demo deployment
+
+Main CI run `40819950403` and automatic demo deployment `40820385848` both succeeded for `6aaf7b3fe2634468adabcb27f4c0f4dae7a344d1`. A read-only AWS check verified demo task revision 22, one running task matching the desired count, completed rollout, and the image digest associated with that tested source revision. Health returned 200 and anonymous agent configuration returned 401; document UI assets require sign-in. No production credentials, customer files or provider calls were used for rollout verification. The authenticated document flow was exercised with synthetic data in the browser and production-container suites, not repeated against customer data on the live site.
