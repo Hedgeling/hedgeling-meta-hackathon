@@ -159,7 +159,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "13f0007ceb89bed362be15f117b61ba63869caa2baa9e7c72f1c5f358ec6e986"
+      "sha256": "0b4b3566a00e620ec324aff7f9058f62b156d653998c0d74fb58661a76861d47"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -307,7 +307,7 @@
     },
     "src/translation-job-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "5b6c3ef001b9f4499cf50df6aab51b95dd949f0fa797cff248941124a78cac3e"
+      "sha256": "f27b89eb4ed9379cde333b65d63167f550ade7afa6647c1c4a3b3a958c41bf90"
     },
     "ui/translation-jobs.css": {
       "origin": "authored-during-event-for-this-extract",
@@ -411,15 +411,15 @@
     },
     "src/context-actions.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "c627a13f90730a3cc90ffb8734268bf8f7e59f98b1033b7432104d383973c4f8"
+      "sha256": "ac5592b07d0ac8b483b747a054571df9cb6656aee922a91165957565f64c8891"
     },
     "docs/CONTEXT-ENRICHMENT.md": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "f10ef9d57f1456aa181e116d9f1e250fae68d00e3764d01333900119a5366249"
+      "sha256": "7ffd509483c19dd1df86dae026e62c43b12c863eb0616b2d0a494082d12b6647"
     },
     "src/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "b490e1b1d7ea8ea5a441b8b400581263321341bcc2e52d7ff8ffd0859574ea33"
+      "sha256": "547e0fc29d3a8ccced6f47414ae1e05a76177eecb0c09e41983f3d4f57a060d8"
     },
     "src/source-evidence.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -431,11 +431,11 @@
     },
     "test/context.test.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "7c63cb1c20de3b2f5212cd53d1f28c04da24808dc729f311af8a63cb18659245"
+      "sha256": "8448878680050d2204f133f14d8091441993de4c30a1993c5b2ea35257011e84"
     },
     "ui/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "143b646dd5bcc7bccd68c2fa950ac1c46232255bcc887eaed1752614d24b7437"
+      "sha256": "1e3f0f103a4d7c7ae0803767803b1e63a2f7ac52da25af2d80ac2dfc95770111"
     },
     "ui/context-enrichment.css": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -443,7 +443,7 @@
     },
     "src/context-analysis.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "87e5c086833e2f926884a1675dd2a2daf984abb49248f50d27c2cc352c632e9c"
+      "sha256": "53269e9a7b2f1119199abd6b6b40d5bbc354af2afdf13eae0dffbe488c829950"
     }
   }
 }

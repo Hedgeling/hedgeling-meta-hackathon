@@ -14,9 +14,15 @@ Chat uses the managed chat key. Enrichment uses the organization's translation/c
 
 ## Character limits
 
-Enrichment can suggest a soft maximum and explain its reasoning, or return no number. Suggestions use Unicode code points and remain advisory in translation prompts. They never replace `limit_chars`, create a validation failure, override existing constraints or guarantee rendered fit. Explicit stored limits retain their existing validation semantics. Do not infer a label's limit from an adjacent input's `maxlength`.
+Enrichment displays a **suggested length**, always advisory in translation prompts. Preserve a numeric LLM suggestion when available. When the model returns no number and the source has no enforced `limit_chars`, the server adds a **formula estimate**: `max(ceil(sourceCharacters * 13 / 10), sourceCharacters + 5)`. This gives 30% headroom, rounded up, with at least five extra characters for short labels (4 → 9, 20 → 26, 21 → 28). Empty/whitespace-only sources get no estimate. Existing enforced limits get no fallback and retain their existing validation semantics. Do not infer a label's limit from an adjacent input's `maxlength`.
 
-An LLM can interpret UI intent and ambiguity, while renderer measurements and explicit product requirements establish real constraints. A formula may remain useful as a fallback estimate; neither a formula nor an LLM proves fit across languages, fonts, placeholders and viewports. See [W3C text-size guidance](https://www.w3.org/International/articles/article-text-size.en).
+`sourceCharacters` counts Unicode code points in the literal source, including spaces, placeholder syntax and markup. This is not a count of rendered glyphs, an ICU branch budget, or a measurement of expanded placeholder values. A translation may exceed the suggestion to preserve meaning. Neither suggestion source replaces `limit_chars`, creates a validation failure, truncates output, overrides existing constraints or guarantees rendered fit.
+
+Results record `suggestionSource` (`model` or `formula`). Formula results also retain the original `modelLimitReason` and a versioned `formula` record with source count and parameters. Model confidence/evidence describe the context analysis, not the accuracy of the formula. UI review cards, acceptance previews and accepted context distinguish these sources. The assistant calls out formula estimates rather than attributing them to the LLM.
+
+Older **unaccepted** results gain the fallback when read/prepared, without a new model call. The exact reviewed result is saved only on human acceptance, including in the run history; previously accepted guidance is never silently rewritten. To update already accepted guidance, explicitly select those strings for a new analysis and review. Source/provider freshness checks and proposal fingerprints still apply.
+
+An LLM can interpret UI intent and ambiguity, while renderer measurements and explicit product requirements establish real constraints. The formula is a writing heuristic, not a locale-specific expansion guarantee; neither it nor an LLM proves fit across languages, fonts, placeholders and viewports. See [W3C text-size guidance](https://www.w3.org/International/articles/article-text-size.en).
 
 ## Bounds and permissions
 
