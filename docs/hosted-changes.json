@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-30T00:28:48.715Z",
+  "recordedAt": "2026-10-30T03:25:59.527Z",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -9965,6 +9965,193 @@
             {
               "start": 10,
               "count": 25
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "acb24b96c1dacdeb332ded857acd952e522ad593",
+      "authorDate": "2026-10-29T21:24:41-06:00",
+      "commitDate": "2026-10-29T21:24:41-06:00",
+      "subject": "Flag invalid translation output and continue the approved queue",
+      "sourceCodeIncluded": false,
+      "deploymentStatus": "local development branch; not deployed",
+      "files": [
+        {
+          "path": "packages/api-contract/translation-job-actions.js",
+          "status": "M",
+          "sha256AtCommit": "86fe5baaff49666574080be60bcb6f3fa7160e4b5c89e343eadb6bf4423a5549",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-translation-jobs-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "48cd4da0742a154bdf75ad42de41276bece783c3e31e74c58ef51f2e865cc022",
+          "newSideHunkRanges": [
+            {
+              "start": 61,
+              "count": 32
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "b53d015a1b9cb622cc71d1be67ee0755ed273a881cf753cd2780f99ad3c83880",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 137,
+              "count": 5
+            },
+            {
+              "start": 150,
+              "count": 1
+            },
+            {
+              "start": 155,
+              "count": 1
+            },
+            {
+              "start": 325,
+              "count": 1
+            },
+            {
+              "start": 340,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-job-actions.js",
+          "status": "M",
+          "sha256AtCommit": "86fe5baaff49666574080be60bcb6f3fa7160e4b5c89e343eadb6bf4423a5549",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-jobs.js",
+          "status": "M",
+          "sha256AtCommit": "361c7d6c02645c5a1b17236dfb9ecf72ab8d3272743dbbfd21358b233b2c072b",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 29,
+              "count": 1
+            },
+            {
+              "start": 97,
+              "count": 2
+            },
+            {
+              "start": 164,
+              "count": 3
+            },
+            {
+              "start": 168,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-output-errors.js",
+          "status": "A",
+          "sha256AtCommit": "755c9ec4041d7a1ec7253e56af9699988e2068b9a7937f4e8c7b90453b02d1bf",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 9
+            }
+          ],
+          "note": "New event file; implementation remains in the separate integration/service workspace."
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.js",
+          "status": "M",
+          "sha256AtCommit": "2ebaaf979b8da28b31456db27dd34a7b148d2bb8a81382ed7e0c45fb30a32e74",
+          "newSideHunkRanges": [
+            {
+              "start": 25,
+              "count": 1
+            },
+            {
+              "start": 28,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/src/server.js",
+          "status": "M",
+          "sha256AtCommit": "b7a631554f37b9326e3e149504cb1485f85064e399587c4b2be56401ef9b81c2",
+          "newSideHunkRanges": [
+            {
+              "start": 10,
+              "count": 1
+            },
+            {
+              "start": 2005,
+              "count": 1
+            },
+            {
+              "start": 2119,
+              "count": 8
+            },
+            {
+              "start": 2129,
+              "count": 1
+            },
+            {
+              "start": 2133,
+              "count": 4
+            },
+            {
+              "start": 2143,
+              "count": 1
+            }
+          ],
+          "note": "Existing file modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/test/translation-jobs.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "c979c7cde0a20e8b59367a2ead6c246c5b339e2ba2051e0eef6840f379bfbc8d",
+          "newSideHunkRanges": [
+            {
+              "start": 10,
+              "count": 48
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
