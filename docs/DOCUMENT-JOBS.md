@@ -28,7 +28,7 @@ Only normalized text and metadata persist; original binary files are discarded a
 | `documents.list` | Project documents, 20 per page with opaque document-ID continuation. |
 | `documents.get` | Metadata, warnings and 20 sections per page; `nextOffset` identifies more sections. |
 | `documents.job` | Human-confirmed import plus file-scoped job draft. |
-| `localization_job.start` | Existing human-confirmed translation execution. Document jobs default to 200 pairs; explicit smaller batches are honored. |
+| `localization_job.start` | Existing human-confirmed translation execution. Document jobs default to all missing pairs up to 10,000; explicit smaller batches are honored. |
 | `documents.export` | Permission-checked TXT or bilingual CSV file card for one job locale. |
 | `GET /api/documents/jobs/<id>/download` | Reauthorizes download and rejects a stale content version. |
 

@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "7a39d4914356ee40d7b5064f42c7169570819192465236496797b3066e461f14"
+      "sha256": "4480a9aaf23c1a7f7439ff79401f98addde4efc65ee5c60e848239c12b359fb5"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -299,15 +299,15 @@
     },
     "ui/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "7dfd9fb13686827f42fcfa1867df70f4e309bb15ac575214d8678dab1e0a0ffa"
+      "sha256": "379e4eb8f27ad743835aad10357654c9f7e3aaa12c0f7ca4a54ac26ded851db7"
     },
     "src/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "f51d4bdd1ceb7e5af1a37356b7b55e22a0bc919c58ff9d791b3b3feaf4020954"
+      "sha256": "e0259f335f23208fb880568487359b8a7f58c61d2c7b4b1ee6072cb55bca7d32"
     },
     "src/translation-job-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "8cf7c3a6f95e8070af87e1cd0b8f66a6b2929919c43b1e9848cd0e5b281dbd71"
+      "sha256": "9489f46f4e77bb179439cf66b4ea8eb08bf95e30ac2de80d7a2b923ecb652b9e"
     },
     "ui/translation-jobs.css": {
       "origin": "authored-during-event-for-this-extract",
@@ -315,7 +315,7 @@
     },
     "test/translation-jobs.test.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "8b2e3f1bad2cc76b5ec890cc46a26ec6741eaab92bb9962ea5cb5beb101169cf"
+      "sha256": "4f51315289ab8b52e60010a37b3e8713342fefd088fe3d95d98bb3af10a5a87b"
     },
     "contracts/202610281800_translation_jobs.sql": {
       "origin": "authored-during-event-for-this-extract",
@@ -323,7 +323,7 @@
     },
     "docs/TRANSLATION-JOBS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "47dfad5be8d69d528f4f79127b197a642a03dd522997f3b4f85c80c723d574dd"
+      "sha256": "4ade2782b50d694917334178df8c21279553281392262ca50d960b440d1762c7"
     },
     "src/agent-scope.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -363,11 +363,11 @@
     },
     "docs/DOCUMENT-JOBS.md": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
-      "sha256": "af9115b2ee9439d45f97bc2c49d47e4f6e144097443a0114d597bbff93ea1c31"
+      "sha256": "52b952dc03df23e797c915529e91dda00afe6971d0926abcf1bdfdd4afbc423a"
     },
     "src/document-actions.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
-      "sha256": "d85e735c5b25546cbd764cebf5843444ac1cecad1282e433d45b26fa3a14b676"
+      "sha256": "9975f3fa301710a8533bcba0253f82e3ced43aae64c05738825ab82e20ee63e6"
     },
     "src/document-parser.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
@@ -383,7 +383,7 @@
     },
     "src/documents.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
-      "sha256": "176dc945442cf2c48926faad55aca1ed18ab65d934feecfd0026915fb0ab5e3f"
+      "sha256": "b98686596e5ff6b4505230e2d0e9563fccfa52ec4271a23be26a2f93977f07be"
     },
     "test/document-fixtures.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
@@ -516,6 +516,10 @@
     "test/job-review-delivery.test.js": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "3d7fb7a336e7ee2536c39ac77eed1391292f97c057f3c1281fdd9ba306877511"
+    },
+    "src/translation-job-limits.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "01a5c392e50dece01d3d00d8f202eef495c7c77a82dc64636acb105e3ce5c6ec"
     }
   }
 }

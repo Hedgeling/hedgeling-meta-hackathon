@@ -34,16 +34,20 @@ Human-translation-only workflows cannot be executed by this AI worker.
 | `localization_job.cancel` | `console_propose_translation_job_cancel` | Preview stopping remaining work; requires human confirmation |
 
 Every action takes a discovered `jobId`. Start optionally accepts
-`maxTranslations` (default 100, maximum 200). Ordinary API, built-in chat and
+`maxTranslations` (optional; defaults to all missing pairs up to 10,000). Ordinary API, built-in chat and
 external MCP share the same server authorization and approval path. The model
-cannot confirm its own proposals.
+cannot confirm its own proposals. For example, 200 source strings × 14 target
+languages = 2,800 translations in one job and one start approval. The worker
+processes that queue incrementally; it does not send all content in one model
+request or ask for another approval for each internal request. Draft creation,
+quality review/verification and PR delivery retain their separate confirmations.
 
 ## Bounds and billing
 
 | Bound | Initial behavior |
 | --- | --- |
 | Selection | Missing source/language pairs, deterministically ordered; all existing translation rows preserved |
-| Batch | 100 pairs by default; 1–200 per confirmed start |
+| Batch | All missing pairs up to 10,000 by default; explicit smaller batches from 1–10,000 are honored |
 | Further coverage | Explicit `remainingPairs`; another draft/start confirmation is required |
 | Prompt | Maximum 65,536 UTF-8 bytes per pair before a bounded validation correction |
 | Output | 2,048 tokens per generation; at most two generations per pair |
