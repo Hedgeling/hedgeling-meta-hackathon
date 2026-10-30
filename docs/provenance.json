@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "4480a9aaf23c1a7f7439ff79401f98addde4efc65ee5c60e848239c12b359fb5"
+      "sha256": "5de56e07dc9cb88473cd0d09ca2963ee3c11c3bb271589bbc3b21f6e390576de"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -299,15 +299,15 @@
     },
     "ui/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "379e4eb8f27ad743835aad10357654c9f7e3aaa12c0f7ca4a54ac26ded851db7"
+      "sha256": "2ebaaf979b8da28b31456db27dd34a7b148d2bb8a81382ed7e0c45fb30a32e74"
     },
     "src/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "e0259f335f23208fb880568487359b8a7f58c61d2c7b4b1ee6072cb55bca7d32"
+      "sha256": "361c7d6c02645c5a1b17236dfb9ecf72ab8d3272743dbbfd21358b233b2c072b"
     },
     "src/translation-job-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "9489f46f4e77bb179439cf66b4ea8eb08bf95e30ac2de80d7a2b923ecb652b9e"
+      "sha256": "86fe5baaff49666574080be60bcb6f3fa7160e4b5c89e343eadb6bf4423a5549"
     },
     "ui/translation-jobs.css": {
       "origin": "authored-during-event-for-this-extract",
@@ -323,7 +323,7 @@
     },
     "docs/TRANSLATION-JOBS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "4ade2782b50d694917334178df8c21279553281392262ca50d960b440d1762c7"
+      "sha256": "0d442b29a83ac086742c767d31169bb4188946cef62e4ce4ff77650361c274d2"
     },
     "src/agent-scope.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -520,6 +520,10 @@
     "src/translation-job-limits.js": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "01a5c392e50dece01d3d00d8f202eef495c7c77a82dc64636acb105e3ce5c6ec"
+    },
+    "src/translation-output-errors.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "755c9ec4041d7a1ec7253e56af9699988e2068b9a7937f4e8c7b90453b02d1bf"
     }
   }
 }

@@ -15,7 +15,7 @@ fs.mkdirSync(output, { recursive: true });
 const origins = [];
 for (const source of ['src/job-scope.js','src/job-review-analysis.js','src/job-review.js','src/job-review-actions.js','src/job-delivery.js','src/job-delivery-actions.js','src/github-source.js','src/github-identity.js','src/repositories.js','src/repository-actions.js','src/context-enrichment.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
   'src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent-scope.js', 'src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
-  'src/translation-job-limits.js', 'src/translation-jobs.js', 'src/translation-job-actions.js', 'src/chat-limits.js', 'src/library.js', 'src/library-actions.js', 'src/tuning-config.js', 'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
+  'src/translation-output-errors.js', 'src/translation-job-limits.js', 'src/translation-jobs.js', 'src/translation-job-actions.js', 'src/chat-limits.js', 'src/library.js', 'src/library-actions.js', 'src/tuning-config.js', 'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
   const contents = fs.readFileSync(source);
   const destination = path.basename(source);
   fs.writeFileSync(path.join(output, destination), contents);

@@ -53,7 +53,8 @@ quality review/verification and PR delivery retain their separate confirmations.
 | Output | 2,048 tokens per generation; at most two generations per pair |
 | Concurrent work | One active job per project; one item at a time per job |
 | Ambiguous interrupted request | Ten-minute claim timeout, then needs attention; never automatically resubmitted |
-| Failures | Stop the remaining batch; keep successful drafts; no automatic provider fallback |
+| Output-validation failures | After at most two attempts, flag that pair, leave it unsaved, and continue the remaining approved queue |
+| Provider, access, budget or changed-input failures | Stop the remaining batch; keep successful drafts; no automatic provider fallback |
 | Model billing | Organization-selected Meta/Gemini BYOK, or managed Gemini AI credits |
 | Managed ceiling | Sum of per-item credit reservations shown in preview; each saved item is charged no more than its approved ceiling |
 | BYOK ceiling | Bounded request count, prompt bytes and output tokens, **not a dollar quote**; provider billing terms still apply |
@@ -81,6 +82,17 @@ Credentials never enter job records, previews or browser bundles. Error cards
 expose safe recovery messages rather than provider payloads. Background job
 records persist across deployments, but an interrupted in-flight call requires
 attention instead of an automatic retry that could spend twice.
+
+Completed model responses that fail the existing output-text, placeholder,
+glossary or hard-length checks get distinct item error codes and safe reasons.
+Invalid text is never saved as a translation. These failures do not cancel other
+queued pairs or add requests beyond the approved two attempts per pair. The job
+stays running while its remaining queue is processed and finishes as
+`needs_attention` if any items failed, including for AI-only jobs. Status exposes
+failed counts and the first five errors with their source IDs and locales. A
+fresh confirmed job can translate remaining missing pairs without overwriting
+saved work. Unknown errors, ambiguous requests, budget limits, lost access and
+changed inputs continue to stop the queue.
 
 ## Verification and licensing
 
