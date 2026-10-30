@@ -339,7 +339,7 @@
     },
     "docs/UI-POLISH-SPEC.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "aaa16eada8e3c6daf9077043b01431fd7a89b7cb70b4f4aa54c7be4a34396bef"
+      "sha256": "9b6e3a661694efd56a2e514bff03a7ce58de2d02b7b522b07b481f73d1a8e838"
     },
     "contracts/202610282100_tuning_models.sql": {
       "origin": "authored-during-event-for-this-extract",

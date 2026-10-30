@@ -1,6 +1,6 @@
 # Deferred console UI polish
 
-Status: draft backlog, requested October 28, 2026. These three improvements are saved for a later UI pass; they are separate from the agent scope policy being implemented now.
+Status: draft backlog, requested October 28, 2026; expanded October 29, 2026. These five improvements are saved for a later UI pass. This document records requirements, not completed UI changes.
 
 ## 1. Make the selected provider and model clear
 
@@ -37,3 +37,32 @@ Acceptance:
 - The logo remains recognizable at small sizes in both themes, with a readable silhouette and a stable button hit area.
 - Controls retain accessible names; decorative artwork is hidden from assistive technology where appropriate.
 - Swapping the brand asset changes the agent artwork without editing chat behavior or duplicating hardcoded image references.
+
+## 4. Make translation and QA progress prominent
+
+Reported problem: progress such as “Translating · 67 of 2474 drafts saved” is easy to overlook, and changes to the count are hard to notice during a long run.
+
+Proposed direction: give the active job a clearly visible progress area with its name, current stage, progress bar, percentage and a larger completed/total count. Make updates noticeable without distracting from reading or manual work. Show the same authoritative progress in the job UI and the relevant chat progress card.
+
+Acceptance:
+
+- Users can quickly see that a job is working and how far it has progressed, including in a narrow side panel and on mobile.
+- Counts use readable formatting, for example “67 of 2,474 drafts saved.” Values come from server-reported job state; do not animate invented progress or show an unsupported time estimate.
+- Translation and QA/review have distinct stage labels and counts. Finishing draft generation must not imply that QA, verification or the whole workflow has finished.
+- Count changes are visually noticeable without layout jumps or forced scrolling. Any animation respects reduced-motion preferences; screen-reader announcements summarize progress without announcing every saved string.
+- Queued, running, stopped, failed and completed states remain clear. If updates cannot be fetched, show that status rather than presenting an old count as current.
+- Maintain legibility in both themes and at 200% zoom. Progress updates use existing job/status reads and do not trigger model calls or change job execution.
+
+## 5. Distinguish user messages from Hedgeling responses
+
+Reported problem: the user's question and the agent's answer blend together in the chat window.
+
+Proposed direction: use distinct card backgrounds or surfaces for “You” and “Hedgeling,” supported by clear speaker labels and consistent spacing. The exact visual treatment remains open for the later UI pass.
+
+Acceptance:
+
+- A user can identify their question and Hedgeling's response at a glance while scanning a conversation.
+- Keep explicit speaker labels; do not rely on color alone. Text, links, emphasis and code remain readable against both card surfaces in light and dark themes.
+- Apply the distinction consistently in full-screen and side-panel chat, including mobile and long or multiline messages.
+- Approval cards, tool activity and job progress remain distinguishable from ordinary message text and clearly associated with the relevant response.
+- Define role-specific surfaces through the shared design tokens so branding can be swapped without changing chat logic.
