@@ -6,6 +6,8 @@ During the event we implemented Meta Responses integration for the existing agen
 
 The earlier public platform snapshot is an integration workspace, **not the submission repository**. It contains pre-event product code; no checkout, package, or history from that snapshot is required to run this extract.
 
+The local development extension for [repository discovery and personal GitHub access](docs/REPOSITORIES.md) adds branch/path exploration and confirmed source snapshots. Its extraction engine remains a separate private dependency; this extension has not been deployed yet.
+
 ## Run and verify
 
 Requires Node.js 22.13+ and npm. Public document-parser dependencies are pinned in the lockfile and labeled in [licensing](docs/LICENSING.md); no private package downloads are required.
@@ -37,7 +39,7 @@ The live command uses Meta inference and may incur provider charges. It makes at
 - A documented engine interface for extraction jobs and rewrite previews. The implementation is private event work around a pre-existing engine; publishing its contract does not deploy the service.
 - New project-scoped API/MCP extraction actions, separate extraction and import approvals, source provenance validation, retry-safe admission, and progress/manual source controls, deployed into the existing demo. See the [workflow and limits](docs/EXTRACTION-WORKFLOW.md). Unit, host integration and browser tests cover this workflow; real extraction/import and Meta proposal checks are recorded in [verification](docs/VERIFICATION.md).
 
-The current live console uses the earlier event Meta adapter inside the existing hosted product. The standalone Meta module here has not yet replaced that adapter. The private engine service is deployed separately and connected to the demo backend; an operator check extracted all three strings from the pinned synthetic source through the real GitHub App and API. [Verification evidence](docs/VERIFICATION.md). Organization Meta BYOK translation is available as described below. Bedrock, LLM context-enrichment inside extraction, and applying repository changes remain future work. Existing chat/approval features are not claimed as event contributions.
+The current live console uses the earlier event Meta adapter inside the existing hosted product. The standalone Meta module here has not yet replaced that adapter. The private engine service is deployed separately and connected to the demo backend; an operator check extracted all three strings from the pinned synthetic source through the real GitHub App and API. [Verification evidence](docs/VERIFICATION.md). Organization Meta BYOK translation is available as described below. [Post-import context enrichment](docs/CONTEXT-ENRICHMENT.md) is implemented for local testing, with separate generation and acceptance approvals. Bedrock and applying repository changes remain future work. Existing chat/approval features are not claimed as event contributions.
 
 ## Private work written during the event
 

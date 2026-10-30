@@ -1,8 +1,14 @@
 // SPDX-License-Identifier: Apache-2.0
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { requestJson } from '../src/http.js';
+import { requestJson, serverUrl } from '../src/http.js';
 import { engineReader } from '../src/engine-client.js';
+
+test('local HTTP requires explicit opt-in and only permits exact IPv4 loopback',()=>{
+  assert.throws(()=>serverUrl('http://127.0.0.1:4319','engine'));
+  assert.equal(serverUrl('http://127.0.0.1:4319','engine',{allowLoopbackHttp:true}).hostname,'127.0.0.1');
+  for(const url of ['http://engine.example','http://127.0.0.1.example','http://0.0.0.0:4319','http://user:secret@127.0.0.1:4319','http://127.0.0.1:4319?token=value'])assert.throws(()=>serverUrl(url,'engine',{allowLoopbackHttp:true}));
+});
 
 test('upstream bodies, network details, and oversized responses do not leak', async () => {
   for (const response of [new Response('confidential-provider-detail', { status: 401 }),
