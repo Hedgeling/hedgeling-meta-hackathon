@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-30T03:25:59.527Z",
+  "recordedAt": "2026-10-30T04:23:05.522650+00:00",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -10155,6 +10155,74 @@
             }
           ],
           "note": "Existing file modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "ee019cd56a9c2269195db8e7913a5954a8ffe51b",
+      "authorDate": "2026-10-29T21:45:08-06:00",
+      "commitDate": "2026-10-29T21:45:08-06:00",
+      "subject": "Update migration expectations for the staged feature release",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "sha256AtCommit": "87e7aaa7d1a4a5a234776cbabc33b70c52d30ec3c3c0f18164383292f44549bb",
+          "newSideHunkRanges": [
+            {
+              "start": 359,
+              "count": 4
+            }
+          ],
+          "note": "Existing test modified; only event changes are claimed, not the whole file."
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "a30a41a6c5b838c79d7a13d806a5be2d0603018b",
+      "authorDate": "2026-10-29T21:58:55-06:00",
+      "commitDate": "2026-10-29T21:58:55-06:00",
+      "subject": "Disambiguate browser checks for repository and review panels",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/scripts/run-documents-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "a7018d6fc276428fccec97d182d8fd9c0a65db29bb8ea8fb4ffa7d52f6eed07a",
+          "newSideHunkRanges": [
+            {
+              "start": 38,
+              "count": 1
+            }
+          ],
+          "note": "Existing test modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-extraction-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "81ad5503f8f162af4ef7be693b47f0eeab1d109dcbd3b078850aba7085eb0e25",
+          "newSideHunkRanges": [
+            {
+              "start": 54,
+              "count": 1
+            }
+          ],
+          "note": "Existing test modified; only event changes are claimed, not the whole file."
+        },
+        {
+          "path": "packages/web-console/scripts/run-tuning-browser-tests.js",
+          "status": "M",
+          "sha256AtCommit": "33d0ee84079dc43841b22ff9d172104ed327fef2f0c19418e59791b16b297056",
+          "newSideHunkRanges": [
+            {
+              "start": 39,
+              "count": 1
+            }
+          ],
+          "note": "Existing test modified; only event changes are claimed, not the whole file."
         }
       ]
     }
