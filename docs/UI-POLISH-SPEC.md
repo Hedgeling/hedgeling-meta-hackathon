@@ -1,6 +1,6 @@
-# Deferred console UI polish
+# Console UI polish
 
-Status: draft backlog, requested October 28, 2026; expanded October 29, 2026. These five improvements are saved for a later UI pass. This document records requirements, not completed UI changes.
+Status: mixed implementation and backlog. Requested October 28, expanded October 29 and November 1, 2026. Items 1–3 and 5 remain deferred. Translation progress was implemented earlier; this pass extends item 4 and implements items 6–8 in the public platform console. Existing platform files are not copied into this event repository.
 
 ## 1. Make the selected provider and model clear
 
@@ -66,3 +66,32 @@ Acceptance:
 - Apply the distinction consistently in full-screen and side-panel chat, including mobile and long or multiline messages.
 - Approval cards, tool activity and job progress remain distinguishable from ordinary message text and clearly associated with the relevant response.
 - Define role-specific surfaces through the shared design tokens so branding can be swapped without changing chat logic.
+
+## 6. Theme dropdown menus and make arrows visible
+
+Implemented November 1: shared console styling for the closed select, picker, selected option and checkmark. A larger high-contrast chevron makes the control obvious. Uses the browser's customizable-select support, keeping native keyboard navigation, typeahead, disabled options, form submission and validation. Unsupported browsers retain their operating-system menu and get the clearer closed-control arrow. The workspace picker uses the same chevron treatment.
+
+Acceptance: verify opening/closing, keyboard selection and Escape focus, light/dark themes, narrow screens and native fallback. No custom JavaScript option list is layered over the form control.
+
+## 7. Open business units in a focused workspace
+
+Implemented November 1: Projects starts with compact business-unit cards showing project counts and names. Selecting a card opens that business unit across the available content width. Each project has separate cards for Languages, Source strings, Translation context, Documents (an alternative source), and Translate/review/deliver. Other units stay out of the focused view. Agent semantic destinations select the matching unit before highlighting a project or job.
+
+Added navigation improvements: All business units returns to the overview and restores keyboard focus to the originating card. Quick links jump to each project's workflow cards; Open translations enters the editor. Switching between units preserves in-page form drafts. Empty units have an explicit next action, Create project. Navigation does not start work or approve changes.
+
+Acceptance: user and agent navigation reach the same focused workspace; permissions still determine available controls; refreshes preserve selected unit; mobile and chat side-panel layouts stay in one column. An agent refresh preserves existing source, context and document review panels only while the project still permits them.
+
+## 8. Update the home message
+
+Implemented November 1: “Your app. In any language.” replaces “Your work. Every language.” Existing navigation and account context are unchanged.
+
+## Progress extension (item 4)
+
+Implemented November 1: context enrichment and QA show saved/checked totals and percentages; extraction shows the reported stage with an indeterminate bar until completion. Document inspection and approval actions show activity while requests are pending. The same components render in the workspace and applicable agent cards. A request budget is not a completion total; missing status reads display unavailable, and failed runs retain only their measured partial progress. Completing generation never implies approval or verification. These displays use existing authenticated reads and do not make model requests.
+
+## Further ideas for a later pass
+
+- A compact “Needs your attention” area for approvals, stopped jobs and completed drafts awaiting review, linking directly to the relevant card.
+- Project search and filters for workspaces with many games or products.
+- A persistent breadcrumb/deep link to a selected business unit and workflow card, including browser Back/Forward and reload restoration.
+- Continue the provider/model clarity, budget repair and chat-speaker contrast items above. Replacement agent artwork still needs a selected asset.

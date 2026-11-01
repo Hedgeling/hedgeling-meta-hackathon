@@ -37,6 +37,8 @@ for (const [source, destination] of [
   ['contracts/202610291600_context_enrichment.sql', 'db/migrations/202610291600_context_enrichment.sql'],
   ['contracts/202610291601_context_retention.sql', 'db/migrations/202610291601_context_retention.sql'],
   ['contracts/202610310100_context_diagnostics.sql', 'db/migrations/202610310100_context_diagnostics.sql'],
+  ['ui/workflow-progress.js', 'src/public/workflow-progress.js'],
+  ['ui/workflow-progress.css', 'src/public/workflow-progress.css'],
   ['ui/context-enrichment.js', 'src/public/context-enrichment.js'],
   ['ui/context-enrichment.css', 'src/public/context-enrichment.css'],
   ['src/document-actions.js', '../api-contract/document-actions.js'],

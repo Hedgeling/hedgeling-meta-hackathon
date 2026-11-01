@@ -139,7 +139,8 @@
     },
     "docs/provenance.json": {
       "origin": "event-authored manifest",
-      "selfManifest": true
+      "selfManifest": true,
+      "sha256": "847e8eb4b21bd84ffdc057b9c16a6d0e8dc1d8e16bca270895c11159730b1b54"
     },
     "src/engine-status.js": {
       "origin": "authored-during-event-for-private-service-integration",
@@ -155,7 +156,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "c6d976d0056281611cc21e4ef9dd7217a480890f574eb7067fbb299a440c93a3"
+      "sha256": "137b169c296b24f433a64707a15b1755bffb8b79a9bc9c4f227e1e763b1bb1a1"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -195,7 +196,7 @@
     },
     "ui/extraction.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "9c1b9d725a18211c2ad8f3b1b8f5e497e1764a1639f2919df20c157c876856c2"
+      "sha256": "1a1d7db168b131ce57e767f64b3b0548340a382550cc595804b30c1c73ae4b9b"
     },
     "examples/source/TravelPlanner.tsx": {
       "origin": "authored-during-event; synthetic travel-planner extraction fixture",
@@ -299,7 +300,7 @@
     },
     "ui/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "e5e7b7b3b35c8bfab0093616d6a2edd789613a215fd5f6458d46957c881d0017"
+      "sha256": "839937bb78229354b65728e00b03f686eab7058fb566c5dbf1768fc156f801ee"
     },
     "src/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -339,7 +340,7 @@
     },
     "docs/UI-POLISH-SPEC.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "9b6e3a661694efd56a2e514bff03a7ce58de2d02b7b522b07b481f73d1a8e838"
+      "sha256": "4225a8c3736bb107bfaeb276f82b06030b6cfe6b75801c019d00208bf44f58c2"
     },
     "contracts/202610282100_tuning_models.sql": {
       "origin": "authored-during-event-for-this-extract",
@@ -399,7 +400,7 @@
     },
     "ui/documents.js": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
-      "sha256": "2f3b37e684c80110d0ee5cc8806c95dd28db3973adaec33e20598f0af0867d3b"
+      "sha256": "30c4cc0d9d3bca5a393a44f589e44cc8ce7eb2143495ab87d19bbec6808d02f8"
     },
     "contracts/202610291601_context_retention.sql": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -435,7 +436,7 @@
     },
     "ui/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "341753ba19872025e79b4ddc9548dfe1807700c1aafb311669d45eace954c013"
+      "sha256": "698cddd4ffd223249a184bc34f9052d463b8da39ddcc7bc29451a4ddbab5283f"
     },
     "ui/context-enrichment.css": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -548,6 +549,14 @@
     "test/context-summary.test.js": {
       "origin": "authored-during-event-for-counts-first-context-inspection",
       "sha256": "2b403c63c4af896ce0902365c0b785c8a230c1c3a4aeb8346a991d649d0529a4"
+    },
+    "ui/workflow-progress.js": {
+      "origin": "authored-during-event-for-console-workflow-progress",
+      "sha256": "89a07dbdb749d193a9f1f85b4bee576f380305232d519f4f1c223dab466f092f"
+    },
+    "ui/workflow-progress.css": {
+      "origin": "authored-during-event-for-console-workflow-progress",
+      "sha256": "d3b619b24f59da40e329ecb57e1b8ed0567c0d8ce1fbd29a75b2e4d198268e1d"
     }
   }
 }
