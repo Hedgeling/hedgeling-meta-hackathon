@@ -5,8 +5,8 @@ Event-created API/MCP operations and review UI generate translator descriptions 
 ## Workflow
 
 1. Import a catalog. The separately operated extractor can attach bounded source excerpts from its pinned snapshot. Older catalogs or document imports may contain metadata only; the UI and approval preview disclose that limitation.
-2. In Projects, open **Context · descriptions and length suggestions**, then **Browse string context**. Select up to 20 strings or request the next batch without current accepted context. The assistant exposes the same actions through MCP.
-3. Preview **Generate context suggestions**. Human confirmation authorizes one request using the organization's selected Meta/Gemini BYOK provider and model. It also saves the generated suggestions for review. There is no inference during preview, and no automatic retry after an ambiguous response.
+2. In Projects, open **Context · descriptions and length suggestions**, then choose **Preview all missing context**. Alternatively, browse and select up to 1,000 strings, or leave the selection empty for the next 20. The assistant exposes the same actions through MCP (`context.enrich` with `allMissing: true` for all missing or stale accepted context).
+3. Review the exact string count, provider, request count, total input-byte bound and total output-token bound. One human confirmation authorizes that run's batches using the organization's selected Meta/Gemini BYOK key. Requests run sequentially, with at most 20 strings each; large prompts split into smaller batches. Each successful batch is saved for review. There is no inference during preview, no automatic retry after an ambiguous response, and no request beyond the approved budget.
 4. Review descriptions, evidence, confidence and optional character-count suggestions. Select results and confirm **Accept selected context** separately.
 5. Subsequent translation/revision previews include accepted, current context. Existing translations are preserved. Changing source text, code evidence, source language or explicit constraints invalidates the accepted guidance; stale guidance is excluded from translation prompts until regenerated and accepted.
 
@@ -27,12 +27,16 @@ An LLM can interpret UI intent and ambiguity, while renderer measurements and ex
 ## Bounds and permissions
 
 - One batch: at most 20 strings, four stored context variants per string, 65,536 prompt bytes and 8,192 output tokens; one provider request, no automatic fallback or retry.
+- Generation requests an explicit JSON response schema for the exact selected IDs, result count, confidence values and field bounds. The approved input budget includes the schema bytes. Server validation still checks unique IDs and existing hard limits. Description/reason bounds count Unicode code points consistently with the schema. A changed prompt format invalidates previously queued requests before dispatch rather than silently expanding their input budget.
+- One run: at most 1,000 strings and 200 requests. An oversized single string or selection fails the preview before any spending. Each request has its own usage reservation and idempotency key. Usage limits, permissions, source freshness and provider configuration are rechecked between batches; a failure stops the remainder and keeps completed suggestions reviewable. Generation does not automatically accept them.
 - Optional source-evidence adapter: at most two excerpts per string, seven lines and 2,048 UTF-8 bytes per excerpt, 256 KiB across a catalog. Oversized excerpts are omitted rather than silently cut. It reads only the provided snapshot, never arbitrary paths.
-- String/run listings: 20 items per page. Automatic missing-context selection scans at most 1,000 strings; beyond that, choose an explicit batch through the paginated list.
+- String/run listings: 20 items per page. Automatic missing-context selection scans at most 10,000 strings. An all-missing request that exceeds the scan or run limit fails explicitly rather than presenting a partial selection as all. Choose an explicit selection for larger projects.
 - Requires a named active user, project source-view access, and import permission for generation/acceptance. Generation also requires active AI/BYOK access. Scope, inputs and provider settings are checked again before dispatch and before saving results.
 - Writes remain server-authenticated human confirmations. Source comments, filenames and model output are untrusted data. The agent cannot confirm a proposal.
-- Interrupted requests become uncertain without redispatch. Already confirmed inference continues when chat is paused. There is no mid-request cancellation in this version.
+- Interrupted requests become uncertain without redispatch. Already confirmed enrichment continues when chat is paused. **Stop remaining batches** (`context.cancel`) requires confirmation and preserves completed suggestions. An in-flight request may still be billed; its response is not added after cancellation. Failed, cancelled or uncertain runs retain their stopped status even after their completed suggestions are accepted. To process unfinished strings later, accept the saved suggestions and preview a new all-missing run.
 - Project content purge removes run snapshots and accepted context. Normal conversation deletion preserves accepted project guidance.
+
+Invalid output records bounded diagnostics: validation reason, expected/received counts or character lengths, item position and batch number. No rejected provider text is stored. The UI distinguishes zero saved suggestions from preserved earlier batches, and instructs users to review/accept saved suggestions before starting another all-missing run. Historical failures without diagnostics remain explicit about that missing detail; neither a new parser nor a successful retry can reconstruct an unsaved old response.
 
 ## Verification and provenance
 

@@ -28,6 +28,14 @@ test('Gemini tuning makes one bounded request and rejects incomplete or oversize
   }
   assert.equal(calls,4);
 });
+test('Gemini quality checks forward the same explicit JSON schema',async()=>{
+  const {generateGeminiTuning}=await import('../src/tuning-gemini.js');
+  const responseSchema={type:'object',properties:{items:{type:'array',items:{type:'string'}}},required:['items'],additionalProperties:false};
+  await generateGeminiTuning({system:'Review',user:'Synthetic',apiKey:'synthetic',model:'synthetic-model',maxOutputTokens:8192,responseSchema,fetchImpl:async(_url,options)=>{
+    const config=JSON.parse(options.body).generationConfig;assert.equal(config.responseMimeType,'application/json');assert.deepEqual(config.responseJsonSchema,responseSchema);
+    return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"items":[]}'}]}}]});
+  }});
+});
 
 
 test('usage summaries distinguish unknown and estimated costs from known zero', async () => {

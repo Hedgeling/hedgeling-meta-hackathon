@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "5de56e07dc9cb88473cd0d09ca2963ee3c11c3bb271589bbc3b21f6e390576de"
+      "sha256": "033bd08d7259f0d219d08750e66694879bfea76610d794ce1e301903804d23c0"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -179,7 +179,7 @@
     },
     "src/extraction-catalog.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
-      "sha256": "277339bf417c45ef059191dc372a3b0789e55b1dd2e91b0c3d5557818360efa6"
+      "sha256": "971a99398d7bdaa1295438a759b86d4669dfd365a03ae47325bee0083686b78e"
     },
     "src/extraction-workflow.js": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -203,11 +203,11 @@
     },
     "test/meta-translation.test.js": {
       "origin": "authored-during-event-for-organization-Meta-BYOK",
-      "sha256": "a277372b4842296b7a48858f6a0328fb5e66ba8ac5b17129411900202fd717f6"
+      "sha256": "f6b479bc9c7e1af5cc318575aa85757e7a726eb88f0487a3ffdd2715dabda46c"
     },
     "src/meta-translation.js": {
       "origin": "authored-during-event-for-organization-Meta-BYOK",
-      "sha256": "c41a28731105c203acecd14047f57a567206bff01e457ac22c7eeee9ff0d4a49"
+      "sha256": "a6b6f57d4cd0e370b0c903461dd13b8e16c080d90dafb31d2a2042d78d5f9d35"
     },
     "contracts/202610271600_meta_byok.sql": {
       "origin": "authored-during-event-for-organization-Meta-BYOK",
@@ -299,7 +299,7 @@
     },
     "ui/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "2ebaaf979b8da28b31456db27dd34a7b148d2bb8a81382ed7e0c45fb30a32e74"
+      "sha256": "e5e7b7b3b35c8bfab0093616d6a2edd789613a215fd5f6458d46957c881d0017"
     },
     "src/translation-jobs.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -311,7 +311,7 @@
     },
     "ui/translation-jobs.css": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "daa4db80786ca673d798305c3c3e13f96c31fd9a5a1867ce946806b6f921dd20"
+      "sha256": "237a7a3db3c4fae9ff08cc960809c35d7c9c8a46daa93354cbf873dad27006d8"
     },
     "test/translation-jobs.test.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -323,7 +323,7 @@
     },
     "docs/TRANSLATION-JOBS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "0d442b29a83ac086742c767d31169bb4188946cef62e4ce4ff77650361c274d2"
+      "sha256": "d86c1d20f29aba2007096f254ec3794bf3cacc15f9933f033ed3462a3f518fa5"
     },
     "src/agent-scope.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -351,11 +351,11 @@
     },
     "test/tuning-models.test.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "fbcb80cc69db5f6d71a3421e002756b7e8ef2ed1c6099a29bede21c48ab9c54b"
+      "sha256": "a15ec6cd7ad627c961e37a14555f10b71715ae5765d187fd80dd831847ac8ed1"
     },
     "src/tuning-gemini.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "b6b9e9485aba9db0551342efe93d6da2a50a50cbcd233c68940e3b31cc73a687"
+      "sha256": "a19cf19c3038cb4e52a269ab534d8aca0fbd316552b40afddb965ec4f597fc4e"
     },
     "contracts/202610290100_document_jobs.sql": {
       "origin": "authored-during-event-for-document-translation-and-file-delivery",
@@ -411,15 +411,15 @@
     },
     "src/context-actions.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "ac5592b07d0ac8b483b747a054571df9cb6656aee922a91165957565f64c8891"
+      "sha256": "0d80295898bfaeffa33f0f6f6ccf0e924cd7033e596af36e533ffd33567934d3"
     },
     "docs/CONTEXT-ENRICHMENT.md": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "7ffd509483c19dd1df86dae026e62c43b12c863eb0616b2d0a494082d12b6647"
+      "sha256": "099dc70befd725394cd694fcd2371adb6893a798f8e4fc9a40e2064d76fa091c"
     },
     "src/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "547e0fc29d3a8ccced6f47414ae1e05a76177eecb0c09e41983f3d4f57a060d8"
+      "sha256": "2486f421196a954f026061985d0e6f25cb2b5e35338d42fe7aa1fe9bc9272bdf"
     },
     "src/source-evidence.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -431,11 +431,11 @@
     },
     "test/context.test.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "8448878680050d2204f133f14d8091441993de4c30a1993c5b2ea35257011e84"
+      "sha256": "846c71118c476af82624913138270b4dcd230d9095668e6048eb799b595e1f7a"
     },
     "ui/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "1e3f0f103a4d7c7ae0803767803b1e63a2f7ac52da25af2d80ac2dfc95770111"
+      "sha256": "752e9a326cdd005eb2ac0eccf9be0d7188eb4df54f88f1ba4bb78544a34ab431"
     },
     "ui/context-enrichment.css": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -443,7 +443,7 @@
     },
     "src/context-analysis.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "53269e9a7b2f1119199abd6b6b40d5bbc354af2afdf13eae0dffbe488c829950"
+      "sha256": "da5743fbf74b16e11be7b976c947f0f2e1ddcfd77c270834db0039c808441828"
     },
     "contracts/202610292000_repository_connections.sql": {
       "origin": "authored-during-event-for-this-extract",
@@ -495,7 +495,7 @@
     },
     "src/job-delivery.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "4d9774de5d03dcf9e0bf95b37683aad4a43f545244af10998f54d86b2afb6a8d"
+      "sha256": "fd1e6154a95cda04badb3d6ca2ef2486a6592c2fc17784553dbe4eb703c919ae"
     },
     "src/job-review-actions.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -503,11 +503,11 @@
     },
     "src/job-review-analysis.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "7e25f4690e558fc95dcc80873ae6637dad1765ab500faae898d0770b8202d6b0"
+      "sha256": "4c10bc74de83c967df7850758243dc8274cce8f4e4a1ffafe8c45dc26b98aa1d"
     },
     "src/job-review.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "81a45103899000526452c3c7ad2791e660c232bc7628407364ef91cffd51651d"
+      "sha256": "7e41304e7e98ff6e05520cfe702805ffee219dbd05343d2f296273334d95af06"
     },
     "src/job-scope.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -515,7 +515,7 @@
     },
     "test/job-review-delivery.test.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "3d7fb7a336e7ee2536c39ac77eed1391292f97c057f3c1281fdd9ba306877511"
+      "sha256": "9f6168de36a894125bd1baf0aef75ced563a85ddbc88b10a58729b75e722427b"
     },
     "src/translation-job-limits.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -524,6 +524,18 @@
     "src/translation-output-errors.js": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "755c9ec4041d7a1ec7253e56af9699988e2068b9a7937f4e8c7b90453b02d1bf"
+    },
+    "contracts/202610300100_job_review_diagnostics.sql": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "c0550fb67ef6becf06509b677ba597aa2f688d8a30ec6e06e461e5d5daad2e0a"
+    },
+    "ui/job-review-messages.js": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "873339646bfe39477d1c89b910a379439c839fdaa7283b46b64103c1297721fd"
+    },
+    "contracts/202610310100_context_diagnostics.sql": {
+      "origin": "authored-during-event-for-this-extract",
+      "sha256": "db6dc6d577788a6368479268e8db24993e49eca3a3f4d0ad2cdc41b5f62ada8b"
     }
   }
 }
