@@ -155,7 +155,7 @@
     },
     "scripts/vendor-integration.mjs": {
       "origin": "authored-during-event-for-private-service-integration",
-      "sha256": "033bd08d7259f0d219d08750e66694879bfea76610d794ce1e301903804d23c0"
+      "sha256": "c6d976d0056281611cc21e4ef9dd7217a480890f574eb7067fbb299a440c93a3"
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
@@ -287,7 +287,7 @@
     },
     "docs/CHAT-LIMITS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "118ce1b3eef45d3c0a0557a26ea87c5f9c0283a322e132bc34cf2fa1b7ba346e"
+      "sha256": "fd14d0c26b847d79639afc57ffceeb9bb1f124ef0efe76dda1a68fbdb0fd4ad2"
     },
     "src/chat-limits.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -411,15 +411,15 @@
     },
     "src/context-actions.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "0d80295898bfaeffa33f0f6f6ccf0e924cd7033e596af36e533ffd33567934d3"
+      "sha256": "65809cb9690b91cb20397770f16c4548cb0979b1f9bb76e4f22ef842ddb02a8b"
     },
     "docs/CONTEXT-ENRICHMENT.md": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "099dc70befd725394cd694fcd2371adb6893a798f8e4fc9a40e2064d76fa091c"
+      "sha256": "6af93edd83d10c3b053cdc585cbfd75508bb1f3115f0161daba2b66d675d05d2"
     },
     "src/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "2486f421196a954f026061985d0e6f25cb2b5e35338d42fe7aa1fe9bc9272bdf"
+      "sha256": "460c82debd9bc9ed50e65f5787a7fa8bbc3bbc34ed7d5a0121809765fb6ded97"
     },
     "src/source-evidence.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -435,7 +435,7 @@
     },
     "ui/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "752e9a326cdd005eb2ac0eccf9be0d7188eb4df54f88f1ba4bb78544a34ab431"
+      "sha256": "27c3e31d17142c86cea96841b384a8783f8dc1e5406714ed072dc73b682ae84f"
     },
     "ui/context-enrichment.css": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -536,6 +536,14 @@
     "contracts/202610310100_context_diagnostics.sql": {
       "origin": "authored-during-event-for-this-extract",
       "sha256": "db6dc6d577788a6368479268e8db24993e49eca3a3f4d0ad2cdc41b5f62ada8b"
+    },
+    "src/context-results.js": {
+      "origin": "authored-during-event-for-paginated-context-review",
+      "sha256": "9ce919f8ab1fb127b8794e38ac39c87ec06e05d884eb1a6e96ee89539c6c808d"
+    },
+    "test/context-results.test.js": {
+      "origin": "authored-during-event-for-paginated-context-review",
+      "sha256": "2246fb20dd17823d8ba71928402e05c4aa9ebf3d2600729d75e9949115dc3a8d"
     }
   }
 }
