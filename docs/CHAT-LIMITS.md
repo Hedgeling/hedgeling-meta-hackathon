@@ -20,12 +20,14 @@ bounds. Organization entitlements separately control included usage.
 
 History admission is checked before accepting a user message; the accepted turn
 can append model/tool entries afterward. Capacity is finite. Stored messages and
-provider replay state are preserved. Context-enrichment status reads return a
-bounded page; bulk enrichment/acceptance proposals contribute counts, costs and
+provider replay state are preserved. Context-enrichment status reads return only
+counts; bulk enrichment/acceptance proposals contribute counts, costs and
 references to model history while the console retains the full approval card.
-Older unpaged enrichment results are projected to the first page when preparing
+Older status/browse enrichment results are projected to counts when preparing
 a provider request, so resuming an affected chat does not reload the entire
-analysis. The projection discloses totals and the next offset and never accepts
+analysis. Specific context inspection needs an explicit selection of up to five
+IDs or a literal text query; bulk browser reads are not agent tools. The
+projection never accepts
 suggestions or rewrites saved results. Request capacity is still checked before
 usage reservation and provider dispatch. One byte is
 reserved as one token, plus the output budget, then reconciled against reported

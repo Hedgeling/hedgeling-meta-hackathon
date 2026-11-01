@@ -287,7 +287,7 @@
     },
     "docs/CHAT-LIMITS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "fd14d0c26b847d79639afc57ffceeb9bb1f124ef0efe76dda1a68fbdb0fd4ad2"
+      "sha256": "61c7c91d82b85b9c1f126749583ed591b1a666e92693bd37411738d09a30aed4"
     },
     "src/chat-limits.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -411,15 +411,15 @@
     },
     "src/context-actions.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "65809cb9690b91cb20397770f16c4548cb0979b1f9bb76e4f22ef842ddb02a8b"
+      "sha256": "17710340468140b3811cc8f5acf161bf2c5d683ae39002e80ac1e6156b8bbe03"
     },
     "docs/CONTEXT-ENRICHMENT.md": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "6af93edd83d10c3b053cdc585cbfd75508bb1f3115f0161daba2b66d675d05d2"
+      "sha256": "bcf6795e97dab393f010f16411136a8a93eaeb0baf9102b15444420659773950"
     },
     "src/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "460c82debd9bc9ed50e65f5787a7fa8bbc3bbc34ed7d5a0121809765fb6ded97"
+      "sha256": "bd64e38aa7c3c1a92d0f03bb3e158c5dfd9cf04d3ff4949360ae22b307e11285"
     },
     "src/source-evidence.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -435,7 +435,7 @@
     },
     "ui/context-enrichment.js": {
       "origin": "authored-during-event-for-translator-context-enrichment",
-      "sha256": "27c3e31d17142c86cea96841b384a8783f8dc1e5406714ed072dc73b682ae84f"
+      "sha256": "341753ba19872025e79b4ddc9548dfe1807700c1aafb311669d45eace954c013"
     },
     "ui/context-enrichment.css": {
       "origin": "authored-during-event-for-translator-context-enrichment",
@@ -539,11 +539,15 @@
     },
     "src/context-results.js": {
       "origin": "authored-during-event-for-paginated-context-review",
-      "sha256": "9ce919f8ab1fb127b8794e38ac39c87ec06e05d884eb1a6e96ee89539c6c808d"
+      "sha256": "99689e5b52348cd3efe6fe615e8b13da246517ee3ee941207c14a2c3a33c6987"
     },
     "test/context-results.test.js": {
       "origin": "authored-during-event-for-paginated-context-review",
-      "sha256": "2246fb20dd17823d8ba71928402e05c4aa9ebf3d2600729d75e9949115dc3a8d"
+      "sha256": "c6cf2a497d76382b127ccaba167c26a8c353677728dd9e49de02952c613c8f1d"
+    },
+    "test/context-summary.test.js": {
+      "origin": "authored-during-event-for-counts-first-context-inspection",
+      "sha256": "2b403c63c4af896ce0902365c0b785c8a230c1c3a4aeb8346a991d649d0529a4"
     }
   }
 }

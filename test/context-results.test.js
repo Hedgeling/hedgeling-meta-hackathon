@@ -30,15 +30,25 @@ test('legacy oversized status and bulk proposals recover without changing saved 
   assert.doesNotThrow(()=>chatRequestBudget(compact)); assert.deepEqual(original,saved);
   assert.deepEqual(compact[0],original[0]); assert.equal(compact[1].parts[0].functionResponse.id,'call');
   const status=compact[1].parts[0].functionResponse.response;
-  assert.equal(status.page.nextOffset,20); assert.equal(status.page.total,723); assert.equal(status.run.completedStrings,723);
+  assert.equal(status.page,undefined); assert.equal(status.run.results,undefined); assert.equal(status.run.completedStrings,723);
+  assert.equal(status.run.awaitingAcceptance,723);
   const summary=compact[2].parts[0].functionResponse.response.proposal;
   assert.equal(summary.id,proposal.id); assert.equal(summary.fingerprint,proposal.fingerprint);
   assert.equal(summary.preview.fields.stringCount,723); assert.equal(summary.preview.fields.strings,undefined);
   assert.deepEqual(summary.preview.sideEffects,proposal.preview.sideEffects);
   assert.deepEqual(contextChatHistory(compact),compact,'Projection is idempotent.');
   const second={run:{id:'run',...contextResultPage(results,20)},page:contextResultPage(results,20).page};
-  assert.equal(contextChatResult('console_get_context_run',second),second,'Current pages must not rewind to page one.');
+  assert.equal(contextChatResult('console_get_context_run',second).run.results,undefined,'Historical paged reads also become counts only.');
   assert.equal(contextChatResult('unrelated_tool',{proposal}).proposal,proposal);
+});
+test('historical browse content is omitted while explicitly scoped inspection remains available', () => {
+  const browse={strings:[{id:'source',source:'Private label',accepted:{description:'Actual context'}}],page:{nextCursor:null}};
+  const projected=contextChatResult('console_list_string_context',browse);
+  assert.equal(projected.returnedStrings,1); assert.equal(projected.strings,undefined);
+  assert(!JSON.stringify(projected).includes('Private label')); assert(!JSON.stringify(projected).includes('Actual context'));
+  assert.equal(contextChatResult('console_inspect_string_context',browse),browse);
+  const runs=contextChatResult('console_list_context_runs',{runs:[{completedStrings:10,acceptedIds:['a','b']}]});
+  assert.equal(runs.runs[0].acceptedStrings,2); assert.equal(runs.runs[0].awaitingAcceptance,8); assert.equal(runs.runs[0].acceptedIds,undefined);
 });
 test('bulk generation summaries retain provider budgets and disclose the complete console preview', () => {
   const provider={provider:'meta',maximumRequests:37,maximumTotalInputBytes:2000000,maximumTotalOutputTokens:303104,batches:Array.from({length:37},()=>({stringIds:['synthetic']}))};
