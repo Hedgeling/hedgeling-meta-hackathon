@@ -36,7 +36,7 @@
     },
     "README.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "65631e5651982cc6b074685261fb5383d0741032c40144386797ae63fd248fb3"
+      "sha256": "eb5f1c0e8be6345e996b93a8ec1545b9c2ebe8df32e9cd81bf17e66784160aa5"
     },
     "contracts/engine.openapi.json": {
       "origin": "event-created API contract with bounded source snapshot extension; original public-copy provenance retained below",
@@ -61,11 +61,11 @@
     },
     "docs/SERVICES.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "a639b4f52c2ac8f9dce0fe6dd60c1ebb989fe0b96f47f8699a21ef7f514d4d8f"
+      "sha256": "d088bbface9736bc1e061d4775236660c2a4f1f8f55a69c141f66b3327178ff2"
     },
     "docs/SUBMISSION.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "e543293bdd92edb4815fc1563d54473ed61650b6ebdda762c323d3e702502d53"
+      "sha256": "9e9bbf5e7037bd387dafb4c6f9e658327fe436cf957c147bad91db185a44ad94"
     },
     "docs/excluded-baseline-sha256.json": {
       "origin": "event-authored guard data; hashes of excluded pre-existing code, no code contents",
@@ -73,7 +73,7 @@
     },
     "docs/hosted-changes.json": {
       "origin": "event-authored inventory of event commits; no source bodies",
-      "sha256": "110df6bd0326613f47a54c64b45d24cb0e9ecc6f3cc36168714856c7d45f903e"
+      "sha256": "f341e6efa4b01bce616863e05d6a3f2e6b3b82829f16a9238fccf9bb695ee18d"
     },
     "examples/catalog.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -160,7 +160,7 @@
     },
     "docs/VERIFICATION.md": {
       "origin": "authored-during-event; redacted live deployment verification record",
-      "sha256": "81af17d2fd2c89296cd7efe55de712dc22945ecea1b8907251c874c8b39338fe"
+      "sha256": "02ed2ecb5215f0071fc87f8e9c5fb7934981b4aa6612355aa18229d4890b619b"
     },
     "contracts/202610271200_extraction_workflow.sql": {
       "origin": "authored-during-event-for-project-extraction-workflow",
@@ -452,7 +452,7 @@
     },
     "docs/REPOSITORIES.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "8ce14f86ba173ae68aa7b04b6e7961ce2a1a39a418ef14e1122e3a1261b7e21b"
+      "sha256": "3918b55c7eb03c693f9fefecb068ebdb89439349d641801c86d387cd5d8c0043"
     },
     "src/github-identity.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -557,6 +557,14 @@
     "ui/workflow-progress.css": {
       "origin": "authored-during-event-for-console-workflow-progress",
       "sha256": "d3b619b24f59da40e329ecb57e1b8ed0567c0d8ce1fbd29a75b2e4d198268e1d"
+    },
+    "docs/JUDGES.md": {
+      "origin": "authored-during-event-for-this-extract; November 4 judge walkthrough and verified preparation boundaries",
+      "sha256": "a01c06b605c108d2f87cba5ee0891c1e6199d93739f900920203208b8a489801"
     }
+  },
+  "submissionReadinessReview": {
+    "date": "2026-11-04",
+    "scope": "Judge-facing documentation, current evidence boundaries, and missing metadata-only hosted contribution records; no pre-event source bodies imported."
   }
 }

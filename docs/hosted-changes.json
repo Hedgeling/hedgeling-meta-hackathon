@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-30T04:23:05.522650+00:00",
+  "recordedAt": "2026-11-04",
   "description": "Event commit inventory. New-side ranges cover additions/replacements in each file at that commit; source bodies and removed pre-event lines are not distributed. Timestamps alone do not prove authorship.",
   "commits": [
     {
@@ -10225,6 +10225,3953 @@
           "note": "Existing test modified; only event changes are claimed, not the whole file."
         }
       ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "60c2f7ad45ac571a0b3ab5d7197884b59be673a5",
+      "authorDate": "2026-11-01T09:17:32-07:00",
+      "commitDate": "2026-11-01T09:17:32-07:00",
+      "subject": "Ship bounded enrichment batches and actionable workflow diagnostics",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/api-contract/context-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 12,
+              "count": 3
+            },
+            {
+              "start": 16,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0d80295898bfaeffa33f0f6f6ccf0e924cd7033e596af36e533ffd33567934d3"
+        },
+        {
+          "path": "packages/web-console/db/migrations/202610300100_job_review_diagnostics.sql",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c0550fb67ef6becf06509b677ba597aa2f688d8a30ec6e06e461e5d5daad2e0a"
+        },
+        {
+          "path": "packages/web-console/db/migrations/202610310100_context_diagnostics.sql",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "db6dc6d577788a6368479268e8db24993e49eca3a3f4d0ad2cdc41b5f62ada8b"
+        },
+        {
+          "path": "packages/web-console/scripts/run-context-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 9,
+              "count": 1
+            },
+            {
+              "start": 27,
+              "count": 4
+            },
+            {
+              "start": 33,
+              "count": 2
+            },
+            {
+              "start": 42,
+              "count": 25
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "04ca5e9b02d532398a8603ade65cf9bbd0bf2945fdd7cc097748da92cc0b9195"
+        },
+        {
+          "path": "packages/web-console/scripts/run-job-workflows-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 50,
+              "count": 11
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "72daed2497f51f8b7037495de001efe82611d275c626650eae5b00ac4c9dec2d"
+        },
+        {
+          "path": "packages/web-console/scripts/run-translation-jobs-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 80,
+              "count": 8
+            },
+            {
+              "start": 90,
+              "count": 14
+            },
+            {
+              "start": 107,
+              "count": 4
+            },
+            {
+              "start": 115,
+              "count": 8
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "3703acad5c18a459b569ce8e50caca26ce5b54fe8bba0dd08f5cae0a69337024"
+        },
+        {
+          "path": "packages/web-console/src/context-integration.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 35,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 4
+            },
+            {
+              "start": 54,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1abaf50ed8642cb162a21340ceda16e2276f26c6a2496eb4d5d49f883829aa88"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 12,
+              "count": 3
+            },
+            {
+              "start": 16,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0d80295898bfaeffa33f0f6f6ccf0e924cd7033e596af36e533ffd33567934d3"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-analysis.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 2
+            },
+            {
+              "start": 37,
+              "count": 41
+            },
+            {
+              "start": 80,
+              "count": 10
+            },
+            {
+              "start": 91,
+              "count": 3
+            },
+            {
+              "start": 95,
+              "count": 8
+            },
+            {
+              "start": 105,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "da5743fbf74b16e11be7b976c947f0f2e1ddcfd77c270834db0039c808441828"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 8,
+              "count": 5
+            },
+            {
+              "start": 27,
+              "count": 1
+            },
+            {
+              "start": 65,
+              "count": 7
+            },
+            {
+              "start": 75,
+              "count": 1
+            },
+            {
+              "start": 89,
+              "count": 1
+            },
+            {
+              "start": 92,
+              "count": 1
+            },
+            {
+              "start": 98,
+              "count": 1
+            },
+            {
+              "start": 103,
+              "count": 4
+            },
+            {
+              "start": 109,
+              "count": 4
+            },
+            {
+              "start": 114,
+              "count": 2
+            },
+            {
+              "start": 118,
+              "count": 1
+            },
+            {
+              "start": 122,
+              "count": 1
+            },
+            {
+              "start": 126,
+              "count": 4
+            },
+            {
+              "start": 148,
+              "count": 2
+            },
+            {
+              "start": 163,
+              "count": 2
+            },
+            {
+              "start": 179,
+              "count": 8
+            },
+            {
+              "start": 188,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "2486f421196a954f026061985d0e6f25cb2b5e35338d42fe7aa1fe9bc9272bdf"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/extraction-catalog.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 32,
+              "count": 2
+            },
+            {
+              "start": 54,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "971a99398d7bdaa1295438a759b86d4669dfd365a03ae47325bee0083686b78e"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 33
+            },
+            {
+              "start": 53,
+              "count": 1
+            },
+            {
+              "start": 113,
+              "count": 1
+            },
+            {
+              "start": 117,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "fd1e6154a95cda04badb3d6ca2ef2486a6592c2fc17784553dbe4eb703c919ae"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review-analysis.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 7
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 21,
+              "count": 1
+            },
+            {
+              "start": 23,
+              "count": 1
+            },
+            {
+              "start": 29,
+              "count": 8
+            },
+            {
+              "start": 38,
+              "count": 7
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4c10bc74de83c967df7850758243dc8274cce8f4e4a1ffafe8c45dc26b98aa1d"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 29,
+              "count": 1
+            },
+            {
+              "start": 47,
+              "count": 1
+            },
+            {
+              "start": 80,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "7e41304e7e98ff6e05520cfe702805ffee219dbd05343d2f296273334d95af06"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/meta-translation.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 27,
+              "count": 1
+            },
+            {
+              "start": 33,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a6b6f57d4cd0e370b0c903461dd13b8e16c080d90dafb31d2a2042d78d5f9d35"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 20,
+              "count": 1
+            },
+            {
+              "start": 30,
+              "count": 1
+            },
+            {
+              "start": 60,
+              "count": 1
+            },
+            {
+              "start": 65,
+              "count": 1
+            },
+            {
+              "start": 70,
+              "count": 1
+            },
+            {
+              "start": 100,
+              "count": 1
+            },
+            {
+              "start": 190,
+              "count": 1
+            },
+            {
+              "start": 200,
+              "count": 1
+            },
+            {
+              "start": 242,
+              "count": 5
+            },
+            {
+              "start": 275,
+              "count": 1
+            },
+            {
+              "start": 290,
+              "count": 1
+            },
+            {
+              "start": 340,
+              "count": 1
+            },
+            {
+              "start": 345,
+              "count": 6
+            },
+            {
+              "start": 426,
+              "count": 5
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1f4fb8ae3c9d350703ba29d7e25e9c361ec0f9ada24ffa824a4c272319549002"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/tuning-gemini.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 13,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a19cf19c3038cb4e52a269ab534d8aca0fbd316552b40afddb965ec4f597fc4e"
+        },
+        {
+          "path": "packages/web-console/src/job-workflows-integration.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 10,
+              "count": 1
+            },
+            {
+              "start": 39,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e93b7918f318c05c98b1ddef6d29341e9ea1db1ef7f9007f7bb86004764805b1"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "669e473e0321f1419dd69bd0de7585fe1a77b8ad363e82cb6395deafe2660aff"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 21,
+              "count": 1
+            },
+            {
+              "start": 88,
+              "count": 5
+            },
+            {
+              "start": 96,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d7ed457aeb6b5868249d3f8a12f48d64965222ebd7e61fb75476ab82ea581dc7"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 213,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1a91ced1de6633d5836bce91cd86f91a3959b7e93dda98b4a51d233aba216948"
+        },
+        {
+          "path": "packages/web-console/src/public/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 17
+            },
+            {
+              "start": 29,
+              "count": 1
+            },
+            {
+              "start": 36,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 42,
+              "count": 2
+            },
+            {
+              "start": 52,
+              "count": 1
+            },
+            {
+              "start": 54,
+              "count": 2
+            },
+            {
+              "start": 58,
+              "count": 1
+            },
+            {
+              "start": 61,
+              "count": 1
+            },
+            {
+              "start": 64,
+              "count": 1
+            },
+            {
+              "start": 66,
+              "count": 1
+            },
+            {
+              "start": 82,
+              "count": 2
+            },
+            {
+              "start": 108,
+              "count": 1
+            },
+            {
+              "start": 111,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "752e9a326cdd005eb2ac0eccf9be0d7188eb4df54f88f1ba4bb78544a34ab431"
+        },
+        {
+          "path": "packages/web-console/src/public/job-review-messages.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 12
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "873339646bfe39477d1c89b910a379439c839fdaa7283b46b64103c1297721fd"
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 12
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "237a7a3db3c4fae9ff08cc960809c35d7c9c8a46daa93354cbf873dad27006d8"
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 12,
+              "count": 8
+            },
+            {
+              "start": 23,
+              "count": 4
+            },
+            {
+              "start": 32,
+              "count": 2
+            },
+            {
+              "start": 36,
+              "count": 26
+            },
+            {
+              "start": 62,
+              "count": 0
+            },
+            {
+              "start": 65,
+              "count": 2
+            },
+            {
+              "start": 68,
+              "count": 11
+            },
+            {
+              "start": 124,
+              "count": 1
+            },
+            {
+              "start": 134,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e5e7b7b3b35c8bfab0093616d6a2edd789613a215fd5f6458d46957c881d0017"
+        },
+        {
+          "path": "packages/web-console/src/server.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2225,
+              "count": 4
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4fc5e87c18fd7b128553263b6b8a8b183ec0069642b431c991d7e731e1e45056"
+        },
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 363,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b896e0a09d7e46a849e3db0aae4d4449e56f382e02871ae77ef464e3855da756"
+        },
+        {
+          "path": "packages/web-console/test/context-enrichment.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 28,
+              "count": 4
+            },
+            {
+              "start": 98,
+              "count": 1
+            },
+            {
+              "start": 116,
+              "count": 67
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "5f1ef6018ff98bc383e6761ae5054605af37d14497a21b66816b49772abeda87"
+        },
+        {
+          "path": "packages/web-console/test/job-review.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 16,
+              "count": 20
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "da507cc923e0b7c19f91c494bb371fbf23122f3dbe8d041daee8baca9d4e4637"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "32287e67560ef581925da3b7296eb7ce098275ac",
+      "authorDate": "2026-11-01T09:32:06-07:00",
+      "commitDate": "2026-11-01T09:32:06-07:00",
+      "subject": "Recover chats blocked by oversized context enrichment results",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/api-contract/context-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            },
+            {
+              "start": 16,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "65809cb9690b91cb20397770f16c4548cb0979b1f9bb76e4f22ef842ddb02a8b"
+        },
+        {
+          "path": "packages/web-console/scripts/run-context-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 35,
+              "count": 4
+            },
+            {
+              "start": 40,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d778195630a4dcc3cfcb70268567081081ffbc062a26cc7337e77d43f3b5e52e"
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 141,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "167b38c1b0c6efe68c655fc7aac3042b269daf6a15ec3a73c58246f23149923d"
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 153,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "297c8ac9d0d500d29c2b87581b4bd07a8179097df7400cadaa5f8b890b21fdeb"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            },
+            {
+              "start": 16,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "65809cb9690b91cb20397770f16c4548cb0979b1f9bb76e4f22ef842ddb02a8b"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 62,
+              "count": 4
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "460c82debd9bc9ed50e65f5787a7fa8bbc3bbc34ed7d5a0121809765fb6ded97"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-results.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 45
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "9ce919f8ab1fb127b8794e38ac39c87ec06e05d884eb1a6e96ee89539c6c808d"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 60,
+              "count": 1
+            },
+            {
+              "start": 70,
+              "count": 1
+            },
+            {
+              "start": 275,
+              "count": 1
+            },
+            {
+              "start": 290,
+              "count": 1
+            },
+            {
+              "start": 431,
+              "count": 5
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "82e9ae9a703f584d3380af1e5b2c68f3c41bc62163e325b89d4c143dfdb1a77d"
+        },
+        {
+          "path": "packages/web-console/src/public/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 32,
+              "count": 3
+            },
+            {
+              "start": 36,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 40,
+              "count": 2
+            },
+            {
+              "start": 46,
+              "count": 3
+            },
+            {
+              "start": 51,
+              "count": 1
+            },
+            {
+              "start": 53,
+              "count": 1
+            },
+            {
+              "start": 75,
+              "count": 8
+            },
+            {
+              "start": 84,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "27c3e31d17142c86cea96841b384a8783f8dc1e5406714ed072dc73b682ae84f"
+        },
+        {
+          "path": "packages/web-console/test/agent-provider.test.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 10,
+              "count": 32
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "8afd2333b03a21c991ec2182688abedfdaca4abf35cea6e91c61ca78f20c5269"
+        },
+        {
+          "path": "packages/web-console/test/context-enrichment.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 128,
+              "count": 10
+            },
+            {
+              "start": 143,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d4941ae8ba8e18e6695c0bec8e34337803d064903bc2c3bae591eda0950392a0"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "6521bc75080d00b4f530cae5f744220a34e40cbe",
+      "authorDate": "2026-11-01T09:47:08-07:00",
+      "commitDate": "2026-11-01T09:47:08-07:00",
+      "subject": "Keep routine context checks to counts and scoped agent reads",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/api-contract/context-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 2
+            },
+            {
+              "start": 11,
+              "count": 3
+            },
+            {
+              "start": 15,
+              "count": 2
+            },
+            {
+              "start": 21,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "17710340468140b3811cc8f5acf161bf2c5d683ae39002e80ac1e6156b8bbe03"
+        },
+        {
+          "path": "packages/api-contract/index.d.ts",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "aa66f98b598d72e1d3f49df32792633c4d74d32720132b8cc0c47a3250a39b3d"
+        },
+        {
+          "path": "packages/platform-mcp/src/consoleTools.ts",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 10,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e998e1bae1a8c57602cf1af456062f751a042b802ebe0b088711000c3902b2f7"
+        },
+        {
+          "path": "packages/platform-mcp/test/console-tools.test.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 24,
+              "count": 3
+            },
+            {
+              "start": 32,
+              "count": 5
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "ed811938d9f7c1add81ee7ce1c480bd58757cbe9738c0cb5a7d829174e85e51a"
+        },
+        {
+          "path": "packages/platform-mcp/test/stdio.test.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 33,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b246faea33b6b215357443a868349dab6213c4791e4129e8ef1e4b5691c78aca"
+        },
+        {
+          "path": "packages/web-console/src/agent-mcp.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4b3c25f42725181425f1a96983875409a970202c7b890e7c3d5d030e1cd897b5"
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 17,
+              "count": 4
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0fcd3571e7b0842dcd3a33eca43625ad5092130ed202ef0d689f5e7affe7a4d2"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 2
+            },
+            {
+              "start": 11,
+              "count": 3
+            },
+            {
+              "start": 15,
+              "count": 2
+            },
+            {
+              "start": 21,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "17710340468140b3811cc8f5acf161bf2c5d683ae39002e80ac1e6156b8bbe03"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 13,
+              "count": 2
+            },
+            {
+              "start": 49,
+              "count": 41
+            },
+            {
+              "start": 104,
+              "count": 1
+            },
+            {
+              "start": 108,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "bd64e38aa7c3c1a92d0f03bb3e158c5dfd9cf04d3ff4949360ae22b307e11285"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/context-results.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 24,
+              "count": 8
+            },
+            {
+              "start": 46,
+              "count": 5
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "99689e5b52348cd3efe6fe615e8b13da246517ee3ee941207c14a2c3a33c6987"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 60,
+              "count": 1
+            },
+            {
+              "start": 70,
+              "count": 1
+            },
+            {
+              "start": 275,
+              "count": 1
+            },
+            {
+              "start": 290,
+              "count": 1
+            },
+            {
+              "start": 435,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c4b29ae37b781d53caeb1fb55e9e20e0045c6c6f4d55f560ecb7a49ce753e6cf"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "82cbd8d064478960f8e07faffb3014b409e0d1f655ed5b6010c7942e291a0f2b"
+        },
+        {
+          "path": "packages/web-console/src/public/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 80,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "341753ba19872025e79b4ddc9548dfe1807700c1aafb311669d45eace954c013"
+        },
+        {
+          "path": "packages/web-console/test/agent-context-tools.test.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 17
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "46e68be052094cea647fbc49acf92bb17ce1d16f50ab1fd3efd11b87e3383867"
+        },
+        {
+          "path": "packages/web-console/test/agent-provider.test.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 19,
+              "count": 1
+            },
+            {
+              "start": 24,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4831a54a4cfe2df54de5f921fc652d4232bf3c5f6d6a8dc1f843305ed3adff76"
+        },
+        {
+          "path": "packages/web-console/test/context-enrichment.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 22,
+              "count": 4
+            },
+            {
+              "start": 31,
+              "count": 13
+            },
+            {
+              "start": 54,
+              "count": 3
+            },
+            {
+              "start": 71,
+              "count": 2
+            },
+            {
+              "start": 131,
+              "count": 3
+            },
+            {
+              "start": 143,
+              "count": 3
+            },
+            {
+              "start": 159,
+              "count": 1
+            },
+            {
+              "start": 165,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "677b31b47e981b7350ec62fab4b6f90e865bfac38b84d4028dba07b3fde36a9c"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "db5e41a7db9656649bd47a2a6f7e25c4dc8fa9c9",
+      "authorDate": "2026-11-01T10:57:44-07:00",
+      "commitDate": "2026-11-01T10:57:44-07:00",
+      "subject": "Focus business-unit workspaces and clarify workflow progress",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/platform/AGENT-CONSOLE-IMPLEMENTATION.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 360,
+              "count": 11
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "fc058eb5b1f34398684101e533f5d71ed470e63fd08642cd89a17c175b129f7d"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 106,
+              "count": 1
+            },
+            {
+              "start": 255,
+              "count": 1
+            },
+            {
+              "start": 304,
+              "count": 1
+            },
+            {
+              "start": 311,
+              "count": 2
+            },
+            {
+              "start": 314,
+              "count": 1
+            },
+            {
+              "start": 333,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a837a4b62205b467ea774833f2a671684b821b6aed773e36ddf0ba2499c6cafc"
+        },
+        {
+          "path": "packages/web-console/scripts/run-context-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 22,
+              "count": 2
+            },
+            {
+              "start": 36,
+              "count": 1
+            },
+            {
+              "start": 64,
+              "count": 1
+            },
+            {
+              "start": 80,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b1c8c269637ae8b1150593451c8ff95f90deb183c1518d8067ccfa57f334c893"
+        },
+        {
+          "path": "packages/web-console/scripts/run-documents-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 23,
+              "count": 1
+            },
+            {
+              "start": 29,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "58e5baac7a7403c594ef8c6132860217837f34725d4deb014b21284ac63d72d6"
+        },
+        {
+          "path": "packages/web-console/scripts/run-extraction-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 37,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "fe2036f2d08fa1099e734c8e35940736ab37ef3417a90474e5e0600067c95c40"
+        },
+        {
+          "path": "packages/web-console/scripts/run-job-workflows-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 26,
+              "count": 1
+            },
+            {
+              "start": 44,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "76598d861c6be61d9a2f03df494e9d68c3253d1ba9892b7cbda28eae362154b5"
+        },
+        {
+          "path": "packages/web-console/scripts/run-project-locales-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 28,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c6036e59b510366213040b8b667c6f3590dd930a5c43bea36b6402e36da45251"
+        },
+        {
+          "path": "packages/web-console/scripts/run-translation-jobs-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 26,
+              "count": 1
+            },
+            {
+              "start": 77,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "9b3be17861195b08c4932d0b84401672cd3faed718a3a31fef479b7e73437e24"
+        },
+        {
+          "path": "packages/web-console/scripts/run-workspace-polish-browser-tests.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 98
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "3bdbde0279b0009ce4feea08699a41a5e8c4dea7a765ab070533618602ae82be"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 290,
+              "count": 1
+            },
+            {
+              "start": 310,
+              "count": 1
+            },
+            {
+              "start": 345,
+              "count": 1
+            },
+            {
+              "start": 420,
+              "count": 1
+            },
+            {
+              "start": 436,
+              "count": 10
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "813a607325634b1cdf409100dfeb75e0ebf83010375b10b27338026bd4e4b27f"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 80,
+              "count": 1
+            },
+            {
+              "start": 86,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "6e4e12da9e822f7871ad5590ab9519314420f3f5d9bd77eddc57753db67439c5"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 41,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 1
+            },
+            {
+              "start": 127,
+              "count": 1
+            },
+            {
+              "start": 132,
+              "count": 3
+            },
+            {
+              "start": 211,
+              "count": 22
+            },
+            {
+              "start": 235,
+              "count": 1
+            },
+            {
+              "start": 241,
+              "count": 1
+            },
+            {
+              "start": 265,
+              "count": 1
+            },
+            {
+              "start": 266,
+              "count": 0
+            },
+            {
+              "start": 268,
+              "count": 17
+            },
+            {
+              "start": 286,
+              "count": 21
+            },
+            {
+              "start": 308,
+              "count": 1
+            },
+            {
+              "start": 310,
+              "count": 2
+            },
+            {
+              "start": 313,
+              "count": 1
+            },
+            {
+              "start": 334,
+              "count": 6
+            },
+            {
+              "start": 342,
+              "count": 2
+            },
+            {
+              "start": 346,
+              "count": 1
+            },
+            {
+              "start": 362,
+              "count": 6
+            },
+            {
+              "start": 369,
+              "count": 6
+            },
+            {
+              "start": 382,
+              "count": 1
+            },
+            {
+              "start": 425,
+              "count": 1
+            },
+            {
+              "start": 427,
+              "count": 1
+            },
+            {
+              "start": 431,
+              "count": 4
+            },
+            {
+              "start": 436,
+              "count": 1
+            },
+            {
+              "start": 445,
+              "count": 1
+            },
+            {
+              "start": 448,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "796900ddae1fd4fb3003201368cfae5c9139384f6dd9e153c259108868038b9b"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 98,
+              "count": 35
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "554820561bec62863f4b60b07d9f227a871f3e3cbe9daf4745bf6d9a23d2e43c"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 154,
+              "count": 1
+            },
+            {
+              "start": 395,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c2eb6af7048afd0c485473469d85450d2fab3ca4c0d4263b53209d90b3ee8c6b"
+        },
+        {
+          "path": "packages/web-console/src/public/console-controls.css",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 30
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a656db42ad7f58c6dcb5e64094767be77799608991a7a2b3e736e7a6cc63ea02"
+        },
+        {
+          "path": "packages/web-console/src/public/console-shell.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 33,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "20cb8bb653199802ee42d58ebddb3e3d9c1e894e302f6a978a87a20ac0f4f4aa"
+        },
+        {
+          "path": "packages/web-console/src/public/context-enrichment.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 32,
+              "count": 2
+            },
+            {
+              "start": 37,
+              "count": 1
+            },
+            {
+              "start": 41,
+              "count": 3
+            },
+            {
+              "start": 53,
+              "count": 2
+            },
+            {
+              "start": 57,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "698cddd4ffd223249a184bc34f9052d463b8da39ddcc7bc29451a4ddbab5283f"
+        },
+        {
+          "path": "packages/web-console/src/public/documents.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 45,
+              "count": 1
+            },
+            {
+              "start": 49,
+              "count": 1
+            },
+            {
+              "start": 89,
+              "count": 1
+            },
+            {
+              "start": 94,
+              "count": 1
+            },
+            {
+              "start": 96,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "30c4cc0d9d3bca5a393a44f589e44cc8ce7eb2143495ab87d19bbec6808d02f8"
+        },
+        {
+          "path": "packages/web-console/src/public/extraction.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 26,
+              "count": 1
+            },
+            {
+              "start": 39,
+              "count": 3
+            },
+            {
+              "start": 80,
+              "count": 1
+            },
+            {
+              "start": 85,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1a1d7db168b131ce57e767f64b3b0548340a382550cc595804b30c1c73ae4b9b"
+        },
+        {
+          "path": "packages/web-console/src/public/index.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 32,
+              "count": 1
+            },
+            {
+              "start": 55,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0d7f8dfac8b8096aed780c289105c1fd393100c27e8eed0bf52d69df001ad02b"
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 130,
+              "count": 1
+            },
+            {
+              "start": 135,
+              "count": 1
+            },
+            {
+              "start": 141,
+              "count": 1
+            },
+            {
+              "start": 150,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "839937bb78229354b65728e00b03f686eab7058fb566c5dbf1768fc156f801ee"
+        },
+        {
+          "path": "packages/web-console/src/public/workflow-progress.css",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 14
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d3b619b24f59da40e329ecb57e1b8ed0567c0d8ce1fbd29a75b2e4d198268e1d"
+        },
+        {
+          "path": "packages/web-console/src/public/workflow-progress.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 33
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "89a07dbdb749d193a9f1f85b4bee576f380305232d519f4f1c223dab466f092f"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "acbf7d1748504251c41011cf0a08677ec6ec3ee8",
+      "authorDate": "2026-11-01T16:01:28-07:00",
+      "commitDate": "2026-11-01T16:01:28-07:00",
+      "subject": "Clarify agent feedback and guide GitHub PR readiness",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 41,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "eef0251785a71161aba5a57918f52883b9522869cd8f3b82f9bd58e08e468f54"
+        },
+        {
+          "path": "packages/web-console/package.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 38,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "25e30378921fa75806a6a27ca647cd6f10c5d0e13b3bd038c99fb0c827153251"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 56,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "76a4a0ded88a2771d9a32b0d0e2e367106c0e5313ef65d45557788c275e4d683"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-feedback-browser-tests.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 142
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "648dcdf0f09297114ce6a37fab318f9f6e38263e380a9fc3a1473c9056c356cb"
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 154,
+              "count": 7
+            },
+            {
+              "start": 346,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "690691e4320ee61cf7932f7ea3c0c8c190d903d68a163b052de01ee4cec04c51"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-activity.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 34
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "492e97b0831868a651a5450138a5f7338230fea38a6641209fa8af5cc352b5a5"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-notifications.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 50
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c3c4e7a0992698b564a3e452108fac260a5061ed376c33e40c3d6180b3738926"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-resizer.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 27
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1af1ac56bc2f7bdad8b5d4d562e789d5094573795a50cf945ec3c93e2ad9b520"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 62,
+              "count": 0
+            },
+            {
+              "start": 160,
+              "count": 0
+            },
+            {
+              "start": 290,
+              "count": 51
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b977dd9e8e740f4bc7db391c0c775f0576fa09cf096d2d129846f7351ca10bac"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 5
+            },
+            {
+              "start": 19,
+              "count": 1
+            },
+            {
+              "start": 35,
+              "count": 1
+            },
+            {
+              "start": 46,
+              "count": 1
+            },
+            {
+              "start": 53,
+              "count": 1
+            },
+            {
+              "start": 57,
+              "count": 2
+            },
+            {
+              "start": 83,
+              "count": 1
+            },
+            {
+              "start": 101,
+              "count": 1
+            },
+            {
+              "start": 140,
+              "count": 1
+            },
+            {
+              "start": 148,
+              "count": 6
+            },
+            {
+              "start": 179,
+              "count": 6
+            },
+            {
+              "start": 186,
+              "count": 5
+            },
+            {
+              "start": 192,
+              "count": 1
+            },
+            {
+              "start": 197,
+              "count": 12
+            },
+            {
+              "start": 287,
+              "count": 2
+            },
+            {
+              "start": 356,
+              "count": 1
+            },
+            {
+              "start": 411,
+              "count": 8
+            },
+            {
+              "start": 490,
+              "count": 0
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "3b93cf0488090399f70c4f1f2d85ae59f340c706157e39c420b3e020dbb0cac0"
+        },
+        {
+          "path": "packages/web-console/src/public/console-controls.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 31,
+              "count": 23
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "308d0b74f7bfb44af0030a98bc08a5db2b6b1ce59adab7dc38004e1caf11f7bf"
+        },
+        {
+          "path": "packages/web-console/src/public/document-files.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 8
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "73a867adcc7c61d5f83feb7e99b1b9a801e4e2f936165d0e37588fe2227ee213"
+        },
+        {
+          "path": "packages/web-console/src/public/github-connection.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 32
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d6ca9414230f6c09097e165bbc2c18b724291ee9c6396cd1386efc6e8cae726a"
+        },
+        {
+          "path": "packages/web-console/src/public/repositories.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0201eb4ad57d8bf6cd48fbd586d57f00bb68b7189bfe792f0d33bcd1e0d25885"
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            },
+            {
+              "start": 157,
+              "count": 1
+            },
+            {
+              "start": 160,
+              "count": 3
+            },
+            {
+              "start": 164,
+              "count": 25
+            },
+            {
+              "start": 190,
+              "count": 1
+            },
+            {
+              "start": 192,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4a208cfbba0e04043cf3e13f787389646a913d7992ea7104bf28e7fff5db353c"
+        },
+        {
+          "path": "packages/web-console/test/document-files.test.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 27
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "408a964739c3ef8be41ebf4ade5673dc27beb67353640997a37f984f1db712d0"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "62cb8329318bf0c06147f7699ab5ad3cf019be92",
+      "authorDate": "2026-11-01T16:24:34-07:00",
+      "commitDate": "2026-11-01T16:24:34-07:00",
+      "subject": "Preserve the chosen chat layout while history loads",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/scripts/run-agent-feedback-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 89,
+              "count": 16
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b575a07c3abd5c951d2d4cb2624dbc028924ac3a5ad19dd6f5861f39ce43cb49"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 411,
+              "count": 4
+            },
+            {
+              "start": 530,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a52434a0547d0365f4fe233e946729e9f16083c94e0c7c7746cf58ba7857883a"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "c4bf34673bcd391c8f791e527557f97f198cef3e",
+      "authorDate": "2026-11-02T22:10:57-07:00",
+      "commitDate": "2026-11-02T22:10:57-07:00",
+      "subject": "Compact chat controls and expand the message composer",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 53,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0bf04bfa90ec72b8e7c512a23bcbb2234364a302b603853097eb07767cebe6cb"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 50,
+              "count": 1
+            },
+            {
+              "start": 156,
+              "count": 1
+            },
+            {
+              "start": 209,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "49bab4fc879ebdcb19713140a7b747641c69074a36cd5e197c56b5852ee33b73"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-feedback-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 33,
+              "count": 11
+            },
+            {
+              "start": 46,
+              "count": 46
+            },
+            {
+              "start": 111,
+              "count": 1
+            },
+            {
+              "start": 116,
+              "count": 5
+            },
+            {
+              "start": 129,
+              "count": 2
+            },
+            {
+              "start": 180,
+              "count": 38
+            },
+            {
+              "start": 258,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "05030c95d41c5a48d6fdf8b64c57d23865d5e7c79f004b3a07608bd21dd485ac"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 182,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "35a48817816d8728156faa955dcb611fa756f3c0ad60d6aee61b58c05c14caa2"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-composer.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 39
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "9f3050fb388ec638ffc01799bddd65a6b0b8645031ff7cd26848f2af181e6e89"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-notifications.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 6
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "5854e2d23dcf9cc2acb4df11d95dd12bf4262974727daa400caeb05ee829efbd"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-preview.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 1
+            },
+            {
+              "start": 11,
+              "count": 1
+            },
+            {
+              "start": 47,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "ad4356dbc94e8c7b371222b6c0fe2130ffdd8086ee910d5c259f167332ebcf09"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 0
+            },
+            {
+              "start": 18,
+              "count": 2
+            },
+            {
+              "start": 21,
+              "count": 3
+            },
+            {
+              "start": 30,
+              "count": 9
+            },
+            {
+              "start": 61,
+              "count": 1
+            },
+            {
+              "start": 63,
+              "count": 19
+            },
+            {
+              "start": 176,
+              "count": 1
+            },
+            {
+              "start": 185,
+              "count": 1
+            },
+            {
+              "start": 249,
+              "count": 1
+            },
+            {
+              "start": 251,
+              "count": 1
+            },
+            {
+              "start": 254,
+              "count": 2
+            },
+            {
+              "start": 269,
+              "count": 3
+            },
+            {
+              "start": 292,
+              "count": 3
+            },
+            {
+              "start": 296,
+              "count": 1
+            },
+            {
+              "start": 303,
+              "count": 0
+            },
+            {
+              "start": 336,
+              "count": 0
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "2c6952e9c0d006b1b695d8cab1e04f723f3cb6dacdec69198a8a2efb98d5af92"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            },
+            {
+              "start": 20,
+              "count": 1
+            },
+            {
+              "start": 40,
+              "count": 3
+            },
+            {
+              "start": 45,
+              "count": 1
+            },
+            {
+              "start": 52,
+              "count": 11
+            },
+            {
+              "start": 111,
+              "count": 1
+            },
+            {
+              "start": 144,
+              "count": 1
+            },
+            {
+              "start": 315,
+              "count": 5
+            },
+            {
+              "start": 372,
+              "count": 1
+            },
+            {
+              "start": 431,
+              "count": 11
+            },
+            {
+              "start": 485,
+              "count": 1
+            },
+            {
+              "start": 506,
+              "count": 1
+            },
+            {
+              "start": 509,
+              "count": 1
+            },
+            {
+              "start": 516,
+              "count": 1
+            },
+            {
+              "start": 520,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "37c9500c6d4484f401198038c16c97e2672d02989e8bb27c8c156d58b7a06c18"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "4f0c05719ba28ce381fc752b8cb0aed916c355b5",
+      "authorDate": "2026-11-02T23:27:55-07:00",
+      "commitDate": "2026-11-02T23:27:55-07:00",
+      "subject": "Add guided localization workflows and review provenance",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "docs/HACKATHON-PLAN.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 55,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "f2da83a07a7bac2a1ed3420bf071e13e93b1e87a2444d70122e826ce8c055915"
+        },
+        {
+          "path": "docs/platform/API-AND-MCP-DESIGN.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 160,
+              "count": 18
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "623e2c740e40f41812f44b427f6ecbca1be918f1df3da6ce9d3926539ec50266"
+        },
+        {
+          "path": "packages/api-contract/index.d.ts",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e7a8eef6569ecbb4763624211b57f14bf061fb36529d6ce8f075d51ca50ff1de"
+        },
+        {
+          "path": "packages/api-contract/index.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 3
+            },
+            {
+              "start": 33,
+              "count": 1
+            },
+            {
+              "start": 45,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "01c3e38d9b720d602aa4a05fe0a6d784c29802125f48af9e520057ae620aaf18"
+        },
+        {
+          "path": "packages/api-contract/job-delivery-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c07ccb380cf59cb821a194bf272fde233d5866ccc2c67714ac629aebec0f8236"
+        },
+        {
+          "path": "packages/api-contract/job-review-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "317846552dccb434824f7f3c42044f81f751004dd2123da98df3b4715acb089d"
+        },
+        {
+          "path": "packages/api-contract/localization-flow-actions.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 16
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "3755458c1ac494098fddd0f2050168f627e52ce530b827ac23b89f82c274fd44"
+        },
+        {
+          "path": "packages/api-contract/localization-workflows.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 6
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "6cb27ac91eeff722e1c80b0d35aedd192dc478702525a9e9cd26e840de35d6d2"
+        },
+        {
+          "path": "packages/api-contract/translation-job-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "f5ca255d25c84209c68481258e8a8f40da2eda52e5993eafa63fe6c9b929f4a5"
+        },
+        {
+          "path": "packages/web-console/db/migrations/202611030100_guided_localization.sql",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 25
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "94a2fdcffcb45be1810c5c98496cabd3995497ec5cb248345bbbe53eb1bb7f3e"
+        },
+        {
+          "path": "packages/web-console/package.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 49,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1687d8b03fee0fb5e78918b11a6c54fa0bf710ddf5a181f7d6183c14a54e6360"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "bed504e5dce94a919fd2a7cec3318adf4de36a44c80cdccee031bb70a2c52c93"
+        },
+        {
+          "path": "packages/web-console/scripts/run-job-workflows-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 34,
+              "count": 1
+            },
+            {
+              "start": 51,
+              "count": 1
+            },
+            {
+              "start": 61,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "81ff646c833c111f27fa2297874cc8fbf9e6a378713432c925dfd2330f97f8a9"
+        },
+        {
+          "path": "packages/web-console/scripts/run-localization-flow-browser-tests.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 77
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "96ac09cf6c7c537ab5ff8aebe16fed7a750d45519404db1d51a4591a4a07d673"
+        },
+        {
+          "path": "packages/web-console/src/agent-provider.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 50,
+              "count": 5
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0c7e33e8d2a67cf7150a1ca20b7c5644fad8b0c593277430c8324f1052171943"
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 18,
+              "count": 2
+            },
+            {
+              "start": 163,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e627be37728da3c183fa94d83a94934e493ebccf514d87d6eb017e47368bb162"
+        },
+        {
+          "path": "packages/web-console/src/agent-skills.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 13,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "52b6ef8c8b682a6522e5e9935e0b6fdb36efd86904ae27be7267ac31791f6b5b"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c07ccb380cf59cb821a194bf272fde233d5866ccc2c67714ac629aebec0f8236"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 77,
+              "count": 1
+            },
+            {
+              "start": 99,
+              "count": 1
+            },
+            {
+              "start": 123,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "77e8ce1b249cbb2b855fb049d4ba139d44867d417410ebe5244a4ded50656605"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "317846552dccb434824f7f3c42044f81f751004dd2123da98df3b4715acb089d"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-review.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 22,
+              "count": 1
+            },
+            {
+              "start": 25,
+              "count": 15
+            },
+            {
+              "start": 44,
+              "count": 1
+            },
+            {
+              "start": 50,
+              "count": 3
+            },
+            {
+              "start": 72,
+              "count": 1
+            },
+            {
+              "start": 75,
+              "count": 1
+            },
+            {
+              "start": 101,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "55eb175f15daa29292a44357f8bc2a4d7b4bbcf6f9c16982dfe983e2ee9c47b8"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-scope.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 4
+            },
+            {
+              "start": 31,
+              "count": 2
+            },
+            {
+              "start": 34,
+              "count": 1
+            },
+            {
+              "start": 39,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e6c33720df204de99890a7d90379522186f74d4614867d3dcc83313875e0d271"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/localization-flow-state.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 23
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "f8efab043871fa379a5198e49f4aa967358508f3ae7946f89e38f524d6d0bde7"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-job-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "f5ca255d25c84209c68481258e8a8f40da2eda52e5993eafa63fe6c9b929f4a5"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-jobs.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 34,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4e0a00757c3e980639887541f9cdad30fd92f0ac9c7c88019cf634d8a3424d83"
+        },
+        {
+          "path": "packages/web-console/src/localization-flow.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 72
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "dfd8c78358973dd6f383adf7052d63463e0df1fcc01bf727bb9502f77273eabd"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-attention.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "5fe8e7e501acc04dbe16b5f44d8aaeb08ade09a6b3e7b98303c9ac1cad4102df"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 2
+            },
+            {
+              "start": 22,
+              "count": 1
+            },
+            {
+              "start": 29,
+              "count": 1
+            },
+            {
+              "start": 207,
+              "count": 1
+            },
+            {
+              "start": 258,
+              "count": 1
+            },
+            {
+              "start": 300,
+              "count": 8
+            },
+            {
+              "start": 349,
+              "count": 1
+            },
+            {
+              "start": 368,
+              "count": 1
+            },
+            {
+              "start": 374,
+              "count": 2
+            },
+            {
+              "start": 377,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a22334d83fb42726d69221d97f6a32777210f9f415998291bdaae4811c73872d"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 2
+            },
+            {
+              "start": 237,
+              "count": 16
+            },
+            {
+              "start": 282,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "937a1d5e12575398a0b40cea11b024b2f4c755f9631d30ce46a708b25ab1962a"
+        },
+        {
+          "path": "packages/web-console/src/public/localization-flow.css",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 13
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "01eb59ad0d995ba9138f1c972ff381f69adedd6431f0056058d32a09b20aa784"
+        },
+        {
+          "path": "packages/web-console/src/public/localization-flow.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 118
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e9756b01b8785f0186cc7aeed33db263833356e9b3a5f7d2b1ea0254c1fd450e"
+        },
+        {
+          "path": "packages/web-console/src/public/translation-jobs.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 64,
+              "count": 1
+            },
+            {
+              "start": 136,
+              "count": 2
+            },
+            {
+              "start": 140,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "f89068e1a25eb0e22d0f55f69e5214be619f0c110a76687a571cda2cd8612265"
+        },
+        {
+          "path": "packages/web-console/src/review-triage.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 292,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "8443665a5a52fa90fea21ac6ac26ab82fc075694a005d8570d30ec2ded98c87c"
+        },
+        {
+          "path": "packages/web-console/src/server.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1118,
+              "count": 1
+            },
+            {
+              "start": 1779,
+              "count": 2
+            },
+            {
+              "start": 1782,
+              "count": 1
+            },
+            {
+              "start": 1805,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "ce066785d927ed89c269f91c3aaaeaea6a614704e8d69ab54b70845b5efc3e6f"
+        },
+        {
+          "path": "packages/web-console/src/workspace-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 2
+            },
+            {
+              "start": 93,
+              "count": 5
+            },
+            {
+              "start": 132,
+              "count": 1
+            },
+            {
+              "start": 175,
+              "count": 8
+            },
+            {
+              "start": 185,
+              "count": 2
+            },
+            {
+              "start": 196,
+              "count": 1
+            },
+            {
+              "start": 239,
+              "count": 2
+            },
+            {
+              "start": 266,
+              "count": 3
+            },
+            {
+              "start": 312,
+              "count": 5
+            },
+            {
+              "start": 318,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "bf5c862c43862bfcf32391a0967f7037e876db5a4d9c4a30dd7315fd6d6a11a2"
+        },
+        {
+          "path": "packages/web-console/src/workspace-management.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 41,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "878d14944538205e24cbb5c715fe17a464a1aaff1dc35ad98765ff9098f73584"
+        },
+        {
+          "path": "packages/web-console/src/workspace-read.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 132,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a692b93f1640f0a9641f17e9321a81744ae5243dfc712206fd82d0c329a69624"
+        },
+        {
+          "path": "packages/web-console/test/localization-flow.integration.mjs",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 120
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0fcf408408c6852a229f56068f661d74850d1d87a97891b8965f473fe46a1bea"
+        },
+        {
+          "path": "packages/web-console/test/localization-flow.test.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 29
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "9333c17dd48a42b4c7c0349eb297f6e52363cc9a410bcf6f3cce71a54136f670"
+        },
+        {
+          "path": "packages/web-console/test/review-triage.test.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 260,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a7e4bdeeb47d93ce8eed1757a2fb268fc2524c9be8411567fe0dd6c92623c522"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "fedabfd09fffb2f1875a8b39d7465458ae74e74a",
+      "authorDate": "2026-11-02T23:40:49-07:00",
+      "commitDate": "2026-11-02T23:40:49-07:00",
+      "subject": "test: include guided localization in migration expectations",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/test/authorization.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 365,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1c4f437cfb039615cc9a266b8ec82410369389e9c9d2fcdc9bcce990b35c6d21"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "af88567b867a36b8fee08591ef47fd7e1630b6a6",
+      "authorDate": "2026-11-03T15:12:05-07:00",
+      "commitDate": "2026-11-03T15:12:05-07:00",
+      "subject": "Guide repository delivery setup and refresh Agent Hedgeling identity",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/api-contract/job-delivery-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "839dee15a94b7c324e15fd4421fa88adc9c818f964510bde3f7eeee870ba5a8e"
+        },
+        {
+          "path": "packages/api-contract/localization-flow-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 15,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b0c7fe7d048edaa5ebfc697d8bbda9e0289b9c8bafd623ad9ad8d50b0b07b98c"
+        },
+        {
+          "path": "packages/api-contract/repository-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 12,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "052e8c363bb75da512d08653250a7294c0f7151e08572fc58515d773d9160f1e"
+        },
+        {
+          "path": "packages/api-contract/translation-job-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "922fe222f4d6e9e1fb870a1a1bfcd9d22eb14e0448ee1f4c0dcf92962938609a"
+        },
+        {
+          "path": "packages/design-system/assets/agent-spark.svg",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 28
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e87d5c50352bd0920da98b8864bae06a8c354f632b28c38f0ed516de6be0aff8"
+        },
+        {
+          "path": "packages/design-system/brand.d.ts",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "ee2a485b781315ad085bbe6b5d983f7888060f09864d32b6849258c3f6cd5cff"
+        },
+        {
+          "path": "packages/design-system/brand.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 2,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "c967a43ef074f21cffb75d539d6537d3b70c264229c7ed6f380f3e618bc6ba1a"
+        },
+        {
+          "path": "packages/design-system/brand.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 8,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "8a05a7458aa884e45365617ba864b273ea3a036c82d9abdcfa3802c81d484370"
+        },
+        {
+          "path": "packages/design-system/brands/hedgeling/assets/agent-spark.svg",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 28
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e87d5c50352bd0920da98b8864bae06a8c354f632b28c38f0ed516de6be0aff8"
+        },
+        {
+          "path": "packages/design-system/brands/hedgeling/brand.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 8,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "96a3fc85c89f38e1e217e72904b747334cdbec6152e9fbe74dc8569ae463c55a"
+        },
+        {
+          "path": "packages/design-system/build.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 29,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "08757402881fd56ffc5ede174ceea065fa0751085a6a066c111a71bad2841c03"
+        },
+        {
+          "path": "packages/platform-mcp/test/console-tools.test.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 69,
+              "count": 21
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "dcac212a52b82cd3605ffdf839f309f69abc2027fc155b41309775c3e7ff9f14"
+        },
+        {
+          "path": "packages/web-console/README.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 10
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d8f96edc9b0a88521890875eee1d2432d70c7a5b13e0c3f88bfc5f2c01fd92aa"
+        },
+        {
+          "path": "packages/web-console/scripts/dev-site.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 53,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "26d04f922a39aa0ca4a1e2087dabbfcc7713f0c0691c60894e6de681a75de4fa"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 233,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "10981f6954786c073ad20b98562c9ff3d513d1ce581c0a6150faeb5aeb274ee5"
+        },
+        {
+          "path": "packages/web-console/scripts/run-agent-feedback-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 31,
+              "count": 4
+            },
+            {
+              "start": 50,
+              "count": 26
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "57b1285e92a5425c62c601d6bc73e916a276c57f80efbb9d5183d4d23e4b3f31"
+        },
+        {
+          "path": "packages/web-console/src/agent-runtime.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 29,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1ee1bb0ee101258bda10d0741b13f6567c60b0eca8e71f5eeb31089ace09bf59"
+        },
+        {
+          "path": "packages/web-console/src/agent-skills.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 15,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "a360c1acb7ad106dc857bd35da64da89435f027cd5870785a60ca0449859fc09"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/github-identity.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "35bc8bded7c08a93e2fb8d558a642928c79bdc9f74c39d3ebff37d689edac36a"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "839dee15a94b7c324e15fd4421fa88adc9c818f964510bde3f7eeee870ba5a8e"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/repositories.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 1
+            },
+            {
+              "start": 19,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "592be6f6302b9c5c21efcae480f795535fe6840df347dfe54a71fb1c88f5d6ee"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/repository-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 6,
+              "count": 1
+            },
+            {
+              "start": 12,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "052e8c363bb75da512d08653250a7294c0f7151e08572fc58515d773d9160f1e"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/repository-delivery-readiness.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 62
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d825d923eaf1b3b64b83d13b728922b6db062b513d5593249be75a010c732579"
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/translation-job-actions.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 14,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "922fe222f4d6e9e1fb870a1a1bfcd9d22eb14e0448ee1f4c0dcf92962938609a"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 88,
+              "count": 17
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "b70760915bf63ad3790caf24621f308b1ddd2cda93e29db49ec64185dfcd7191"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 40,
+              "count": 1
+            },
+            {
+              "start": 49,
+              "count": 1
+            },
+            {
+              "start": 66,
+              "count": 1
+            },
+            {
+              "start": 90,
+              "count": 1
+            },
+            {
+              "start": 121,
+              "count": 1
+            },
+            {
+              "start": 471,
+              "count": 3
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "bce75259682d353e0b20e3c40bb1430d87702ee264e6f133bdfb827bcb217890"
+        },
+        {
+          "path": "packages/web-console/src/repositories-integration.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 22,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "7542b5bfa2b7b5f26ee4f0496979b37249359d9a9d6587e7bb8fc43d3b6133b4"
+        },
+        {
+          "path": "packages/web-console/test/agent-context-tools.test.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 10,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "82d9ba66675acf9ba97638f4fe3bb6b616a1270fb212aee4b4d93e77f622c1ed"
+        },
+        {
+          "path": "packages/web-console/test/repository-delivery-readiness.test.js",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 158
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "ea787a63d1676138feeea769ec7902a4ec3ebb9dfad76e0bd8c2aca3c2016ac6"
+        }
+      ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "9ef8645fcaf287df1e7f394f0aa566fb7457e177",
+      "authorDate": "2026-11-03T15:57:22-07:00",
+      "commitDate": "2026-11-03T15:57:22-07:00",
+      "subject": "Polish chat sending controls and add the Hedgeling favicon",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/web-console/scripts/run-agent-feedback-browser-tests.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 29,
+              "count": 4
+            },
+            {
+              "start": 83,
+              "count": 5
+            },
+            {
+              "start": 95,
+              "count": 3
+            },
+            {
+              "start": 113,
+              "count": 2
+            },
+            {
+              "start": 116,
+              "count": 2
+            },
+            {
+              "start": 123,
+              "count": 1
+            },
+            {
+              "start": 237,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "8b96193e7adcb4ee60aad96aa604c19f383e6e7b425a5baa98ab1f7509320a07"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-components.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 185,
+              "count": 5
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "e60c68658488479453b472f23b26e05f55fefde3d3aa761cbe68e8dc2d37ae61"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-composer.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 5,
+              "count": 2
+            },
+            {
+              "start": 8,
+              "count": 1
+            },
+            {
+              "start": 23,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "dd9269b26c36fa42a22b634abcc0f86c2035cea444a15b0e4792bf70ec7e1471"
+        },
+        {
+          "path": "packages/web-console/src/public/agent-preview.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "5fab3e8c368cccf771f94c9cfc0e50fcdc09af709b8f3cf58f3ee78fa032b9ad"
+        },
+        {
+          "path": "packages/web-console/src/public/agent.css",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 266,
+              "count": 2
+            },
+            {
+              "start": 273,
+              "count": 4
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4a6e4e1d8e1f883643dd6f341d2e885e6a7b91397af52da5d66d3829deb65a9a"
+        },
+        {
+          "path": "packages/web-console/src/public/github-callback.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 3,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0fb6a7793baf7e79fafd57474d695c5f789b3bdf1d714c8ba75419bdbfbde6d4"
+        },
+        {
+          "path": "packages/web-console/src/public/index.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 7,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "2e7939ac2c0f726d462166d789845f901c290a5974186336c6c978ea5ef782ed"
+        },
+        {
+          "path": "packages/web-console/src/public/local-login.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "04d42174e3ae27374262b5d7c957d0988e96f122a27331c72cace1d4d8702db3"
+        },
+        {
+          "path": "packages/web-console/src/public/login.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "6f73c0aa8b2cf02dd231b87e358a5b87fb0da24cb5a9556a08440549b7920ed7"
+        },
+        {
+          "path": "packages/web-console/src/public/onboarding.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "f018fc6812b2ef2f7ee2b6d5fc65c123f64cf446a08be28eeba5d051aca84645"
+        },
+        {
+          "path": "packages/web-console/src/public/signup.html",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 8,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "d7346ddb839fb71560506348ca61249b08f21477eb2e4cc3617fd01ef9c53f58"
+        },
+        {
+          "path": "packages/web-console/src/public/theme.js",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 37,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "4882338c79957bc68287e09f81e2d1820db5c4bc81a3fb20dde5fb114272c095"
+        }
+      ]
+    },
+    {
+      "workspace": "private-engine-api",
+      "commit": "225265c92709644f611ea18c53df39b44b12ce8f",
+      "authorDate": "2026-10-31T13:44:09-06:00",
+      "commitDate": "2026-10-31T13:44:09-06:00",
+      "subject": "Extract user-facing prose from JSON content files",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/i18n/README.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 19,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "15c5e68221c12598a7c3c78d2203ccac3b9796c2f03fa8c3a0d70db6ed16ceb7"
+        },
+        {
+          "path": "packages/i18n/docs/DIAGNOSTICS.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 26,
+              "count": 1
+            },
+            {
+              "start": 102,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "2a37bcdb29381cda629bbb01ffb29bb14f384284ec0aaf4e83f5221a10532bd1"
+        },
+        {
+          "path": "packages/i18n/package.json",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 4,
+              "count": 1
+            },
+            {
+              "start": 162,
+              "count": 4
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "1e64bb580af41bc02108c050b231ce0ec8beb53500a83bb619365920c21f3997"
+        },
+        {
+          "path": "packages/i18n/src/adapters/README.md",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 56,
+              "count": 17
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "61aded0722bab9018bcb9499facd6c7361d0af329b0f829c0dcd4ba25b4daa64"
+        },
+        {
+          "path": "packages/i18n/src/adapters/index.ts",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 11,
+              "count": 1
+            },
+            {
+              "start": 27,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 1
+            },
+            {
+              "start": 43,
+              "count": 1
+            },
+            {
+              "start": 52,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "0f3fb65aa51c6a7045996b1c1ee32de7da040a405521db6617f27ab4e46a4630"
+        },
+        {
+          "path": "packages/i18n/src/adapters/json/index.ts",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 61
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "23a9579e8513673872a8b91609625f26fde7203a181079e1a0994cdbcbad31e9"
+        },
+        {
+          "path": "packages/i18n/src/core/extract.ts",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 1019,
+              "count": 1
+            },
+            {
+              "start": 1029,
+              "count": 2
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "08306391a8bef8f2a7b48555b35a2999ad3f2417788eaf20059b159502f9f4c8"
+        },
+        {
+          "path": "packages/i18n/test/diagnostic-contract.test.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 403,
+              "count": 1
+            },
+            {
+              "start": 470,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "3b2a34c41a9d41604ad70bfe1a5f5acfbc53053f5c8c1072c89fb733c6d22bc6"
+        },
+        {
+          "path": "packages/i18n/test/json-content.test.mjs",
+          "status": "A",
+          "newSideHunkRanges": [
+            {
+              "start": 1,
+              "count": 54
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "309fa918ca094b49dff060400c6a44377909b708703fcdba94807ffd7a62b878"
+        }
+      ]
+    },
+    {
+      "workspace": "private-engine-api",
+      "commit": "fe27fcd52e7880e5d039964d0b2d48b8ad18c96a",
+      "authorDate": "2026-11-01T09:15:05-07:00",
+      "commitDate": "2026-11-01T09:15:05-07:00",
+      "subject": "Authorize snapshot tuning results through the job read boundary",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/engine-api/src/model-queue.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 55,
+              "count": 4
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "608a5973e685c224d063b14e64abdc4306652e4d5166133fc53441e0cc1c1773"
+        },
+        {
+          "path": "packages/engine-api/src/store.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 76,
+              "count": 2
+            },
+            {
+              "start": 79,
+              "count": 1
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "ef0caa196e0303a93e880ebb31d9d03780ff8cac42830778f973ae3ab86e012e"
+        },
+        {
+          "path": "packages/engine-api/test/snapshot.integration.mjs",
+          "status": "M",
+          "newSideHunkRanges": [
+            {
+              "start": 12,
+              "count": 1
+            },
+            {
+              "start": 38,
+              "count": 31
+            }
+          ],
+          "note": "New-side event changes only; existing file bodies are not distributed.",
+          "sha256AtCommit": "58b1308e8ccd456ad8e6754e77b5fb7bb49182010561551ba40dcde2b7de9d80"
+        }
+      ]
     }
-  ]
+  ],
+  "submissionSnapshot": {
+    "platformRevision": "b232811f97cd3b30efc6c4568734e6f41897ebbf",
+    "eventImplementationRevision": "c87a64273dadb09bd6151fa5cf274a437206cae3",
+    "note": "Metadata inventory; source bodies, live infrastructure identifiers and post-recording uncommitted operational changes are excluded."
+  }
 }
