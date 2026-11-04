@@ -1,4 +1,19 @@
-# Deployment verification — October 27, 2026
+# Verification record
+
+## Submission readiness update — November 4, 2026
+
+This update supersedes earlier “local only” or “not yet deployed” status statements for features now in the recorded platform release. Historical sections below describe their original dated checks, not the current complete product state.
+
+- A fresh dependency installation in an isolated worktree succeeded without private packages. The November 4 local audit passed all 81 event tests, repository/provenance checks and the labeled offline demo. A scan of local public Git history found no matching GitHub-token, AWS-access-key or private-key signatures; this is a bounded signature scan, not a guarantee against every possible secret.
+- GitHub metadata reports the event submission repository as public and identifies `main` as the default branch. Event implementation through `c87a642` passed public CI on its development branch; merging the reviewed submission update and checking resulting main CI remain release steps.
+- Latest successful platform [demo deployment](https://github.com/Hedgeling/hedgeling-agent-platform/actions/runs/41737927815) selected `b232811f97cd3b30efc6c4568734e6f41897ebbf`. That revision’s event provenance names `c87a64273dadb09bd6151fa5cf274a437206cae3`. Of 88 imported files, 71 match the recorded hashes and 17 have subsequent platform edits; the provenance pin alone is not a claim of byte identity for every integrated file.
+- Read-only AWS CLI inspection matched the currently running healthy demo task to the ECR image tagged with `b232811`, by immutable digest. The service had one running/desired task and a completed rollout. Public health/login returned 200; anonymous agent configuration returned 401. Live infrastructure identifiers and endpoints are intentionally excluded here.
+- [Scroll Goblin translation PR #96](https://github.com/shane-washburn/scroll-goblin/pull/96) was merged at `2026-11-04T20:08:14Z`, with merge commit `418c8a3ec3624578f487ab3be2b73f7feee6fc9a`. The source app’s entry point loads the public web bundle and source-key map through its existing Hedgeling runtime. Owner-supplied recordings show Meta `muse-spark-1.3` in the organization-key translation preview and the integrated Meta BYOK workflow, approvals, PR, merge and multilingual game. This is a recorded owner demonstration, not a fresh judge-account or standalone live-harness rerun.
+- A narrated 177-second video was assembled and fully decoded locally. It labels shortened processing/deployment waits. Its English-source comparison view was captured separately from the live app with `en-US`; it is not represented as a historical recording made before deployment. The video and original recordings remain private until the owner uploads the final submission asset.
+- Judge workspace membership and console access have been provisioned; the owner supplied a signed-in judge-console screenshot. Newly issued demo access/ID tokens now last eight hours, independently of GitHub reconnection. These operational checks do not prove a judge’s own GitHub/App permissions or a complete fresh-account translation run.
+
+Current [submission checklist](SUBMISSION.md) and [judge instructions](JUDGES.md) list remaining access, video-link and portal checks. Do not turn this dated record into a guarantee about future service availability, model quality or organizer eligibility.
+
 
 ## Local context-enrichment milestone (October 29)
 

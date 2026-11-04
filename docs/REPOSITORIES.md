@@ -1,6 +1,6 @@
 # Repository discovery and source snapshots
 
-This event-created extension adds repository discovery, personal GitHub authorization and confirmed source connections to the existing hosted console. The extractor, adapters and injector remain separate proprietary service dependencies. Local testing can run that service from a separately authorized checkout; its code is not included here. These changes are on local development branches and have not been deployed.
+This event-created extension adds repository discovery, personal GitHub authorization and confirmed source connections to the existing hosted console. The extractor, adapters and injector remain separate proprietary service dependencies. Local testing can run that service from a separately authorized checkout; its code is not included here. The workflow is integrated in the hosted demo; platform release `b232811` records event modules from `c87a642`. See the November 4 [verification update](VERIFICATION.md#submission-readiness-update--november-4-2026).
 
 ## User workflow
 
@@ -14,7 +14,7 @@ The shared action registry exposes `repositories.inspect`, `.branches`, `.file`,
 
 ## Authentication and source handling
 
-Public repositories can be read anonymously. Connecting GitHub enables the user's own GitHub App user token. Private access is the intersection of the user's repository access and the App's installation/Contents permission. A browser GitHub login or a server installation token alone is insufficient. The App must be installed on each desired private repository with read-only Contents access.
+Public repositories can be read anonymously. Connecting GitHub enables the user's own GitHub App user token. Private access is the intersection of the user's repository access and the App's installation/Contents permission. A browser GitHub login or a server installation token alone is insufficient. Source reads require the App to be installed on the selected private repository with Contents read access. Translation PR delivery additionally requires Contents and Pull requests write permissions and the connected user’s push access.
 
 The browser flow uses exact callbacks, single-use state bound to the console user, PKCE S256 and a server-only Client secret. The initial callback page is public because the console uses Strict cookies; it exchanges the result with an authenticated same-origin POST. Tokens and PKCE verifiers are encrypted by the host vault and excluded from model inputs, tool results and engine requests. The current implementation asks the user to reconnect after at most eight hours; automatic refresh is not implemented. Disconnect removes saved console credentials; users revoke the GitHub grant on GitHub.
 

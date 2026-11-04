@@ -142,6 +142,13 @@ and at most 8,192 output tokens. Preview reports the actual batch count and
 aggregate request/token ceilings; these are not a dollar price. No automatic
 paid retry follows an error or an ambiguous five-minute expired claim.
 
+Quality requests use the provider's JSON-schema response format, with the
+selected IDs, verdicts and exact batch size. The server still validates every
+result independently. A rejected response saves only a bounded reason, batch
+number and counts, never the raw provider reply. The UI explains that reason
+and distinguishes zero saved findings from findings retained from earlier
+completed batches. Older failures without diagnostics remain readable.
+
 The model checks meaning, language, locale conventions, grammar, tone,
 terminology and supplied context. Results are `pass`, `needs_changes` or
 `uncertain`. Server checks additionally reject placeholder mismatches and hard
@@ -173,6 +180,14 @@ preserved. It does not install a runtime, modify application source, run the
 private injector, or export the private engine. Arbitrary JSON paths are not a
 promise that the app loads those files. Document jobs use their existing
 TXT/CSV download flow instead of repository PRs.
+
+Context-specific entries use the pinned catalog's explicit `context` to build
+runtime lookups (`source` + U+0004 + `context`). Their distinct keys and
+translations are preserved. Existing plain-text lookups remain unchanged.
+When a new contextual source has no plain entry, callers without a context use
+the variant with the most extracted occurrences; ties use context-name order.
+This fallback does not replace any contextual variant. Genuine key collisions
+remain blocking; the delivery panel does not provide a mapping editor.
 
 Complete coverage is mandatory for the selected languages. Review workflows
 require verified translations. AI-only output can be delivered unreviewed and

@@ -19,9 +19,17 @@ bounds. Organization entitlements separately control included usage.
 | Proposal validity | 15 minutes | 15 minutes |
 
 History admission is checked before accepting a user message; the accepted turn
-can append model/tool entries afterward. Capacity is finite. This release keeps
-full model history and does not summarize, truncate, or silently drop it. Request
-capacity is checked before usage reservation and provider dispatch. One byte is
+can append model/tool entries afterward. Capacity is finite. Stored messages and
+provider replay state are preserved. Context-enrichment status reads return only
+counts; bulk enrichment/acceptance proposals contribute counts, costs and
+references to model history while the console retains the full approval card.
+Older status/browse enrichment results are projected to counts when preparing
+a provider request, so resuming an affected chat does not reload the entire
+analysis. Specific context inspection needs an explicit selection of up to five
+IDs or a literal text query; bulk browser reads are not agent tools. The
+projection never accepts
+suggestions or rewrites saved results. Request capacity is still checked before
+usage reservation and provider dispatch. One byte is
 reserved as one token, plus the output budget, then reconciled against reported
 usage. This conservative reservation is not a tokenizer or the model's native
 context window. Larger requests therefore need more allowance headroom.

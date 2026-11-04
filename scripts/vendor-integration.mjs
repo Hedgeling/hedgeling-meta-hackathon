@@ -13,7 +13,7 @@ const dirty = Boolean(execFileSync('git', ['status', '--porcelain'], { encoding:
 const output = path.join(target, 'src/hackathon-engine');
 fs.mkdirSync(output, { recursive: true });
 const origins = [];
-for (const source of ['src/job-scope.js','src/job-review-analysis.js','src/job-review.js','src/job-review-actions.js','src/job-delivery.js','src/job-delivery-actions.js','src/github-source.js','src/github-identity.js','src/repositories.js','src/repository-actions.js','src/context-enrichment.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
+for (const source of ['src/job-scope.js','src/job-review-analysis.js','src/job-review.js','src/job-review-actions.js','src/job-delivery.js','src/job-delivery-actions.js','src/github-source.js','src/github-identity.js','src/repositories.js','src/repository-actions.js','src/context-enrichment.js', 'src/context-results.js', 'src/context-analysis.js', 'src/context-actions.js', 'src/documents.js', 'src/document-parser.js', 'src/document-processing.js', 'src/document-worker.js', 'src/document-actions.js',
   'src/tuning-gemini.js', 'src/tuning-models.js', 'src/agent-scope.js', 'src/errors.js', 'src/http.js', 'src/engine-client.js', 'src/engine-status.js', 'src/engine-operations.js',
   'src/translation-output-errors.js', 'src/translation-job-limits.js', 'src/translation-jobs.js', 'src/translation-job-actions.js', 'src/chat-limits.js', 'src/library.js', 'src/library-actions.js', 'src/tuning-config.js', 'src/project-locales.js', 'src/project-locales-actions.js', 'src/meta-translation.js', 'src/extraction-actions.js', 'src/extraction-catalog.js', 'src/extraction-workflow.js', 'LICENSE', 'NOTICE']) {
   const contents = fs.readFileSync(source);
@@ -27,6 +27,7 @@ for (const [source, destination] of [
   ['src/job-review-actions.js','../api-contract/job-review-actions.js'],
   ['src/job-delivery-actions.js','../api-contract/job-delivery-actions.js'],
   ['contracts/202610292200_job_review_delivery.sql','db/migrations/202610292200_job_review_delivery.sql'],
+  ['contracts/202610300100_job_review_diagnostics.sql','db/migrations/202610300100_job_review_diagnostics.sql'],
   ['src/repository-actions.js','../api-contract/repository-actions.js'],
   ['contracts/202610292000_repository_connections.sql','db/migrations/202610292000_repository_connections.sql'],
   ['ui/repositories.js','src/public/repositories.js'],
@@ -35,6 +36,9 @@ for (const [source, destination] of [
   ['src/context-actions.js', '../api-contract/context-actions.js'],
   ['contracts/202610291600_context_enrichment.sql', 'db/migrations/202610291600_context_enrichment.sql'],
   ['contracts/202610291601_context_retention.sql', 'db/migrations/202610291601_context_retention.sql'],
+  ['contracts/202610310100_context_diagnostics.sql', 'db/migrations/202610310100_context_diagnostics.sql'],
+  ['ui/workflow-progress.js', 'src/public/workflow-progress.js'],
+  ['ui/workflow-progress.css', 'src/public/workflow-progress.css'],
   ['ui/context-enrichment.js', 'src/public/context-enrichment.js'],
   ['ui/context-enrichment.css', 'src/public/context-enrichment.css'],
   ['src/document-actions.js', '../api-contract/document-actions.js'],
@@ -47,6 +51,7 @@ for (const [source, destination] of [
   ['contracts/202610281800_translation_jobs.sql', 'db/migrations/202610281800_translation_jobs.sql'],
   ['ui/translation-jobs.css', 'src/public/translation-jobs.css'],
   ['ui/translation-jobs.js', 'src/public/translation-jobs.js'],
+  ['ui/job-review-messages.js', 'src/public/job-review-messages.js'],
   ['src/chat-limits.js', 'src/public/chat-limits.js'],
   ['src/library-actions.js', '../api-contract/library-actions.js'],
   ['contracts/202610272300_library_workflow.sql', 'db/migrations/202610272300_library_workflow.sql'],

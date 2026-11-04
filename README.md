@@ -1,16 +1,30 @@
 # Hedgeling — Meta hackathon contributions
 
-**This is the fresh event-only submission repository.** Hedgeling's existing console, authorization/approval system, platform API, older MCP tools, and localization engine predate the event. They are separate hosted dependencies and are not included here. This repository does not import their Git history.
+**Your app. In any language.** Hedgeling helps teams reach global markets from day one by connecting repository source, translation context, language generation and delivery to the files an application actually loads.
 
-During the event we implemented Meta Responses integration for the existing agent, isolated demo infrastructure, and a private GitHub-connected processing API. This public extract contains the standalone Meta protocol integration, a verification harness, engine clients/contract, and the new project-bound extraction → review → import workflow with shared API/MCP actions and UI components. [Provenance](docs/PROVENANCE.md) distinguishes public implementation, private event work, and pre-existing services.
+**This is the public, event-only submission repository.** Hedgeling's localization engine, console, platform API, earlier MCP tools, chat and approval foundations existed before the hackathon. They are separately operated dependencies, not new work distributed here. The integration workspace's `hackathon-start` tag records that baseline. This repository has its own fresh history and Apache-2.0 license; it does not contain the earlier product snapshot or private engine.
 
-The earlier public platform snapshot is an integration workspace, **not the submission repository**. It contains pre-event product code; no checkout, package, or history from that snapshot is required to run this extract.
+## Built or extended during the hackathon
 
-The local development extension for [repository discovery and personal GitHub access](docs/REPOSITORIES.md) adds branch/path exploration and confirmed source snapshots. Its extraction engine remains a separate private dependency; this extension has not been deployed yet.
+- **Meta-powered Agent integration:** Responses tool calls, encrypted reasoning replay, usage normalization, cancellation and bounded errors, connected to the existing console's permission-checked actions.
+- **Meta BYOK for language work:** organization-owned credentials for contextual translation, context enrichment and AI quality assessment. Keys remain server-side; failed BYOK work does not silently fall back to a different paid route.
+- **GitHub-connected processing API:** authenticated, tenant-scoped source processing around the pre-existing private engine, pinned commits and bounded caller-authorized snapshots.
+- **Connected localization workflow:** separate extraction/import and enrichment/acceptance approvals; saved translation jobs; AI-only, AI quality-check and human-review choices; and separately approved translation PR delivery.
+- **Agent and console improvements:** counts-first context tools, batched work, actionable validation diagnostics, measured progress, focused business-unit workspaces and guided repository readiness.
 
-## Run and verify
+The event-created modules, shared action definitions, contracts, UI components and tests are distributed here. Integration changes inside older product files are recorded by commit, path, digest and added-line ranges in [the hosted-change inventory](docs/hosted-changes.json), without distributing their pre-existing bodies. [Provenance](docs/PROVENANCE.md) and [licensing](docs/LICENSING.md) explain the boundary; timestamps alone do not prove authorship or event eligibility.
 
-Requires Node.js 22.13+ and npm. Public document-parser dependencies are pinned in the lockfile and labeled in [licensing](docs/LICENSING.md); no private package downloads are required.
+## Judges: start here
+
+Read the [judge walkthrough](docs/JUDGES.md), [service/access boundary](docs/SERVICES.md) and [latest verification record](docs/VERIFICATION.md#submission-readiness-update--november-4-2026).
+
+Hosted access instructions and credentials are supplied privately through the submission channel. The hosted demo is the integrated product; installing this extract does not install the older console or private engine. No credential or private service endpoint is needed for the offline checks below.
+
+The recorded demonstration uses Hot Dog or Not in Scroll Goblin. It shows source import, accepted translation context, Meta BYOK AI-only translation, a real GitHub PR, human merge and the translated game. AI-only output is labeled unreviewed; AI assessment and human review are separate workflow choices. A person merges the PR and the application's own pipeline deploys it.
+
+## Run the public extract
+
+Requires Node.js 22.13+ and npm. Dependencies are public, pinned in the lockfile and identified in [licensing](docs/LICENSING.md).
 
 ```sh
 npm ci --ignore-scripts
@@ -19,63 +33,31 @@ npm test
 npm run demo
 ```
 
-`npm run demo` is explicitly a **fixture**: it makes no network/model calls and does not perform extraction. It exercises request conversion, a synthetic read-only tool, tool-result replay, and a final answer through the actual adapter.
+`npm run demo` is a labeled **offline fixture**. It exercises the real Meta request/response adapter with a synthetic read-only tool and replayed responses. It makes no provider calls, performs no extraction and does not prove live inference. Public CI runs these same checks without provider, cloud or deployment secrets.
 
-For a real Meta model call:
+For bounded live verification:
 
 ```sh
 cp .env.example .env.local
-# Set the Meta Responses endpoint, model, and key in .env.local.
+# Configure the authorized Meta Responses endpoint, model and key privately.
 npm run demo:live
 ```
 
-The live command uses Meta inference and may incur provider charges. It makes at most four turns against a newly authored synthetic catalog; it does not access customer source or change a workspace. Missing configuration fails explicitly. Encrypted provider replay state stays inside the tool loop and is not printed. [Service setup and judge access](docs/SERVICES.md).
+That optional command uses real Meta inference and may incur provider charges. It makes at most four turns against an authored synthetic catalog, requires a real tool call, and does not change a hosted workspace. Missing configuration fails explicitly. Provider replay state and credentials are not printed. See [service configuration](docs/SERVICES.md).
 
-## What works today
+## What is in the submission
 
-- Meta conversation conversion, structured tool calls, opaque reasoning replay, usage normalization, cancellation, and bounded HTTP responses.
-- Offline tests and an optional live Meta tool-loop verification independent of the existing console.
-- A server-only read client for private engine capabilities and paginated repository connections, deployed into the existing demo behind operator authorization.
-- A documented engine interface for extraction jobs and rewrite previews. The implementation is private event work around a pre-existing engine; publishing its contract does not deploy the service.
-- New project-scoped API/MCP extraction actions, separate extraction and import approvals, source provenance validation, retry-safe admission, and progress/manual source controls, deployed into the existing demo. See the [workflow and limits](docs/EXTRACTION-WORKFLOW.md). Unit, host integration and browser tests cover this workflow; real extraction/import and Meta proposal checks are recorded in [verification](docs/VERIFICATION.md).
+- Meta protocol and translation adapters; private engine clients and public API contract.
+- Repository discovery/source snapshots, extraction/tuning, [context enrichment](docs/CONTEXT-ENRICHMENT.md), [Library guidance](docs/LIBRARY-WORKFLOW.md), [translation jobs, quality and PR delivery](docs/TRANSLATION-JOBS.md).
+- [Document jobs](docs/DOCUMENT-JOBS.md) for Markdown/TXT, DOCX body text and selectable-text PDF, with TXT/CSV export. OCR and original-layout preservation are not implemented.
+- Shared API/MCP action definitions and event-authored UI modules. The hosted API owns authorization and human confirmation; the model cannot confirm its own proposals.
 
-The current live console uses the earlier event Meta adapter inside the existing hosted product. The standalone Meta module here has not yet replaced that adapter. The private engine service is deployed separately and connected to the demo backend; an operator check extracted all three strings from the pinned synthetic source through the real GitHub App and API. [Verification evidence](docs/VERIFICATION.md). Organization Meta BYOK translation is available as described below. [Post-import context enrichment](docs/CONTEXT-ENRICHMENT.md) is implemented for local testing, with separate generation and acceptance approvals. Bedrock and applying repository changes remain future work. Existing chat/approval features are not claimed as event contributions.
+Real hosted extraction uses the separate private service. Translation PR delivery requires a connected GitHub user with push access, the App installed with Contents and Pull requests write access, a current source snapshot and compatible runtime bundle/map files already integrated into the application. A file-name check alone does not prove runtime compatibility. [Repository setup](docs/REPOSITORIES.md).
 
-## Private work written during the event
+Bedrock, independent workload model selection, token streaming and broader runtime onboarding remain future work. No automatic PR merge or application deployment is claimed.
 
-| Change | Evidence | Status |
-| --- | --- | --- |
-| Meta adapter and existing-console wiring; database TLS changes | Commit `eef24e7a0e27d8ce829c47d73e9310eb142f0a9b`; file/line inventory in [hosted changes](docs/hosted-changes.json) | Integrated in existing demo; standalone adapter extracted here |
-| Isolated demo AWS deployment, seed and CI support | Commits `eef24e7a0e27d8ce829c47d73e9310eb142f0a9b`, `961af208f26f9705cfc9649c7422501a452b2700` | Existing demo infrastructure; not a deployment pipeline for this repo |
-| GitHub App connector, tenant-scoped engine API, queue, worker, previews, tests and container packaging | Private commits `95b0c245601fc8b197da700f485e20dfc14286fa` and the deployment commit recorded in [hosted changes](docs/hosted-changes.json) | Deployed from the unmerged private branch; no npm release |
-| Private AWS engine stack, restricted database role, secret provisioning and synthetic verification | Deployment commit in [hosted changes](docs/hosted-changes.json) | Dedicated service healthy; live extraction verified |
-| Demo server readiness route and server-only connection configuration | Commit `a159e447a3dcea5bac095c9ece623cfa37a4f689` | Deployed; vendored public event modules retain Apache-2.0 and provenance |
-| Extraction action/UI integration, transactional importer/usage bridge and restricted synthetic project seed | Commits `8fc8b77`, `5710426`, `b7fc91c`, fully inventoried in [hosted changes](docs/hosted-changes.json) | Deployed; real three-string extraction/import and live Meta proposal verified |
+## License and submission status
 
-The engine itself was not written during the event. The inventory records every changed file and added line range in these event commits, including modifications made inside older files; older source contents are not copied into this submission. Keep the inventory and implementation status current as work lands.
+Original event work distributed here is **Apache-2.0**, selected by the owner. See [LICENSE](LICENSE), [NOTICE](NOTICE) and [provenance](docs/PROVENANCE.md). The existing product/integration workspace retains its commercial terms; the private engine and service implementation are not relicensed by this repository. Third-party dependencies and trademarks retain their terms.
 
-## License and submission
-
-The original event code and documentation distributed here are **Apache-2.0**, selected by the owner on October 27, 2026. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [licensing scope](docs/LICENSING.md). This grants no license to the separate proprietary product/service implementation, model weights, customer data, or trademarks.
-
-The organizers' clarification allows a private existing product as a disclosed hosted service. [Rules record](docs/EVENT-RULES.md) records the supplied clarification and remaining submission checks. The [submission checklist](docs/SUBMISSION.md) tracks the video, judge access, and final verification. Repository setup is not a claim that the final hackathon deliverables are complete or that organizers have approved the project.
-
-### Organization-owned Meta translation keys
-
-Event-created `src/meta-translation.js` provides metadata-only key validation and context-aware translation using Meta Responses. The hosted console stores Gemini and Meta keys independently, requires a human preview/confirmation for key or billing-route changes, and leaves included chat on Hedgeling’s managed account. Translation prompts include the existing source context, glossary, and project instructions. Extraction itself remains the separately hosted pre-existing service; this addition does not add an LLM context-enrichment pass there.
-
-The server requires `HEDGELING_META_RESPONSES_URL` (the operator-approved HTTPS Responses endpoint) and `HEDGELING_META_TRANSLATION_MODEL`. Keys are organization credentials in the encrypted host vault, never frontend environment values. Selecting Meta uses that organization key only; failure or removal never falls back to Gemini or managed credits. The additive migration preserves existing Gemini keys. Existing paid-plan access requirements still apply.
-
-`npm test` verifies the new Meta transport with synthetic responses. Host integration tests separately verify encryption, authorization, coexistence, confirmation, translation provenance, and zero platform translation-credit charges for BYOK. These fixture tests do not establish live provider access.
-
-Project configuration and deterministic extraction tuning are available as event-authored API/MCP actions and UI components; see [the workflow](docs/EXTRACTION-WORKFLOW.md). The private service runs the pre-existing tuner. Settings are saved per project/connection, downloaded as JSON, and used for a separately approved re-extraction/import flow.
-
-The [Agent Library workflow](docs/LIBRARY-WORKFLOW.md) adds event-created, permission-scoped personas, translation instructions, glossary suggestions, human review and revision history. Existing product storage and translation execution remain hosted dependencies.
-
-Chat capacity and included-usage boundaries are documented in [Chat limits](docs/CHAT-LIMITS.md).
-
-The [agent scope policy](docs/AGENT-SCOPE.md) keeps hosted chat focused on localization and Hedgeling, with synthetic acceptance cases for live model evaluation. The [deferred UI polish spec](docs/UI-POLISH-SPEC.md) tracks provider/model selection clarity, Set budget repair and agent logo replacement.
-
-The [confirmed translation-job workflow](docs/TRANSLATION-JOBS.md) adds event-created start/status/stop actions, a durable bounded queue and progress UI. A human start confirmation authorizes generation and draft persistence through the hosted translation pipeline; review and publication remain separate. Organization Meta/Gemini keys and managed AI-credit budgets keep their existing boundaries.
-
-The [document workflow](docs/DOCUMENT-JOBS.md) adds Markdown/TXT, DOCX body text and selectable-text PDF uploads, section previews, confirmed document-scoped jobs and authenticated TXT/bilingual CSV downloads. Manual UI, chat and MCP share authorization and approval boundaries. Parsing uses declared public dependencies; this workflow does not require the private source-code extractor. OCR and preservation of original Word/PDF layout are not implemented.
+[Submission readiness](docs/SUBMISSION.md) separates completed evidence from final portal, video-link and fresh-account checks. The private hosted dependency is disclosed under the owner-supplied organizer clarification; this is not an independent event-eligibility certification.

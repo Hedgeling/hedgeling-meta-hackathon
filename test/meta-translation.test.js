@@ -2,6 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { metaTranslationConfiguration, validateMetaKey, generateMetaText } from '../src/meta-translation.js';
+import { reviewPrompt } from '../src/job-review-analysis.js';
 
 const config = { endpoint: 'https://provider.example.invalid/v1/responses', model: 'configured-model' };
 const apiKey = 'synthetic-key-for-testing-only';
@@ -35,6 +36,16 @@ test('contextual translation uses only the supplied organization key, does not s
   assert.deepEqual(result.raw.usageMetadata, { promptTokenCount: 100, candidatesTokenCount: 18,
     thoughtsTokenCount: 12, cachedContentTokenCount: 10, totalTokenCount: 130 });
   assert.ok(!JSON.stringify(result).includes(apiKey));
+});
+test('Meta quality checks request strict structured output without changing ordinary translation requests',async()=>{
+  const prompt=reviewPrompt([{id:'synthetic',sourceText:'Hello',text:'Bonjour',locale:'fr'}],'en',{});
+  await generateMetaText({...prompt,apiKey,config,fetchImpl:async(_url,options)=>{
+    assert.deepEqual(JSON.parse(options.body).text,{format:{type:'json_schema',name:'quality_review',strict:true,schema:prompt.responseSchema}});
+    return Response.json(response);
+  }});
+  await generateMetaText({system:'Translate',user:'Hello',apiKey,config,fetchImpl:async(_url,options)=>{
+    assert.equal(JSON.parse(options.body).text,undefined);return Response.json(response);
+  }});
 });
 test('Meta translation fails closed on upstream errors, refusal, and incomplete output', async () => {
   for (const raw of [{ ...response, status: 'incomplete' }, { ...response, output: [] },
