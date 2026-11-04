@@ -228,3 +228,9 @@ approvals, result pagination, stale edits, revoked access, cancellation, AI-only
 completion and partial batches. Browser checks exercise manual quality and
 verification cards, automatic control refresh and mobile layout. These tests
 do not establish live Meta quality or successful writes to a real GitHub repo.
+
+## After the translation PR: runtime handoff
+
+PR creation and merge do not install app localization. The developer needs the Hedgeling injector component, supplied as a separate npm package, plus an application language selector connected to the active locale. The injector must load the translation bundle and source-key map the app actually uses. Full installation and framework instructions are maintained at [the Hedgeling quickstart](https://thehedgeling.com/docs/quickstart); do not infer a package name or install command from this repository.
+
+After PR creation, or when the user reports a merge, Agent Hedgeling should give a short checklist: review/merge, install or verify the injector and language selector, check bundle/map paths, deploy via the app pipeline, then inspect the same route in a target language. Verify an existing integration instead of asking users to reinstall it. The agent does not merge, deploy or certify UI rendering. Missing runtime setup should also be explained before paid repository work; translation-only users can continue without PR delivery.

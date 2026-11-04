@@ -324,7 +324,7 @@
     },
     "docs/TRANSLATION-JOBS.md": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "d86c1d20f29aba2007096f254ec3794bf3cacc15f9933f033ed3462a3f518fa5"
+      "sha256": "a3a9eff68bda29beb02a467e3a535c4040a1009f0cee5ae098979df6fe8eef48"
     },
     "src/agent-scope.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -492,7 +492,7 @@
     },
     "src/job-delivery-actions.js": {
       "origin": "authored-during-event-for-this-extract",
-      "sha256": "fd82acf7d5427e308743a33b068ff5f348269c7f40eb4d319cb853e89018d52f"
+      "sha256": "b60e923122ab0a8433eafee48ed690e3554c36004b6659e408618bf6ca647fd1"
     },
     "src/job-delivery.js": {
       "origin": "authored-during-event-for-this-extract",
@@ -560,7 +560,7 @@
     },
     "docs/JUDGES.md": {
       "origin": "authored-during-event-for-this-extract; November 4 judge walkthrough and verified preparation boundaries",
-      "sha256": "a01c06b605c108d2f87cba5ee0891c1e6199d93739f900920203208b8a489801"
+      "sha256": "6e91f4cbfdb81d5b5969f51343b6dca93acdadf55d584112939c4b12524ecee7"
     }
   },
   "submissionReadinessReview": {
