@@ -15,6 +15,12 @@ This update supersedes earlier “local only” or “not yet deployed” status
 Current [submission checklist](SUBMISSION.md) and [judge instructions](JUDGES.md) list remaining access, video-link and portal checks. Do not turn this dated record into a guarantee about future service availability, model quality or organizer eligibility.
 
 
+## Runtime delivery handoff — November 4, 2026
+
+The delivery skill now explains the post-PR developer handoff: install or verify the separately packaged Hedgeling injector, implement or verify a language selector, check bundle/map loading, deploy through the app pipeline and test the translated route. It links the owner-provided maintained quickstart at https://thehedgeling.com/docs/quickstart without guessing npm package names or install commands. A user-reported merge is distinguished from observed deployment/rendering.
+
+The paired platform integration `f0a036afb11fe48326cd67df29132d895bfe9d92` adds the same guidance to early readiness and the confirmed-PR receipt. Local public-boundary/build/lint checks, 10 repository-readiness tests and 14 Meta/provider regression tests passed. The event repository passed its provenance checks, all 81 tests and the labeled offline fixture. These checks verify instruction wiring and preserve existing gates; they do not prove that every live model response follows the handoff or that an arbitrary application is integrated. Hosted release evidence remains tracked by the platform PR/deployment pipeline.
+
 ## Local context-enrichment milestone (October 29)
 
 The subsequent advisory-length update passed 47 event tests, five context and seven translation-job integration tests, and the desktop/mobile/light/dark context browser flow. Tests verify rounded Unicode-code-point estimates, short-label headroom, preservation of model suggestions/hard limits, older pending-result previews without new inference, and unchanged previously accepted guidance. A generated translation exceeding the formula target saved intact. Browser checks cover the Projects heading, AI Translation wording, and identical formula labels in review and acceptance cards. These changes remain local; no hosted deployment or new live-provider request was made for this update.
