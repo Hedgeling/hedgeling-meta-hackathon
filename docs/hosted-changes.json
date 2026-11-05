@@ -14167,6 +14167,112 @@
           "sha256AtCommit": "58b1308e8ccd456ad8e6754e77b5fb7bb49182010561551ba40dcde2b7de9d80"
         }
       ]
+    },
+    {
+      "workspace": "existing-platform-integration",
+      "commit": "f0a036afb11fe48326cd67df29132d895bfe9d92",
+      "authorDate": "2026-11-04T16:58:53-07:00",
+      "commitDate": "2026-11-04T16:58:53-07:00",
+      "subject": "Guide injector and language selector setup after translation PRs",
+      "sourceCodeIncluded": false,
+      "files": [
+        {
+          "path": "packages/api-contract/job-delivery-actions.js",
+          "status": "M",
+          "sha256AtCommit": "bd10f7716e5d5e45573917f9cfabcf34c1353d6bf0f37df4885181a588731866",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 2
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        },
+        {
+          "path": "packages/api-contract/repository-actions.js",
+          "status": "M",
+          "sha256AtCommit": "17770221975022734df624a1c689a0e38d24a6f9f799e388cd0c2856405217ce",
+          "newSideHunkRanges": [
+            {
+              "start": 13,
+              "count": 2
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/job-delivery-actions.js",
+          "status": "M",
+          "sha256AtCommit": "bd10f7716e5d5e45573917f9cfabcf34c1353d6bf0f37df4885181a588731866",
+          "newSideHunkRanges": [
+            {
+              "start": 9,
+              "count": 2
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/provenance.json",
+          "status": "M",
+          "sha256AtCommit": "38314ef870eb5d6347c78215b6ccbe7637cc4bec1804f21d8b19b805ca0c5faf",
+          "newSideHunkRanges": [
+            {
+              "start": 35,
+              "count": 4
+            },
+            {
+              "start": 238,
+              "count": 4
+            },
+            {
+              "start": 453,
+              "count": 14
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/repository-actions.js",
+          "status": "M",
+          "sha256AtCommit": "17770221975022734df624a1c689a0e38d24a6f9f799e388cd0c2856405217ce",
+          "newSideHunkRanges": [
+            {
+              "start": 13,
+              "count": 2
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        },
+        {
+          "path": "packages/web-console/src/hackathon-engine/repository-delivery-readiness.js",
+          "status": "M",
+          "sha256AtCommit": "ee37c83c0fec67b88efacaf5e01380df8d328fe5b24e78d4332d91017b000471",
+          "newSideHunkRanges": [
+            {
+              "start": 41,
+              "count": 2
+            },
+            {
+              "start": 47,
+              "count": 2
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        },
+        {
+          "path": "packages/web-console/src/public/agent.js",
+          "status": "M",
+          "sha256AtCommit": "c0c97fe4fa4696262f165ee66be019617761ff77982e96ee2ba22903b581b498",
+          "newSideHunkRanges": [
+            {
+              "start": 272,
+              "count": 1
+            }
+          ],
+          "note": "Event-authored runtime handoff; existing integration file bodies are not distributed."
+        }
+      ]
     }
   ],
   "submissionSnapshot": {
